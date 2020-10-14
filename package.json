@@ -1,0 +1,41 @@
+{
+  "name": "thefrontendcoach.com",
+  "version": "1.0.0",
+  "description": "A dedicated support and learning system those who wish to start a career as a front end developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrobind/thefrontendcoach.com.git"
+  },
+  "keywords": [
+    "front",
+    "end",
+    "dev",
+    "self-taught",
+    "learn to code",
+    "mentor",
+    "coach"
+  ],
+  "author": "James Robinson <jrobind@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrobind/thefrontendcoach.com/issues"
+  },
+  "homepage": "https://github.com/jrobind/thefrontendcoach.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "browser-sync": "2.26.12",
+    "cssnano": "4.1.10",
+    "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-imagemin": "7.1.0",
+    "gulp-postcss": "9.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-terser": "1.4.0",
+    "node-sass": "4.14.1"
+  }
+}
