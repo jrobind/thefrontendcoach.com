@@ -14,8 +14,8 @@ const { src, series, parallel, dest, watch } = require('gulp');
 
 sass.compiler = require('node-sass');
 
-const JS_PATH = 'src/js/*.js';
-const CSS_PATH = 'src/scss/*.scss';
+const JS_PATH = 'src/js/**/*.js';
+const CSS_PATH = 'src/scss/**/*.scss';
 const HTML_PATH = 'src/*.html';
 const IMG_PATH = 'src/images/*';
 

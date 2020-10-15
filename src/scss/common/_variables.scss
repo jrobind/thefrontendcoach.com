@@ -1,0 +1,33 @@
+// COlOURS
+$main-bc: #339989;
+$secondary-bc: #2B2C28;
+$tertiary-bc: #F7B501;
+
+// BREAKPOINTS
+$breakpoints: (
+  tablet: 700px,
+  desktop: 1024px,
+  wide: 1440px
+);
+
+$sizes: tiny, small, medium, large, xlarge, giant;
+
+// SPACINGS
+$spacings: (
+  tiny: 4px,
+  small: 8px,
+  medium: 16px,
+  large: 32px,
+  xlarge: 48px,
+  giant: 64px,
+);
+
+// HEADINGS
+$headings: (
+  tiny: 16px,
+  small: 20px,
+  medium: 24px,
+  large: 30px,
+  xlarge: 38px,
+  giant: 50px,
+);

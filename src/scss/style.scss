@@ -1,8 +1,14 @@
-body {
-    background-color: black;
-    color: white;
+/* SASS */
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/base';
 
-    h1 {
-        color: burlywood;
-    }
-}
+/* COMPONENTS */
+@import 'components/header';
+
+/* PAGES */
+@import 'pages/landing';
+
+
+/* UTILS */
+@import 'common/utils';

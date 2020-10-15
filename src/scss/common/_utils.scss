@@ -1,0 +1,112 @@
+// GENERIC
+.u-c--white {
+  color: white;
+}
+
+.u-bg--white {
+  background: white;
+}
+
+.u-fw--300 {
+  font-weight: 300;
+}
+
+.u-fw--700 {
+  font-weight: 700;
+}
+
+// SPACING
+.u-m--none {
+  margin: 0;
+}
+
+.u-m--auto {
+  margin: auto;
+}
+
+.u-p--none {
+  padding: 0;
+}
+
+// X AND Y AXIS
+// Examples: .u-mt--xsmall,. u-mt--tiny-bp-w, .u-mr--tiny, .u-pb--medium, .u-pt--xlarge
+@each $prop in margin, padding {
+  @each $position in top, bottom, right, left {
+    .u-#{str-slice($prop, 0, 1)}#{str-slice($position, 0, 1)} {
+      @each $size in $sizes {
+        &--#{$size} {
+            #{$prop}-#{$position}: map-get($spacings, $size);
+        }
+      }
+    }
+  }
+}
+
+// DEFAULT
+// Examples: .u-mr--tiny, .u-p--medium, .u-p--bp-w
+@each $prop in margin, padding {
+  .u-#{str-slice($prop, 0, 1)} {
+    @each $size in $sizes {
+      &--#{$size} {
+          #{$prop}: map-get($spacings, $size);
+      }
+    }
+  }
+} 
+
+// HEADINGS
+@each $size in $sizes {
+  .u-fs--#{$size} {
+    font-size: map-get($headings, $size);
+  }
+}
+
+// FLEXBOX
+.u-d--flex {
+  display: flex;
+}
+
+.u-fd--column {
+  flex-direction: column;
+}
+
+.u-jc--center {
+  justify-content: center;
+}
+
+.u-jc--space-between {
+  justify-content: space-between;
+}
+
+.u-jc--start {
+  justify-content: flex-start;
+}
+
+.u-jc--end {
+  justify-content: flex-end;
+}
+
+.u-ai--center {
+  align-items: center;
+}
+
+.u-ai--start {
+  align-items: flex-start;
+}
+
+.u-ai--end {
+  align-items: flex-end;
+}
+
+// BACKGROUND
+.u-bg--main {
+  background: $main-bc;
+}
+
+.u-bg--secondary {
+  background: $secondary-bc;
+}
+
+.u-bg--tertiary {
+  background: $tertiary-bc;
+}

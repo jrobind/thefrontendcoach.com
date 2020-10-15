@@ -1,0 +1,64 @@
+// MEDIA QUERIES
+@mixin mq($from: null, $until: null, $only: null) {
+  // A mixin for applying responsive properties, takes in device names (tablet, desktop, wide)
+  // then uses corresponsing values from $breakpoints map in ./_variables.scss, or pixel values.
+  //
+  // Examples:
+  // for $breakpoints: (tablet: 600px, desktop: 1024px, wide: 1440px)
+  // @include mq($from: tablet) or @include mq(tablet): 600px and up
+  // @include mq($from: 430px) or @include mq(430px): 430px and up
+  // @include mq($until: wide): less than 1440px (up to 1439px)
+  // @include mq($from: 200px,$until: tablet) or @include mq(200px,tablet): 200px until 599px (200px <= x < 600px)
+  // @include mq($only: desktop): 1024px until 1440px (1024px <= x < 1439px)
+
+  // ONLY
+  @if $only { // if $only given, ignore user $from and $until values and set these
+    // Map device names to breakpoint values in ./_variables.scss for $from and $until
+    @if $only == 'tablet' {
+      $from: map-get($breakpoints, tablet);
+      $until: map-get($breakpoints, desktop);
+    }
+    @else if $only == 'desktop' {
+      $from: map-get($breakpoints, desktop);
+      $until: map-get($breakpoints, wide);
+    }
+  }
+  @else {
+    // FROM
+    // Map device names to breakpoint values in ./_variables.scss for $from
+    @if $from == 'tablet' {
+      $from: map-get($breakpoints, tablet);
+    }
+    @else if $from == 'desktop' {
+      $from: map-get($breakpoints, desktop);
+    }
+    @else if $from == 'wide' {
+      $from: map-get($breakpoints, wide);
+    }
+    // Map device names to breakpoint values in ./_variables.scss for $until
+    @if $until == 'tablet' {
+      $until: map-get($breakpoints, tablet);
+    }
+    @else if $until == 'desktop' {
+      $until: map-get($breakpoints, desktop);
+    }
+    @else if $until == 'wide' {
+      $until: map-get($breakpoints, wide);
+    }
+  }
+  @if $from {
+    @if $until { // if both $from and $until given (by user or due to $only being given)
+      @media (min-width: $from) and (max-width: #{$until - 1px}) { @content; }
+    }
+    @else { // if only $from given
+      @media (min-width: $from) { @content; }
+    }
+  }
+  @else if $until { // if only $until given
+    @media (max-width: #{$until - 1px}) { @content; }
+  }
+}
+
+@function getSpace($size) {
+  @return map-get($spacings, $size);
+}

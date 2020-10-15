@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.js"],"names":["message","console","log"],"mappings":"AAAA,MAAAA,QAAA,IAAA,QAEAC,QAAAC,IAFA","file":"index.js","sourcesContent":["const message = () => 'hello';\r\n\r\nconsole.log(message());"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"index.js","sourcesContent":[]}

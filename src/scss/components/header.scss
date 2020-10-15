@@ -1,0 +1,102 @@
+.header {
+  background-color: $main-bc;
+  width: 100%;
+  z-index: 3;
+  min-height: 57px;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    padding: getSpace(medium);
+    text-decoration: none;
+  }
+
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+    padding-top: getSpace(giant);
+
+    @include mq(tablet) {
+      position: absolute;
+      right: 0;
+      display: flex;
+      max-height: none;
+      padding-top: 0;
+    }
+  
+    &__item a {
+      display: block;
+      padding: getSpace(medium);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+      @include mq(tablet) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ .menu {
+      max-height: 260px;
+    }
+    
+    &:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    
+    &:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+    }
+    
+    &:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+    }
+    
+    &:checked ~ .menu-icon:not(.steps) .nav-icon:before,
+    &:checked ~ .menu-icon:not(.steps) .nav-icon:after {
+      top: 0;
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 30px 20px;
+    position: absolute;
+    user-select: none;
+    right: 0;
+
+    @include mq(tablet) {
+      display: none;
+    }
+
+    .nav-icon {
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+
+      &:before, &:after {
+        content: '';
+        background-color: white;
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+  }
+}
