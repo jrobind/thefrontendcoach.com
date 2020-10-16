@@ -1,33 +1,89 @@
 .hero {
   background: $main-bc;
-  height: 800px;
-  position: relative;
-  z-index: 3;
+  height: 850px;
   background: url(/images/hero-wave.svg);
   background-repeat: no-repeat;
-  background-size: auto 115%;
+  background-size: cover;
+  background-position: -120px -1px;
+  padding-top: getSpace(large);
 
-  &-content {
+  @include mq(desktop) {
+    background-position: 0 -1px;
+  }
+
+  @include mq(tablet) {
+    padding-top: getSpace(giant);
+  }
+}
+
+.content {
+  @include mq(desktop) {
     display: flex;
+  }
 
-    &__img {
-      height: auto; 
-      width: auto; 
-      max-width: 450px; 
-      max-height: 450px;
-    }
+  &__img {
+    display: none;
+    height: auto; 
+    width: auto; 
+    max-width: 450px; 
+    max-height: 450px;
 
-    &__cta {
+    @include mq(desktop) {
       display: block;
-      max-width: 180px;
-    }
-
-    &__headline {
-      margin-top: -13px;
-    }
-
-    &__copy p {
-      letter-spacing: 1.5px;
+      margin-right: getSpace(large);
     }
   }
-}         
+
+  &__cta {
+    display: block;
+    max-width: 180px;
+  }
+
+  &__headline {
+    margin-top: -13px;
+    font-size: 30px;
+
+    @include mq(tablet) {
+      font-size: 38px;
+    }
+  }
+
+  &__copy {
+    @include mq(desktop) {
+      margin-left: getSpace(large);
+    }
+
+    p {
+      letter-spacing: 1.5px;
+      font-size: 20px;
+
+      @include mq(tablet) {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+.about {
+  margin-top: -(getSpace(xlarge));
+
+  .content {
+    &__img {
+      box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+    }
+  }
+}
+
+.services {
+  background: $secondary-bc;
+  margin-top: -(getSpace(small));
+
+  .content {
+    &__copy {
+      padding: getSpace(large);
+      border-radius: getSpace(medium);
+      background: white;
+      box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1), 0 5px 8px 0 rgba(0,0,0,0.1);
+    }
+  }
+}

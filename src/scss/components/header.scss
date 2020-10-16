@@ -2,7 +2,7 @@
   background-color: $main-bc;
   width: 100%;
   z-index: 3;
-  min-height: 80px;
+  min-height: 85px;
   font-family: 'Amatic SC';
   letter-spacing: 1px;
 
@@ -42,7 +42,7 @@
     display: none;
 
     &:checked ~ .menu {
-      max-height: 260px;
+      max-height: 330px;
     }
     
     &:checked ~ .menu-icon .nav-icon {
