@@ -18,6 +18,7 @@ const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
 const HTML_PATH = 'src/*.html';
 const IMG_PATH = 'src/images/*';
+const FONT_PATH = 'src/fonts/*';
 
 
 function reload(done) {
@@ -37,6 +38,11 @@ function serve(done) {
 function copyHtmlTask() {
   return src(HTML_PATH)
     .pipe(gulp.dest('dist'));
+}
+
+function copyFontTask() {
+  return src(FONT_PATH)
+    .pipe(gulp.dest('dist/fonts'));
 }
 
 function imgOptimTask() {
@@ -74,5 +80,6 @@ function watchTask() {
 exports.jsTask = jsTask;
 exports.cssTask = cssTask;
 exports.copyHtmlTask = copyHtmlTask;
+exports.copyFontTask = copyFontTask;
 exports.imgOptimTask = imgOptimTask;
-exports.default = series(parallel(copyHtmlTask, serve, imgOptimTask, jsTask, cssTask), watchTask);
+exports.default = series(parallel(copyHtmlTask, copyFontTask, serve, imgOptimTask, jsTask, cssTask), watchTask);

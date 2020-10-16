@@ -1,0 +1,41 @@
+/* amatic-sc-regular - latin */
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'),
+       url('/fonts/amatic-sc-v15-latin-regular.woff2') format('woff2'),
+       url('/fonts/amatic-sc-v15-latin-regular.woff') format('woff');
+  font-display: swap;
+}
+/* amatic-sc-700 - latin */
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'),
+       url('/fonts/amatic-sc-v15-latin-700.woff2') format('woff2'),
+       url('/fonts/amatic-sc-v15-latin-700.woff') format('woff');
+  font-display: swap;
+}
+
+/* oswald-300 - latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('/fonts/oswald-v35-latin-300.woff2') format('woff2'),
+       url('/fonts/oswald-v35-latin-300.woff') format('woff');
+  font-display: swap;
+}
+/* oswald-regular - latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/oswald-v35-latin-regular.woff2') format('woff2'),
+       url('/fonts/oswald-v35-latin-regular.woff') format('woff');
+  font-display: swap;
+}

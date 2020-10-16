@@ -1,1 +1,33 @@
+.hero {
+  background: $main-bc;
+  height: 800px;
+  position: relative;
+  z-index: 3;
+  background: url(/images/hero-wave.svg);
+  background-repeat: no-repeat;
+  background-size: auto 115%;
 
+  &-content {
+    display: flex;
+
+    &__img {
+      height: auto; 
+      width: auto; 
+      max-width: 450px; 
+      max-height: 450px;
+    }
+
+    &__cta {
+      display: block;
+      max-width: 180px;
+    }
+
+    &__headline {
+      margin-top: -13px;
+    }
+
+    &__copy p {
+      letter-spacing: 1.5px;
+    }
+  }
+}         

@@ -2,7 +2,9 @@
   background-color: $main-bc;
   width: 100%;
   z-index: 3;
-  min-height: 57px;
+  min-height: 80px;
+  font-family: 'Amatic SC';
+  letter-spacing: 1px;
 
   &__logo {
     position: absolute;
@@ -22,7 +24,7 @@
       right: 0;
       display: flex;
       max-height: none;
-      padding-top: 0;
+      padding-top: 14px;
     }
   
     &__item a {

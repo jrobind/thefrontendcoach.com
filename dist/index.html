@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +10,43 @@
   </head>
   <body>
     <header class="header u-c--white">
-      <a href="/" class="header__logo u-fs--large">The Front End Coach <span>.</span></a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="nav-icon u-bg--white"></span></label>
-      <ul class="menu">
-        <li class="menu__item"><a href="/">About</a></li>
-        <li class="menu__item"><a href="/">Blog</a></li>
-        <li class="menu__item"><a href="/">Support</a></li>
-        <li class="menu__item"><a href="/">Podcast</a></li>
-      </ul>
+      <div class="wrapper">
+        <a href="/" class="header__logo u-fs--xlarge u-fw--700">The Front End Coach</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon u-bg--white"></span></label>
+        <ul class="menu u-fs--small">
+          <li class="menu__item">
+            <a class="u-fw--700" href="/">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="u-fw--700" href="/">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="u-fw--700" href="/">Support</a>
+          </li>
+          <li class="menu__item">
+            <a class="u-fw--700" href="/">Podcast</a>
+          </li>
+        </ul>
+      </div>
     </header>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#339989" fill-opacity="1" d="M0,32L30,74.7C60,117,120,203,180,202.7C240,203,300,117,360,117.3C420,117,480,203,540,240C600,277,660,267,720,266.7C780,267,840,277,900,250.7C960,224,1020,160,1080,149.3C1140,139,1200,181,1260,176C1320,171,1380,117,1410,90.7L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
-    <h1 class="u-fs--giant">Hello world!!</h1>
+
+    <main>
+      <section class="hero u-pt--huge u-pb--xlarge">
+        <div class="hero-content wrapper u-pl--medium u-pr--medium">
+          <img class="hero-content__img  u-mr--xlarge" alt="Man inspecting code block" src="./images/code-inspection.svg" width='450' height='450'/>
+          <div class="hero-content__copy u-c--white u-d--flex u-fd--column u-ml--xlarge">
+            <h1 class="u-fs--xlarge u-mb--medium hero-content__headline">Get help starting your career as a Front end developer</h1>
+            <p class="u-fs--small u-mb--medium">
+              Learning to code? Thinking of becoming a Front end developer? The Front end coach is here to help! A free support system to help you land your first development job. What are you waiting for?
+            </p>
+            <button class="btn hero-content__cta u-bg--tertiary u-p--small">LEARN MORE</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+
     <script src="./js/index.js" async defer></script>
   </body>
 </html>
