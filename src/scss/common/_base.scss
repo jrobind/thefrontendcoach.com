@@ -16,14 +16,20 @@ body, main {
 }
 
 a {
+  cursor: pointer;
+
   &,
   &:hover,
   &:active,
   &:visited,
   &:focus {
     color: inherit;
-    font-weight: 500;
     text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.85;
+    transition: all 0.2s;
   }
 }
 
