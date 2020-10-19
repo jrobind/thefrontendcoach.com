@@ -35,6 +35,9 @@
     @else if $from == 'wide' {
       $from: map-get($breakpoints, wide);
     }
+    @else if $from == 'xwide' {
+      $from: map-get($breakpoints, xwide);
+    }
     // Map device names to breakpoint values in ./_variables.scss for $until
     @if $until == 'tablet' {
       $until: map-get($breakpoints, tablet);

@@ -7,6 +7,18 @@
     <meta name="description" content="the front end coach is a dedicated support and learning system those who wish to start a career as a front end developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- MailerLite Universal -->
+    <script>
+      (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+      var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+      f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+      var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+      _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+      
+      var ml_account = ml('accounts', '2504986', 'x5f7j2f2f1', 'load');
+      </script>
+      <!-- End MailerLite Universal -->
+
   </head>
   <body>
     <header class="header u-c--white">
@@ -44,7 +56,7 @@
           <img class="content__img" alt="Man inspecting code block" src="./images/code-inspection.svg" width='450' height='450'/>
         </div>
       </section>
-      <img class="hero__wave" alt="wave shape" src="./images/hero-wave.svg"/>
+      <img class="wave hero__wave" alt="wave shape" src="./images/hero-wave.svg"/>
 
       <section class="about">
         <div class="content wrapper u-pl--medium u-pr--medium u-jc--space-between">
@@ -59,11 +71,11 @@
         </div>
       </section>
 
-      <img alt="wave shape" src="./images/about-wave.svg">
-      <section class="services u-pb--giant">
+      <img class="wave" alt="wave shape" src="./images/about-wave.svg">
+      <section class="services u-pb--medium u-pt--medium">
         <div class="content wrapper u-pl--medium u-pr--medium u-fd--column">
           <div class="u-d--flex u-fd--column">
-            <div class="content__card u-d--flex u-jc--space-between u-fd--column u-m--small">
+            <div class="content__card u-d--flex u-jc--space-between u-fd--column u-mb--medium">
               <h2 class="u-mb--medium content__headline u-m--auto">Support</h2>
               <img class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/collab.svg" width='450' height='350'/>
               <div class="content__copy u-d--flex u-fd--column">
@@ -73,7 +85,7 @@
                 <button class="btn content-cta u-bg--secondary u-c--white u-p--small u-mt--large">LEARN MORE</button>
               </div>
             </div>
-            <div class="content__card u-d--flex u-jc--space-between u-fd--column u-m--small">
+            <div class="content__card u-d--flex u-jc--space-between u-fd--column u-mb--medium">
               <h2 class="u-mb--medium content__headline u-m--auto">Podcast</h2>
               <img class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/podcast-dark(1).svg" width='450' height='350'/>
               <div class="content__copy u-d--flex u-fd--column">
@@ -85,11 +97,11 @@
             </div>
           </div>
           <!-- These blog posts need to be pulled through dynamically -->
-          <div class="content__card u-m--small">
+          <div class="content__card">
             <div class="content__copy">
               <h2 class="u-mb--medium content__headline u-m--auto u-mb--large">Blog</h2>
               <div class="u-d--flex u-jc--space-between blog-card-wrapper">
-                <div class="u-d--flex u-fd--column blog-card u-jc--space-between">
+                <div class="u-d--flex u-fd--column blog-card u-bg--white u-jc--space-between">
                   <div class="u-d--flex u-jc--space-between">
                     <span>October 2020</span>
                     <span class="pill u-fs--micro">Starting</span>
@@ -97,7 +109,7 @@
                   <h3>Deciding where to start when you have absolutely no idea</h3>
                   <a class="u-d--flex u-ai--end" href="/">Read more <img alt="" src='./images/arrow-right.svg'></a>
                 </div>
-                <div class="u-d--flex u-fd--column blog-card u-jc--space-between">
+                <div class="u-d--flex u-fd--column blog-card u-bg--white u-jc--space-between">
                   <div class="u-d--flex u-jc--space-between">
                     <span>October 2020</span>
                     <div class="u-ml--medium">
@@ -107,7 +119,7 @@
                   <h3>How honesty can help improve your learning process</h3>
                   <a class="u-d--flex u-ai--end" href="/">Read more <img alt="" src='./images/arrow-right.svg'></a>
                 </div>
-                <div class="u-d--flex u-fd--column blog-card u-jc--space-between">
+                <div class="u-d--flex u-fd--column blog-card u-bg--white u-jc--space-between">
                   <div class="u-d--flex u-jc--space-between">
                     <span>October 2020</span>
                     <div class="u-ml--medium">
@@ -118,7 +130,7 @@
                   <h3>Understanding the limitations of web development tutorials</h3>
                   <a class="u-d--flex u-ai--end" href="/">Read more <img alt="" src='./images/arrow-right.svg'></a>
                 </div>
-                <div class="u-d--flex u-fd--column blog-card u-jc--space-between">
+                <div class="u-d--flex u-fd--column blog-card u-bg--white u-jc--space-between">
                   <div class="u-d--flex u-jc--space-between">
                     <span>October 2020</span>
                     <div class="u-ml--medium">
@@ -135,8 +147,19 @@
           </div>
         </div>
       </section>
+      <img class="wave" alt="wave shape" src="./images/about-wave-bottom.svg">
+      <section class="newsletter wrapper u-d--flex u-jc--center u-ai--center">
+        <div class="newsletter__form">
+          <div class="ml-form-embed"
+            data-account="2504986:x5f7j2f2f1"
+            data-form="2868019:r3a1b8">
+          </div>
+        </div>
+        <img alt="A woman resting against a mail box" width="300" height="200" src="./images/newsletter.svg">
+      </section>
     </main>
-  
+
+    <footer class="footer"></footer>
 
     <script src="./js/index.js" async defer></script>
   </body>

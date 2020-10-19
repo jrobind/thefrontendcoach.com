@@ -7,6 +7,13 @@
     max-width: max-content;
   }
 
+  .wave {
+    @include mq(xwide) {
+      visibility: hidden;
+      max-height: 150px;
+    }
+  }
+
   .hero {
     background: $main-bc;
     padding-top: getSpace(large);
@@ -23,7 +30,7 @@
   
     &__wave {
       position: relative;
-      top: -3px;
+      top: -(getSpace(tiny));
       z-index: -1;
   
       @include mq(desktop) {
@@ -95,6 +102,12 @@
   }
   
   .about {
+    margin: -3% 0;
+
+    @include mq(xwide) {
+      margin: 0;
+    }
+
     .content {
       &__copy {
         @include mq(desktop) {
@@ -133,33 +146,59 @@
         @include mq(desktop) {
           flex-direction: row;
         }
+    
+        & div:first-of-type {
+          @include mq(desktop) {
+            margin-right: getSpace(medium);
+          }
+        }
+      }
+
+      & > div:last-of-type {
+        background-image: url(/images/blog-blob.svg);
+        background-size: cover;
+        background-position: -488px -271px;
+
+        @include mq(desktop) {
+          margin-top: getSpace(xlarge);
+        }
       }
 
       &__img {
         width: 100%; 
-        max-width: 285px;
+        max-width: 180px;
+
+        @include mq(desktop) {
+          max-width: 245px;
+        }
       }
 
       &__card {
         padding: getSpace(large);
-        border-radius: getSpace(medium);
+        border-radius: getSpace(tiny);
         background: white;
-        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.15), 0 5px 8px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
       }
     }
 
     .blog-card-wrapper {
       display: grid;
       grid-gap: getSpace(medium);
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+      @include mq(tablet) {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      }
     }
 
     .blog-card {
-      padding: getSpace(small) getSpace(medium);
+      padding: getSpace(small);
       border: 1px solid rgba(0,0,0,0.25);
       box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.1);
       height: 180px;
       border-radius: 2px;
+      position: relative;
+      z-index: 1;
 
       h3 {
         max-width: 300px;
