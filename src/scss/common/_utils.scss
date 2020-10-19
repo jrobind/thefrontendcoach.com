@@ -64,7 +64,7 @@
 // Examples: .u-mr--tiny, .u-p--medium, .u-p--bp-w
 @each $prop in margin, padding {
   .u-#{str-slice($prop, 0, 1)} {
-    @each $size in $headingSizes {
+    @each $size in $sizes {
       &--#{$size} {
           #{$prop}: map-get($spacings, $size);
       }
@@ -73,7 +73,7 @@
 } 
 
 // HEADINGS
-@each $size in $sizes {
+@each $size in $headingSizes {
   .u-fs--#{$size} {
     font-size: map-get($headings, $size);
   }
