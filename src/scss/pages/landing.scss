@@ -1,89 +1,145 @@
-.hero {
-  background: $main-bc;
-  height: 850px;
-  background: url(/images/hero-wave.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -120px -1px;
-  padding-top: getSpace(large);
-
-  @include mq(desktop) {
-    background-position: 0 -1px;
+.landing {
+  h2 {
+    background-image: linear-gradient(180deg,#f7b501 33%,transparent 0,transparent 66%,#f7b501 0,#f7b501);
+    background-position: 0 49px;
+    background-repeat: repeat-x;
+    background-size: 2px 7px;
+    max-width: max-content;
   }
 
-  @include mq(tablet) {
-    padding-top: getSpace(giant);
-  }
-}
-
-.content {
-  @include mq(desktop) {
-    display: flex;
-  }
-
-  &__img {
-    display: none;
-    height: auto; 
-    width: auto; 
-    max-width: 450px; 
-    max-height: 450px;
-
+  .hero {
+    background: $main-bc;
+    padding-top: getSpace(large);
+    padding-bottom: getSpace(medium);
+  
     @include mq(desktop) {
-      display: block;
-      margin-right: getSpace(large);
+      background-position: 0 -1px;
+      padding-bottom: 0;
     }
-  }
-
-  &__cta {
-    display: block;
-    max-width: 180px;
-  }
-
-  &__headline {
-    margin-top: -13px;
-    font-size: 30px;
-
+  
     @include mq(tablet) {
-      font-size: 38px;
+      padding-top: getSpace(giant);
     }
-  }
-
-  &__copy {
-    @include mq(desktop) {
-      margin-left: getSpace(large);
+  
+    &__wave {
+      position: relative;
+      top: -3px;
+      z-index: -1;
+  
+      @include mq(desktop) {
+        top: -20px;
+      }
     }
-
-    p {
-      letter-spacing: 1.5px;
-      font-size: 20px;
-
-      @include mq(tablet) {
-        font-size: 22px;
+  
+    .content {
+      &__img {
+        display: none;
+        height: auto; 
+        width: auto; 
+        max-width: 450px; 
+        max-height: 450px;
+    
+        @include mq(desktop) {
+          display: block;
+        }
+      }
+  
+      &__copy {
+        @include mq(desktop) {
+          margin-right: getSpace(xlarge);
+        }
       }
     }
   }
-}
-
-.about {
-  margin-top: -(getSpace(xlarge));
-
+  
   .content {
+    @include mq(desktop) {
+      display: flex;
+    }
+  
     &__img {
-      box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+      height: auto; 
+      width: 100%; 
     }
-  }
-}
-
-.services {
-  background: $secondary-bc;
-  margin-top: -(getSpace(small));
-
-  .content {
+  
+    &__cta {
+      display: block;
+      max-width: 180px;
+    }
+  
+    &__headline {
+      margin-top: -13px;
+      font-size: 30px;
+  
+      @include mq(tablet) {
+        font-size: 38px;
+      }
+    }
+  
     &__copy {
-      padding: getSpace(large);
-      border-radius: getSpace(medium);
-      background: white;
-      box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1), 0 5px 8px 0 rgba(0,0,0,0.1);
+      max-width: 750px;
+  
+      @include mq(desktop) {
+        max-width: 600px;
+      }
+  
+      p {
+        letter-spacing: 1.5px;
+        font-size: 18px;
+  
+        @include mq(tablet) {
+          font-size: 22px;
+        }
+      }
     }
   }
+  
+  .about {
+    .content {
+      &__copy {
+        @include mq(desktop) {
+          max-width: 650px;
+          margin-left: getSpace(large);
+        }
+      }
+  
+      &__img {
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+        margin: auto;
+        display: block;
+        max-width: 385px; 
+        max-height: 385px;
+        margin-bottom: getSpace(large);
+  
+        @include mq(desktop) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .services {
+    background: $secondary-bc;
+    margin-top: -(getSpace(small));
+
+    .content > div:last-of-type {
+      .content__copy {
+        max-width: none;
+      }
+    }
+  
+    .content {
+      &__img {
+        width: 285px; 
+        height: 250px;
+      }
+
+      &__card {
+        padding: getSpace(large);
+        border-radius: getSpace(medium);
+        background: white;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.15), 0 5px 8px 0 rgba(0,0,0,0.15);
+      }
+    }
+  }  
 }

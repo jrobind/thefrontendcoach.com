@@ -18,7 +18,7 @@
           <li class="menu__item">
             <a class="u-fw--700" href="/">About</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item">   
             <a class="u-fw--700" href="/">Blog</a>
           </li>
           <li class="menu__item">
@@ -31,10 +31,9 @@
       </div>
     </header>
 
-    <main>
+    <main class="landing">
       <section class="hero">
-        <div class="content wrapper u-pl--medium u-pr--medium">
-          <img class="content__img" alt="Man inspecting code block" src="./images/code-inspection.svg" width='450' height='450'/>
+        <div class="content wrapper u-pl--medium u-pr--medium u-d--flex u-jc--space-between">
           <div class="content__copy u-c--white u-d--flex u-fd--column">
             <h1 class="u-mb--medium content__headline">Get help starting your career as a Front end developer</h1>
             <p class="u-mb--medium">
@@ -42,40 +41,57 @@
             </p>
             <button class="btn content__cta u-bg--tertiary u-p--small">LEARN MORE</button>
           </div>
+          <img class="content__img" alt="Man inspecting code block" src="./images/code-inspection.svg" width='450' height='450'/>
         </div>
       </section>
+      <img class="hero__wave" alt="wave shape" src="./images/hero-wave.svg"/>
 
       <section class="about">
-        <div class="content wrapper u-pl--medium u-pr--medium">
+        <div class="content wrapper u-pl--medium u-pr--medium u-jc--space-between">
           <img class="content__img" alt="Man inspecting code block" src="./images/npm.jpg" width='450' height='350'/>
           <div class="content__copy u-d--flex u-fd--column">
             <h2 class="u-mb--medium content__headline">About James Robinson</h2>
             <p class="u-mb--medium">
               Hey. I'm James Robinson, a self-taught Front End developer. I know just how frustrating and difficult it can be when first starting out. But over time, and through lots of trial and error, I’ve discovered learning strategies and other tips that work. And I’m here to share them with you and support you along the way. 
             </p>
-            <button class="btn content-cta u-bg--tertiary u-p--small">LEARN MORE</button>
+            <button class="btn content-cta u-bg--secondary u-c--white u-p--small">LEARN MORE</button>
           </div>
         </div>
       </section>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2b2c28" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,181.3C384,171,480,117,576,90.7C672,64,768,64,864,74.7C960,85,1056,107,1152,101.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
+      <img alt="wave shape" src="./images/about-wave.svg">
       <section class="services u-pb--giant">
-        <div class="content wrapper u-pl--medium u-pr--medium">
-          <div class="content__copy u-d--flex u-fd--column">
-            <h2 class="u-mb--medium content__headline">Support</h2>
-            <p class="u-mb--medium">
-              Hey. I'm James Robinson, a self-taught Front End developer. I know just how frustrating and difficult it can be when first starting out. But over time, and through lots of trial and error, I’ve discovered learning strategies and other tips that work. And I’m here to share them with you and support you along the way. 
-            </p>
-            <button class="btn content-cta u-bg--tertiary u-p--small">LEARN MORE</button>
+        <div class="content wrapper u-pl--medium u-pr--medium u-fd--column">
+          <div class="u-d--flex">
+            <div class="content__card u-m--small">
+              <h2 class="u-mb--medium content__headline u-m--auto">Support</h2>
+              <img class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/collab.svg" width='450' height='350'/>
+              <div class="content__copy u-d--flex u-fd--column">
+                <p class="u-mb--medium">
+                  Don't learn in isolation. Find the support you need by joining our Slack community, Facebook group, or apply for a more personalised support system.
+                </p>
+                <button class="btn content-cta u-bg--secondary u-c--white u-p--small">LEARN MORE</button>
+              </div>
+            </div>
+            <div class="content__card u-m--small">
+              <h2 class="u-mb--medium content__headline u-m--auto">Podcast</h2>
+              <img class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/podcast.png" width='450' height='350'/>
+              <div class="content__copy u-d--flex u-fd--column">
+                <p class="u-mb--medium">
+                  Interviews, tips and advice for learning how to build your Front End skillset, getting your first job in the tech industry and more!
+                </p>
+                <button class="btn content-cta  u-bg--secondary u-c--white u-p--small">LISTEN NOW</button>
+              </div>
+            </div>
           </div>
-          <div class="content__copy u-d--flex u-fd--column">
-            <h2 class="u-mb--medium content__headline">Podcast</h2>
-            <p class="u-mb--medium">
-              Hey. I'm James Robinson, a self-taught Front End developer. I know just how frustrating and difficult it can be when first starting out. But over time, and through lots of trial and error, I’ve discovered learning strategies and other tips that work. And I’m here to share them with you and support you along the way. 
-            </p>
-            <button class="btn content-cta u-bg--tertiary u-p--small">LEARN MORE</button>
+          <div class="content__card u-m--small">
+            <div class="content__copy u-d--flex u-fd--column">
+              <h2 class="u-mb--medium content__headline u-m--auto">Blog</h2>
+              <p class="u-mb--medium">
+                Hey. I'm James Robinson, a self-taught Front End developer. I know just how frustrating and difficult it can be when first starting out. But over time, and through lots of trial and error, I’ve discovered learning strategies and other tips that work. And I’m here to share them with you and support you along the way. 
+              </p>
+              <button class="btn content-cta u-bg--secondary u-c--white u-p--small">READ THE BLOG</button>
+            </div>
           </div>
         </div>
       </section>
