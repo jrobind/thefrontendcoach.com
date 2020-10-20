@@ -65,3 +65,7 @@
 @function getSpace($size) {
   @return map-get($spacings, $size);
 }
+
+@function getHeadingSize($size) {
+  @return map-get($headings, $size);
+}

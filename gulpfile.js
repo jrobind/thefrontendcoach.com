@@ -17,8 +17,7 @@ sass.compiler = require('node-sass');
 
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
-const HTML_PATH = 'src/*.html';
-const PARTIALS_PATH = 'src/partials/*.html';
+const HTML_PATH = 'src/**/*.html';
 const IMG_PATH = 'src/images/*';
 const FONT_PATH = 'src/fonts/*';
 
