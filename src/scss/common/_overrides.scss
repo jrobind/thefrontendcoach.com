@@ -1,0 +1,65 @@
+// overrides for the landing page email form
+
+.newsletter {
+  .ml-field-group.ml-field-email {
+    label {
+      border: 0;
+      clip: rect(0,0,0,0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+  
+  .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
+    padding-top: 0;
+  }
+
+  & input {
+    &::placeholder {
+      opacity: 0.7;
+      font-size: getHeadingSize(tiny);
+    }
+  }
+   
+  #mlb2-2868019.ml-form-embedContainer h4 {
+    letter-spacing: 2px !important;
+    font-size: getHeadingSize(tiny) !important;
+    font-weight: 600 !important;
+    margin-bottom: getSpace(medium) !important;
+  }
+
+  #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p {
+    font-size: getHeadingSize(medium);
+    font-weight: 300;
+    letter-spacing: 1.5px !important;
+    line-height: getSpace(large);
+  }
+
+  #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+    font-size: 16px !important;
+    font-weight: 300;
+    display: block;
+    max-width: 180px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+  }
+
+  #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:before {
+    content: 'Hello ';
+    font-size: 12px;
+    color: red;
+  }
+
+  #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p:last-child,
+  #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
+    letter-spacing: 1.5px !important;
+    font-size: 14px !important;
+  }
+}

@@ -12,7 +12,7 @@ html {
 
 html,
 body, main {
-  height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
   }
 
   &:hover {
-    opacity: 0.85;
+    text-decoration: underline;
     transition: all 0.2s;
   }
 }
