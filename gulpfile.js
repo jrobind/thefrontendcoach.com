@@ -2,6 +2,7 @@ const browserSync = require('browser-sync');
 const server = browserSync.create();
 
 const gulp = require('gulp');
+const fileinclude = require('gulp-file-include');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
@@ -17,6 +18,7 @@ sass.compiler = require('node-sass');
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
 const HTML_PATH = 'src/*.html';
+const PARTIALS_PATH = 'src/partials/*.html';
 const IMG_PATH = 'src/images/*';
 const FONT_PATH = 'src/fonts/*';
 
@@ -37,6 +39,10 @@ function serve(done) {
 
 function copyHtmlTask() {
   return src(HTML_PATH)
+    .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+    }))
     .pipe(gulp.dest('dist'));
 }
 
