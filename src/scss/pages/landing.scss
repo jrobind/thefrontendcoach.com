@@ -1,42 +1,16 @@
 .landing {
-  .wave {
-    @include mq(xwide) {
-      visibility: hidden;
-      max-height: 150px;
-    }
-  }
-
   .hero {
     background: $main-bc;
     padding-top: getSpace(large);
     padding-bottom: getSpace(medium);
-  
-    @include mq(desktop) {
-      background-position: 0 -1px;
-      padding-bottom: 0;
-    }
-  
+
     @include mq(tablet) {
-      padding-top: getSpace(giant);
+      padding-top: getSpace(huge);
     }
-  
-    &__wave {
-      position: relative;
-      top: -(getSpace(tiny));
-      z-index: -1;
-  
-      @include mq(desktop) {
-        top: -20px;
-      }
-    }
-  
+
     .content {
       &__img {
         display: none;
-        height: auto; 
-        width: auto; 
-        max-width: 450px; 
-        max-height: 450px;
         filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
     
         @include mq(desktop) {
@@ -90,10 +64,10 @@
   }
   
   .about {
-    margin-top: -6%;
+    margin: getSpace(xlarge) 0;
 
-    @include mq(xwide) {
-      margin: 0;
+    @include mq(desktop) {
+      margin: getSpace(giant) 0;
     }
 
     .content {
@@ -108,8 +82,8 @@
         box-shadow: $boxShadow;
         margin: auto;
         display: block;
-        max-width: 385px; 
-        max-height: 385px;
+        max-width: 330px; 
+        max-height: 330px;
         margin-bottom: getSpace(large);
   
         @include mq(desktop) {
@@ -211,9 +185,5 @@
         max-width: 300px;
       }
     }
-  }
-
-  .newsletter {
-    margin-bottom: -6%;
   }
 }
