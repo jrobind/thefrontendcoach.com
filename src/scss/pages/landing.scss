@@ -1,11 +1,10 @@
 .landing {
   .hero {
     background: $main-bc;
-    padding-top: getSpace(large);
-    padding-bottom: getSpace(medium);
+    padding: getSpace(large) 0;
 
-    @include mq(tablet) {
-      padding-top: getSpace(huge);
+    @include mq(desktop) {
+      padding: 0;
     }
 
     .content {
@@ -19,8 +18,11 @@
       }
   
       &__copy {
+        max-width: 750px;
+  
         @include mq(desktop) {
-          margin-right: getSpace(xlarge);
+          margin-right: getSpace(large);
+          max-width: 600px;
         }
       }
     }
@@ -32,12 +34,10 @@
     }
   
     &__img {
-      height: auto; 
       width: 100%; 
     }
   
     &__headline {
-      margin-top: -13px;
       font-size: getHeadingSize(large);
   
       @include mq(tablet) {
@@ -45,15 +45,9 @@
       }
     }
   
-    &__copy {
-      max-width: 750px;
-  
-      @include mq(desktop) {
-        max-width: 600px;
-      }
-  
+    &__copy { 
       p {
-        letter-spacing: 1.5px;
+        letter-spacing: 1.7px;
         font-size: getHeadingSize(tiny);
   
         @include mq(tablet) {
@@ -93,38 +87,30 @@
     }
   }
   
-  .services {
-    .content > div:last-of-type {
-      .content__copy {
-        max-width: none;
-      }
-    }
-  
-    .content {  
+  .services {  
+    background-color: rgba(0, 0, 0, 0.025);
+
+    .content {
       & > div:first-of-type {
-        .content__copy {
-          flex: 1;
-          justify-content: space-between;
-        }
-
-        .content__card {
-          @include mq(desktop) {
-            max-height: 600px;
-          }
-        }
-
-        h2 {
-          margin: 0 0 getSpace(medium) 0;
-        }
-
         @include mq(desktop) {
           flex-direction: row;
         }
-    
+
         & > div:first-of-type {
           @include mq(desktop) {
-            margin-right: getSpace(medium);
+            margin-right: getSpace(giant);
           }
+        }
+      }
+
+      &__copy {
+        &--flat {
+          flex: 1;
+          max-width: 400px;
+  
+          h3 {
+            margin-top: -(getSpace(medium));
+          } 
         }
       }
 
@@ -132,44 +118,28 @@
         background-image: url(/images/blog-blob.svg);
         background-size: cover;
         background-position: -488px -271px;
+        box-shadow: $boxShadow;
+        background-color: white;
 
         @include mq(desktop) {
           margin-top: getSpace(xlarge);
         }
       }
 
-      &__img-wrapper {
-        background: $main-bc;
-        border-radius: 6px 6px 0 0;
-
-        height: 50%;
-
-        img {
-          filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
-        }
+      &__img-wrapper img {
+        filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
       }
 
       &__img {
-        width: 100%; 
-        max-width: 300px;
-      }
-
-      &__card {
-        min-height: 500px;
-        border-radius: 6px;
-        background: white;
-        box-shadow: $boxShadow;
+        width: 250px;
+        height: 250px;
       }
     }
 
     .blog-card-wrapper {
       display: grid;
       grid-gap: getSpace(medium);
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
-      @include mq(tablet) {
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      }
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 
     .blog-card {
@@ -183,6 +153,24 @@
 
       h3 {
         max-width: 300px;
+        font-size: getHeadingSize(xsmall);
+      }
+    }
+
+    .discord {
+      &__card {
+        border-radius: 6px;
+        box-shadow: $boxShadow;
+
+        &-content {
+          max-width: 600px;
+        }
+      }
+
+      &__logo {
+        max-width: 400px;
+        margin: auto;
+        display: block;
       }
     }
   }

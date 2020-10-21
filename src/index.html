@@ -24,43 +24,43 @@
           <p class="u-mb--medium">
             Hey. I'm James Robinson, a self-taught Front End developer. I know just how frustrating and difficult it can be when first starting out. But over time, and through lots of trial and error, I’ve discovered learning strategies and other tips that work. And I’m here to share them with you and support you along the way. 
           </p>
-          <button class="btn content-cta u-bg--tertiary">LEARN MORE</button>
+          <button class="btn content-cta u-bg--secondary u-c--white">LEARN MORE</button>
         </div>
       </div>
     </section>
 
-    <section class="services u-mb--giant u-pt--medium">
+    <section class="services u-mb--giant u-pt--medium u-pb--giant">
       <div class="content wrapper u-fd--column u-pl--medium u-pr--medium">
-        <div class="u-d--flex u-fd--column">
-          <div class="content__card u-d--flex u-jc--space-between u-fd--column u-mb--medium">
-            <div class="content__img-wrapper u-p--medium u-d--flex u-jc--center u-ai--center">
-              <img class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/coach.svg" width='450' height='350'/>
+        <div class="u-d--flex u-fd--column u-jc--center">
+          <div class="content__card u-d--flex u-fd--column u-mb--medium u-ai--center">
+            <div class="content__img-wrapper u-d--flex u-jc--center u-ai--center">
+              <img class="content__img u-m--auto u-d--block" alt="" src="./images/coach.svg" width='450' height='350'/>
             </div>
-            <div class="content__copy u-d--flex u-fd--column u-p--medium">
-              <h2 class="u-mb--medium content__headline u-m--auto">Support</h2>
-              <p class="u-mb--medium">
-                Find the support you need by joining our Slack community, Facebook group, or apply for a more personalised support system.
+            <div class="content__copy content__copy--flat u-ta--center u-d--flex u-fd--column u-ai--center">
+              <h3 class="u-mb--medium u-fs--medium">Support</h3>
+              <p class="u-mb--medium u-ta--center u-fs--tiny">
+                Find the support you need by joining our Discord community, Facebook group, or apply for a more personalised support system.
               </p>
-              <button class="btn content-cta u-bg--tertiary">LEARN MORE</button>
+              <button class="btn content-cta u-bg--secondary u-c--white">LEARN MORE</button>
             </div>
           </div>
-          <div class="content__card u-d--flex u-jc--space-between u-fd--column u-mb--medium">
-            <div class="content__img-wrapper u-p--medium u-d--flex u-jc--center u-ai--center">
-              <img style="max-width: 270px;" class="content__img u-m--auto u-d--block u-mt--large u-mb--large" alt="" src="./images/radio-presenter.svg" width='450' height='350'/>
+          <div class="content__card u-d--flex u-fd--column u-mb--medium u-ai--center">
+            <div class="content__img-wrapper u-d--flex u-jc--center u-ai--center">
+              <img class="content__img u-m--auto u-d--block" alt="" src="./images/radio-presenter.svg" width='450' height='350'/>
             </div>
-            <div class="content__copy u-d--flex u-fd--column u-p--medium">
-              <h2 class="u-mb--medium content__headline u-m--auto">Podcast</h2>
-              <p class="u-mb--medium">
+            <div class="content__copy content__copy--flat u-ta--center u-d--flex u-fd--column u-ai--center">
+              <h3 class="u-mb--medium u-fs--medium">Podcast</h3>
+              <p class="u-mb--medium u-ta--center u-fs--tiny">
                 Interviews, tips and advice for learning how to build your Front End skillset, getting your first job in the tech industry and more!
               </p>
-              <button class="btn content-cta u-bg--tertiary">LISTEN NOW</button>
+              <button class="btn content-cta u-bg--secondary u-c--white">LISTEN NOW</button>
             </div>
           </div>
         </div>
         <!-- These blog posts need to be pulled through dynamically -->
-        <div class="content__card u-p--medium">
+        <div class="content__card u-p--medium u-mb--medium">
           <div class="content__copy">
-            <h2 class="u-mb--medium content__headline u-m--auto u-mb--large">Blog</h2>
+            <h2 class="u-mb--medium content__headline u-m--auto u-mb--large">Latest blog posts</h2>
             <div class="u-d--flex u-jc--space-between blog-card-wrapper">
               <div class="u-d--flex u-fd--column blog-card u-bg--white u-jc--space-between">
                 <div class="u-d--flex u-jc--space-between">
@@ -107,6 +107,16 @@
           </div>
         </div>
       </div>
+      <div class="discord wrapper u-pl--medium u-pr--medium">
+        <div class="discord__card u-pl--medium u-pr--medium u-pb--medium u-bg--main u-c--white u-mt--xlarge">
+          <img class="discord__logo" alt="Discord logo" src="./images/discord-logo.svg"/>
+          <div class="discord__card-content u-d--flex u-ai--center u-fd--column u-mt--medium u-m--auto">
+            <h4>JOIN THE DISCORD COMMUNITY</h4>
+            <p class="u-mt--medium u-ta--center">Don't learn in isolation! Join other like-minded, aspiring front end developers and myself. A highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front end developer.</p>
+            <button class="btn content-cta u-c--white u-bg--secondary u-mt--xlarge">JOIN NOW</button>
+          </div>
+        </div>
+      </div>
     </section>
   
     <section class="newsletter u-mt--large wrapper u-d--flex u-jc--center u-ai--center u-pl--medium u-pr--medium u-pb--huge">
@@ -140,8 +150,8 @@
                       <div class="ml-input-horizontal">
                         <div style="width:100%" class="horizontal-fields">
                           <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                            <label>Email</label>
-                            <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email@example.com" autocomplete="email">
+                            <label for="newsletter-email">Email</label>
+                            <input id="newsletter-email" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="email@example.com" autocomplete="email">
                           </div>
                         </div>
                       </div>
