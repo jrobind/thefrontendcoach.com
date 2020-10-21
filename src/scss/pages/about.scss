@@ -1,0 +1,41 @@
+.about {
+  img {
+    filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
+  }
+
+  &-me {
+    &__header {
+      h1 {
+        color: $main-bc;
+
+        span {
+          font-style: italic;
+          opacity: 0.95;
+        }
+      }
+
+      img {
+        max-width: 200px;
+      }
+    }
+
+    &__content {
+      max-width: 750px;
+      text-align: justify;
+    }
+  }
+
+  .launching {
+    background-image: url(/images/rocket-boy.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    p {
+      max-width: 730px;
+
+      strong {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

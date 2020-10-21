@@ -1,5 +1,4 @@
 .header {
-  background-color: $main-bc;
   width: 100%;
   z-index: 3;
   min-height: 85px;
@@ -98,6 +97,14 @@
 
       &:after {
         top: -5px;
+      }
+    }
+
+    .nav-icon.dark {
+      background: black;
+
+      &:before, &:after {
+        background-color: black;
       }
     }
   }

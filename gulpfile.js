@@ -3,6 +3,8 @@ const server = browserSync.create();
 
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
+const rename = require('gulp-rename');
+const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
@@ -17,8 +19,9 @@ sass.compiler = require('node-sass');
 
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
-const HTML_PATH = 'src/**/*.html';
 const IMG_PATH = 'src/images/*';
+const HTML_PATH = 'src/**/*.html';
+const HTML_PATH_PAGES = 'src/pages/*.html';
 const FONT_PATH = 'src/fonts/*';
 
 
@@ -36,13 +39,19 @@ function serve(done) {
   done();
 }
 
+function copyRedirects() {
+  return src('src/_redirects')
+    .pipe(gulp.dest('dist'));
+}
+
 function copyHtmlTask() {
-  return src(HTML_PATH)
+  return src([HTML_PATH])
     .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulpif(HTML_PATH_PAGES, rename({dirname: ''})) // NEED TO USE GULP FILTER FOR THIS 
+    .pipe(gulp.dest('dist')));
 }
 
 function copyFontTask() {
@@ -79,12 +88,13 @@ function watchTask() {
   watch(
     [CSS_PATH, JS_PATH, IMG_PATH, HTML_PATH],
     { interval: 1000 },
-    series(parallel(copyHtmlTask, imgOptimTask, jsTask, cssTask), reload))
+    series(parallel(copyHtmlTask, copyRedirects, imgOptimTask, jsTask, cssTask), reload))
 }
 
 exports.jsTask = jsTask;
 exports.cssTask = cssTask;
 exports.copyHtmlTask = copyHtmlTask;
+exports.copyRedirects = copyRedirects;
 exports.copyFontTask = copyFontTask;
 exports.imgOptimTask = imgOptimTask;
-exports.default = series(parallel(copyHtmlTask, copyFontTask, serve, imgOptimTask, jsTask, cssTask), watchTask);
+exports.default = series(parallel(copyHtmlTask, copyRedirects, copyFontTask, serve, imgOptimTask, jsTask, cssTask), watchTask);
