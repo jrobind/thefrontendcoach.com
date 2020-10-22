@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.uta--justify {
+  text-align: justify;
+}
+
 .u-c--white {
   color: white;
 }
@@ -141,4 +145,9 @@
 
 .wave {
   display: block;
+}
+
+.u-t--emphasis {
+  font-weight: 600;
+  text-decoration: underline;
 }

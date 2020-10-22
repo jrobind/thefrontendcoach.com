@@ -14,7 +14,7 @@ $breakpoints: (
   xwide: 2500px,
 );
 
-$sizes: tiny, small, medium, large, xlarge, huge, giant;
+$sizes: tiny, small, medium, big, large, xlarge, huge, giant;
 $headingSizes: micro, tiny, xsmall, small, medium, large, xlarge, giant;
 
 // SPACINGS
@@ -22,6 +22,7 @@ $spacings: (
   tiny: 4px,
   small: 8px,
   medium: 16px,
+  big: 24px,
   large: 32px,
   xlarge: 48px,
   huge: 64px,

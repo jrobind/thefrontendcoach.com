@@ -5,36 +5,96 @@
 
   &-me {
     &__header {
+      margin-top: getSpace(xlarge);
+
+      @include mq(desktop) {
+        margin-top: getSpace(giant);
+      }
+
       h1 {
         color: $main-bc;
+        max-width: 165px;
+        font-size: getHeadingSize(large);
+
+        @include mq(desktop) {
+          max-width: 350px;
+          margin-right: getSpace(large);
+          font-size: getHeadingSize(xlarge);
+        }
 
         span {
           font-style: italic;
           opacity: 0.95;
+          min-width: 250px;
+          font-size: getHeadingSize(medium);
+
+          @include mq(desktop) {
+            font-size: getHeadingSize(large);
+          }
         }
       }
 
       img {
-        max-width: 200px;
+        max-width: 150px;
+        max-height: 150px;
+        position: relative;
+        right: getSpace(tiny);
+
+        @include mq(desktop) {
+          max-width: 200px;
+          max-height: 200px;
+        }
       }
     }
 
     &__content {
-      max-width: 750px;
       text-align: justify;
+      max-width: 650px;
+ 
+      @include mq(desktop) {
+        max-width: 850px;
+      }
     }
   }
 
   .launching {
-    background-image: url(/images/rocket-boy.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    p {
+    h2 {
+      text-align: center;
+
+      @include mq(desktop) {
+        text-align: left;
+      }
+    }
+    .wrapper {
+      @include mq(desktop) {
+        background-image: url(/images/rocket-boy.svg);
+        background-repeat: no-repeat;
+        background-position: 104% 20px;
+      }
+    }
+
+    &__content p {
       max-width: 730px;
+      margin: auto;
+
+      @include mq(desktop) {
+        margin: getSpace(medium) 0;
+      }
 
       strong {
         text-decoration: underline;
       }
+    }
+  }
+
+  .get-support {
+    &__content {
+      max-width: 600px;
+    }
+
+    &__img {
+      max-width: 340px;
+      display: block;
     }
   }
 

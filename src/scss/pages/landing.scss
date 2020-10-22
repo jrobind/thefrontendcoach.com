@@ -47,7 +47,6 @@
   
     &__copy { 
       p {
-        letter-spacing: 1.7px;
         font-size: getHeadingSize(tiny);
   
         @include mq(tablet) {
@@ -106,10 +105,10 @@
       &__copy {
         &--flat {
           flex: 1;
-          max-width: 400px;
+          max-width: 410px;
   
           h3 {
-            margin-top: -(getSpace(medium));
+            margin-top: -(getSpace(large));
           } 
         }
       }

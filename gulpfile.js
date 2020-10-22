@@ -97,4 +97,4 @@ exports.copyHtmlTask = copyHtmlTask;
 exports.copyRedirects = copyRedirects;
 exports.copyFontTask = copyFontTask;
 exports.imgOptimTask = imgOptimTask;
-exports.default = series(parallel(copyHtmlTask, copyRedirects, copyFontTask, serve, imgOptimTask, jsTask, cssTask), watchTask);
+exports.default = series(parallel(imgOptimTask, copyHtmlTask, copyRedirects, copyFontTask, serve, jsTask, cssTask), watchTask);

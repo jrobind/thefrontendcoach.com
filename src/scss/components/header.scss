@@ -2,14 +2,31 @@
   width: 100%;
   z-index: 3;
   min-height: 85px;
-  font-family: 'Amatic SC';
-  letter-spacing: 1px;
+
+
+  &__logo.dark {
+    background-image: url(/images/logo-black-small.png);
+
+    @include mq(tablet) {
+      background-image: url(/images/logo-black-large.png);
+    }
+  }
+
+  &__logo.white {
+    background-image: url(/images/logo-white-small.png);
+
+    @include mq(tablet) {
+      background-image: url(/images/logo-white-large.png);
+    }
+  }
 
   &__logo {
     position: absolute;
     left: 0;
-    padding: getSpace(medium);
-    text-decoration: none;
+    background-position: 16px 24px;
+    height: 58px;
+    background-repeat: no-repeat;
+    width: 305px;
   }
 
   .menu {
@@ -28,11 +45,14 @@
   
     &__item a {
       display: block;
-      padding: getSpace(medium);
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      font-size: getHeadingSize(tiny);
+      padding-left: getSpace(medium);
 
       @include mq(tablet) {
         border-bottom: none;
+        padding-left: 0;
+        font-size: getHeadingSize(xsmall);
       }
     }
   }
@@ -65,7 +85,7 @@
   .menu-icon {
     cursor: pointer;
     display: block;
-    padding: 30px 20px;
+    padding: 40px 20px;
     position: absolute;
     user-select: none;
     right: 0;

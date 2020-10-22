@@ -26,7 +26,7 @@
   }
    
   #mlb2-2868019.ml-form-embedContainer h4 {
-    letter-spacing: 2px !important;
+    letter-spacing: 1.5px !important;
     font-size: getHeadingSize(tiny) !important;
     font-weight: 600 !important;
     margin-bottom: getSpace(medium) !important;
@@ -35,7 +35,6 @@
   #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p {
     font-size: getHeadingSize(medium);
     font-weight: 300;
-    letter-spacing: 1.7px !important;
     line-height: getSpace(large);
   }
 
@@ -49,6 +48,11 @@
     letter-spacing: 1px;
     cursor: pointer;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+
+    &:hover {
+      background: $tertiary-bc !important;
+      border-color: transparent !important;
+    }
   }
 
   #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:before {
@@ -59,7 +63,6 @@
 
   #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedPermissions .ml-form-embedPermissionsContent.privacy-policy p:last-child,
   #mlb2-2868019.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
-    letter-spacing: 1.7px !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 }
