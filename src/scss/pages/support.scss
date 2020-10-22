@@ -1,0 +1,23 @@
+.support {
+  .help {
+    min-height: 300px;
+
+    @include mq(desktop) {
+      background-image: url(/images/question.svg);
+      background-repeat: no-repeat;
+      background-position: 108% 20px;
+    }
+
+    &__header {
+      margin-top: getSpace(xlarge);
+
+      @include mq(desktop) {
+        margin-top: getSpace(giant);
+      }
+    }
+
+    &__content {
+      max-width: 500px;
+    }
+  }
+}
