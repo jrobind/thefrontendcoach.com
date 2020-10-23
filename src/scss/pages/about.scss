@@ -1,8 +1,4 @@
 .about {
-  img {
-    filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
-  }
-
   &-me {
     &__header {
       margin-top: getSpace(xlarge);
@@ -65,11 +61,14 @@
         text-align: left;
       }
     }
-    .wrapper {
+    &__img {
+      display: none;
+
       @include mq(desktop) {
-        background-image: url(/images/rocket-boy.svg);
-        background-repeat: no-repeat;
-        background-position: 104% 20px;
+        display: block;
+        max-width: 400px;
+        position: relative;
+        right: -(getSpace(medium));
       }
     }
 

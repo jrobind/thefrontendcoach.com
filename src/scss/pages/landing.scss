@@ -10,7 +10,6 @@
     .content {
       &__img {
         display: none;
-        filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
     
         @include mq(desktop) {
           display: block;
@@ -123,10 +122,6 @@
         @include mq(desktop) {
           margin-top: getSpace(xlarge);
         }
-      }
-
-      &__img-wrapper img {
-        filter: drop-shadow( 0 3px 3px rgba(0, 0 ,0, 0.4));
       }
 
       &__img {
