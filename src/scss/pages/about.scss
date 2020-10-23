@@ -13,7 +13,7 @@
         font-size: getHeadingSize(large);
 
         @include mq(desktop) {
-          max-width: 350px;
+          max-width: 360px;
           margin-right: getSpace(large);
           font-size: getHeadingSize(xlarge);
         }
@@ -95,5 +95,10 @@
       max-width: 340px;
       display: block;
     }
+  }
+
+  .newsletter {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: getSpace(xlarge);
   }
 }
