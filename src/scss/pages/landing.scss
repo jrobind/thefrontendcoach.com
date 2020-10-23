@@ -71,8 +71,6 @@
       }
   
       &__img {
-        box-shadow: $boxShadow;
-        margin: auto;
         display: block;
         max-width: 330px; 
         max-height: 330px;
@@ -133,7 +131,11 @@
     .blog-card-wrapper {
       display: grid;
       grid-gap: getSpace(medium);
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+      @include mq(desktop) {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      }
     }
 
     .blog-card {
