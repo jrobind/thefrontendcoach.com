@@ -20,6 +20,7 @@ sass.compiler = require('node-sass');
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
 const IMG_PATH = 'src/images/*';
+const BLOG_PATH = 'src/blog/out/404.html';
 const HTML_PATH = 'src/**/*.html';
 const HTML_PATH_PAGES = 'src/pages/*.html';
 const FONT_PATH = 'src/fonts/*';
@@ -32,11 +33,17 @@ function reload(done) {
 
 function serve(done) {
   server.init({
+    port: 4000,
     server: {
-      baseDir: './dist'
+      baseDir: './dist',
     }
   });
   done();
+}
+
+function copyBlog() {
+  return src('src/blog/out/*', {base: '.'})
+    .pipe(gulp.dest('dist/blog'));
 }
 
 function copyRedirects() {
@@ -76,25 +83,26 @@ function jsTask() {
 
 function cssTask() {
   return src(CSS_PATH)
-    .pipe(sourcemaps.init())
     .pipe(concat('style.scss'))
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(sourcemaps.write('.'))
-    .pipe(dest('dist/css'));
+    .pipe(dest('dist/css'))
+    .pipe(rename('styles.css'))
+    .pipe(dest('src/blog/', {overwrite: true}));
 }
 
 function watchTask() {
   watch(
-    [CSS_PATH, JS_PATH, IMG_PATH, HTML_PATH],
+    [CSS_PATH, JS_PATH, IMG_PATH, HTML_PATH, BLOG_PATH],
     { interval: 1000 },
-    series(parallel(copyHtmlTask, copyRedirects, imgOptimTask, jsTask, cssTask), reload))
+    series(parallel(copyHtmlTask, copyBlog, copyRedirects, imgOptimTask, jsTask, cssTask), reload))
 }
 
 exports.jsTask = jsTask;
 exports.cssTask = cssTask;
 exports.copyHtmlTask = copyHtmlTask;
 exports.copyRedirects = copyRedirects;
+exports.copyBlog = copyBlog;
 exports.copyFontTask = copyFontTask;
 exports.imgOptimTask = imgOptimTask;
-exports.default = series(parallel(imgOptimTask, copyHtmlTask, copyRedirects, copyFontTask, serve, jsTask, cssTask), watchTask);
+exports.default = series(parallel(imgOptimTask, copyBlog, copyHtmlTask, copyRedirects, copyFontTask, serve, jsTask, cssTask), watchTask);

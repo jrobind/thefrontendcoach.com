@@ -4,7 +4,10 @@
   "description": "A dedicated support and learning system those who wish to start a career as a front end developer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cd ./src/blog/ && next dev",
+    "build": "cd ./src/blog/ && next build && next export",
+    "start": "gulp",
+    "blog-start": "gulp next start"
   },
   "repository": {
     "type": "git",
@@ -36,10 +39,15 @@
     "gulp-imagemin": "7.1.0",
     "gulp-postcss": "9.0.0",
     "gulp-rename": "2.0.0",
+    "gulp-replace": "1.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
     "gulp-terser": "1.4.0",
     "node-sass": "4.14.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "next": "9.5.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
 }
