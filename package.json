@@ -7,7 +7,7 @@
     "dev": "cd ./src/blog/ && next dev",
     "build": "cd ./src/blog/ && next build && next export",
     "start": "gulp",
-    "blog-start": "gulp next start"
+    "blog-start": "next start"
   },
   "repository": {
     "type": "git",
@@ -32,9 +32,11 @@
     "autoprefixer": "^9.0.0",
     "browser-sync": "2.26.12",
     "cssnano": "4.1.10",
+    "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
     "gulp-file-include": "2.2.2",
+    "gulp-flatten": "0.4.0",
     "gulp-if": "3.0.0",
     "gulp-imagemin": "7.1.0",
     "gulp-postcss": "9.0.0",
@@ -46,6 +48,8 @@
     "node-sass": "4.14.1"
   },
   "dependencies": {
+    "@mdx-js/loader": "1.6.19",
+    "@next/mdx": "9.5.5",
     "next": "9.5.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"

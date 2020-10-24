@@ -1,20 +1,14 @@
 import Layout from '../components/Layout'
 import styles from '../styles.css';
 
-const App = ({ title, description, ...props }) => {
+export default function App({ Component, pageProps }) {
   return (
-    <Layout pageTitle={title}>
-      <h1 className="title u-fs--giant">Welcome to my blog!</h1>
-        <p className="description">
-          {description}
-        </p>
-        <main>
-          Posts go here!
-        </main>
-    </Layout>)
+    <Layout pageTitle="Blog" description="My Personal Blog">
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default App;
 
 export async function getStaticProps() {
   const configData = await import(`../siteconfig.json`)

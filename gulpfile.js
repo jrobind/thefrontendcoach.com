@@ -14,13 +14,18 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const { src, series, parallel, dest, watch } = require('gulp');
+const del = require('del');
 
 sass.compiler = require('node-sass');
 
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
 const IMG_PATH = 'src/images/*';
-const BLOG_PATH = 'src/blog/out/404.html';
+const BLOG_PATH = 'src/blog/out/*';
+const BLOG_PATHS = [
+  'src/blog/out/**/*',
+  '!src/blog/out/404.html',
+];
 const HTML_PATH = 'src/**/*.html';
 const HTML_PATH_PAGES = 'src/pages/*.html';
 const FONT_PATH = 'src/fonts/*';
@@ -41,9 +46,12 @@ function serve(done) {
   done();
 }
 
-function copyBlog() {
-  return src('src/blog/out/*', {base: '.'})
-    .pipe(gulp.dest('dist/blog'));
+function copyBlog(done) {
+  return src(BLOG_PATHS)
+    .pipe(gulp.dest('dist/blog'))
+    .on('end', () => {
+      del('dist/blog/out').then(done)
+    })
 }
 
 function copyRedirects() {
