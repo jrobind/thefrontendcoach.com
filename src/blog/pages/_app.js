@@ -1,11 +1,13 @@
 import Layout from '../components/Layout'
 import styles from '../styles.css';
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, props }) {
   return (
-    <Layout pageTitle="Blog" description="My Personal Blog">
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Layout pageTitle="Blog" description="My Personal Blog">
+        <Component {...props} />
+      </Layout>
+    </>
   );
 }
 

@@ -9,19 +9,12 @@ export const Post = ({ post }) => {
 
   return (
     <>
-      <article>
+      <article className="post">
         <HeadPost meta={meta} />
-        <Link href={link}>
+        <Link href={'/blog' + link}>
           <a>Read more &rarr;</a>
         </Link>
       </article>
-      <style jsx>
-        {`
-          article {
-            margin-bottom: 3rem;
-          }
-        `}
-      </style>
     </>
   )
 }

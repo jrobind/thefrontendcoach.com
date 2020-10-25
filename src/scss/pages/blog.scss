@@ -1,3 +1,11 @@
 .blog {
-  background: blue;
+  .posts {
+    display: grid;
+    grid-gap: getSpace(medium);
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+    @include mq(desktop) {
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+  } 
 }
