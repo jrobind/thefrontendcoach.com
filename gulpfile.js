@@ -21,11 +21,8 @@ sass.compiler = require('node-sass');
 const JS_PATH = 'src/js/**/*.js';
 const CSS_PATH = 'src/scss/**/*.scss';
 const IMG_PATH = 'src/images/*';
-const BLOG_PATH = 'src/blog/out/*';
-const BLOG_PATHS = [
-  'src/blog/out/**/*',
-  '!src/blog/out/404.html',
-];
+const BLOG_PATH = 'src/blog/out/**/*';
+const BLOG_PATHS = ['src/blog/out/**/*', '!src/blog/out/404.html', '!src/blog/out/public/'];
 const HTML_PATH = 'src/**/*.html';
 const HTML_PATH_PAGES = 'src/pages/*.html';
 const FONT_PATH = 'src/fonts/*';
@@ -77,7 +74,7 @@ function copyFontTask() {
 function imgOptimTask() {
   return src(IMG_PATH)
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/images'))
 }
 
 function jsTask() {
@@ -96,7 +93,8 @@ function cssTask() {
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist/css'))
     .pipe(rename('styles.css'))
-    .pipe(dest('src/blog/', {overwrite: true}));
+    .pipe(dest('src/blog/', {overwrite: true}))
+    .pipe(dest('src/blog/public', {overwrite: true}))
 }
 
 function watchTask() {
