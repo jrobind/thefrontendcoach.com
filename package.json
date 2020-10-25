@@ -4,10 +4,10 @@
   "description": "A dedicated support and learning system those who wish to start a career as a front end developer",
   "main": "index.js",
   "scripts": {
-    "dev": "cd ./src/blog/ && next dev",
-    "build": "cd ./src/blog/ && next build && next export",
-    "start": "gulp",
-    "blog-start": "next start"
+    "dev": "cd ./app && next dev",
+    "build": "cd ./app && next build",
+    "start": "cd ./app && next start",
+    "export": "cd ./app && next export"
   },
   "repository": {
     "type": "git",
@@ -48,10 +48,12 @@
     "node-sass": "4.14.1"
   },
   "dependencies": {
-    "@mdx-js/loader": "1.6.19",
-    "@next/mdx": "9.5.5",
+    "gray-matter": "^4.0.2",
+    "marked": "^0.8.2",
     "next": "9.5.5",
+    "postcss-preset-env": "6.7.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "tailwindcss": "1.9.6"
   }
 }
