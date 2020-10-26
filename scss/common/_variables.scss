@@ -1,0 +1,42 @@
+// COlOURS
+$main-bc: #2B8275;
+$secondary-bc: #2B2C28;
+$tertiary-bc: #F7B501;
+
+// GENERAL
+$boxShadow: 0 7px 30px -10px rgba(150,170,180,0.5);;
+
+// BREAKPOINTS
+$breakpoints: (
+  tablet: 700px,
+  desktop: 1024px,
+  wide: 1440px,
+  xwide: 2500px,
+);
+
+$sizes: tiny, small, medium, big, large, xlarge, huge, giant;
+$headingSizes: micro, tiny, xsmall, small, medium, large, xlarge, giant;
+
+// SPACINGS
+$spacings: (
+  tiny: 4px,
+  small: 8px,
+  medium: 16px,
+  big: 24px,
+  large: 32px,
+  xlarge: 48px,
+  huge: 64px,
+  giant: 84px,
+);
+
+// HEADINGS
+$headings: (
+  micro: 12px,
+  tiny: 16px,
+  xsmall: 20px,
+  small: 22px,
+  medium: 24px,
+  large: 30px,
+  xlarge: 38px,
+  giant: 50px,
+);

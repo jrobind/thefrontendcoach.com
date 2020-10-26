@@ -1,0 +1,129 @@
+.header {
+  z-index: 3;
+  min-height: 85px;
+
+  &__logo.dark {
+    background-image: url(/images/logo-black-small.png);
+
+    @include mq(tablet) {
+      background-image: url(/images/logo-black-large.png);
+    }
+  }
+
+  &__logo.white {
+    background-image: url(/images/logo-white-small.png);
+
+    @include mq(tablet) {
+      background-image: url(/images/logo-white-large.png);
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    background-position: 16px 24px;
+    height: 58px;
+    background-repeat: no-repeat;
+    width: 305px;
+  }
+
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+    padding-top: getSpace(giant);
+
+    @include mq(tablet) {
+      position: absolute;
+      right: 0;
+      display: flex;
+      max-height: none;
+      padding-top: 14px;
+    }
+  
+    &__item a {
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      font-size: getHeadingSize(tiny);
+      padding-left: getSpace(medium);
+
+      @include mq(tablet) {
+        border-bottom: none;
+        padding-left: 0;
+        font-size: getHeadingSize(xsmall);
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ .menu {
+      max-height: 330px;
+    }
+    
+    &:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    
+    &:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+    }
+    
+    &:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+    }
+    
+    &:checked ~ .menu-icon:not(.steps) .nav-icon:before,
+    &:checked ~ .menu-icon:not(.steps) .nav-icon:after {
+      top: 0;
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    padding: 40px 20px;
+    position: absolute;
+    user-select: none;
+    right: 0;
+
+    @include mq(tablet) {
+      display: none;
+    }
+
+    .nav-icon {
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+
+      &:before, &:after {
+        content: '';
+        background-color: white;
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+
+    .nav-icon.dark {
+      background: black;
+
+      &:before, &:after {
+        background-color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.landing {
+  .hero {
+    background: $main-bc;
+    padding: getSpace(large) 0;
+
+    @include mq(desktop) {
+      padding: 0;
+    }
+  }
+  
+  .content {
+    @include mq(desktop) {
+      display: flex;
+    }
+  
+    &__img {
+      width: 100%; 
+    }
+  
+    &__headline {
+      font-size: getHeadingSize(large);
+  
+      @include mq(tablet) {
+        font-size: getHeadingSize(xlarge);
+      }
+    }
+  
+    &__copy { 
+      p {
+        font-size: getHeadingSize(tiny);
+  
+        @include mq(tablet) {
+          font-size: getHeadingSize(xsmall);
+        }
+      }
+    }
+  }
+  
+  .about {
+    margin: getSpace(xlarge) 0;
+
+    @include mq(desktop) {
+      margin: getSpace(giant) 0;
+    }
+
+    .content {
+      &__copy {
+        @include mq(desktop) {
+          max-width: 650px;
+          margin-left: getSpace(large);
+        }
+      }
+  
+      &__img {
+        display: block;
+        max-width: 330px; 
+        max-height: 330px;
+        margin-bottom: getSpace(large);
+  
+        @include mq(desktop) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  .services {  
+    background-color: rgba(0, 0, 0, 0.025);
+
+    .content {
+      & > div:first-of-type {
+        @include mq(desktop) {
+          flex-direction: row;
+        }
+
+        & > div:first-of-type {
+          @include mq(desktop) {
+            margin-right: getSpace(giant);
+          }
+        }
+      }
+
+      &__copy {
+        &--flat {
+          flex: 1;
+          max-width: 410px;
+  
+          h3 {
+            margin-top: -(getSpace(large));
+          } 
+        }
+      }
+
+      & > div:last-of-type {
+        background-image: url(/images/blog-blob.svg);
+        background-size: cover;
+        background-position: -488px -271px;
+        box-shadow: $boxShadow;
+        background-color: white;
+
+        @include mq(desktop) {
+          margin-top: getSpace(xlarge);
+        }
+      }
+
+      &__img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    .blog-card-wrapper {
+      display: grid;
+      grid-gap: getSpace(medium);
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+      @include mq(desktop) {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      }
+    }
+
+    .blog-card {
+      padding: getSpace(small);
+      border: 1px solid rgba(0,0,0,0.25);
+      box-shadow: $boxShadow;
+      height: 180px;
+      border-radius: 2px;
+      position: relative;
+      z-index: 1;
+
+      h3 {
+        max-width: 300px;
+        font-size: getHeadingSize(xsmall);
+      }
+    }
+
+    .discord {
+      &__card {
+        border-radius: 6px;
+        box-shadow: $boxShadow;
+
+        &-content {
+          max-width: 600px;
+        }
+      }
+
+      &__logo {
+        max-width: 400px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+}

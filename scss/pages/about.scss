@@ -1,0 +1,104 @@
+.about {
+  &-me {
+    &__header {
+      margin-top: getSpace(xlarge);
+
+      @include mq(desktop) {
+        margin-top: getSpace(giant);
+      }
+
+      h1 {
+        color: $main-bc;
+        max-width: 165px;
+        font-size: getHeadingSize(large);
+
+        @include mq(desktop) {
+          max-width: 360px;
+          margin-right: getSpace(large);
+          font-size: getHeadingSize(xlarge);
+        }
+
+        span {
+          font-style: italic;
+          opacity: 0.95;
+          min-width: 250px;
+          font-size: getHeadingSize(medium);
+
+          @include mq(desktop) {
+            font-size: getHeadingSize(large);
+          }
+        }
+      }
+
+      img {
+        max-width: 150px;
+        max-height: 150px;
+        position: relative;
+        right: getSpace(tiny);
+
+        @include mq(desktop) {
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+    }
+
+    &__content {
+      text-align: justify;
+      max-width: 650px;
+ 
+      @include mq(desktop) {
+        max-width: 850px;
+      }
+    }
+  }
+
+  .launching {
+    h2 {
+      text-align: center;
+
+      @include mq(desktop) {
+        text-align: left;
+      }
+    }
+    &__img {
+      display: none;
+
+      @include mq(desktop) {
+        display: block;
+        max-width: 400px;
+        position: relative;
+        right: -(getSpace(medium));
+      }
+    }
+
+    &__content p {
+      max-width: 730px;
+      margin: auto;
+
+      @include mq(desktop) {
+        margin: getSpace(medium) 0;
+      }
+
+      strong {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .get-support {
+    &__content {
+      max-width: 600px;
+    }
+
+    &__img {
+      max-width: 340px;
+      display: block;
+    }
+  }
+
+  .newsletter {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: getSpace(xlarge);
+  }
+}
