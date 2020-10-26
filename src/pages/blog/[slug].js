@@ -1,19 +1,34 @@
 import React from "react";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import marked from "marked";
+import ReactMarkdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-const Post = ({ htmlString, data }) => {
+const CodeBlock = ({ language, value }) => {
   return (
-    <>
+    <SyntaxHighlighter style={vscDarkPlus} language={language}>
+      {value}
+    </SyntaxHighlighter>
+  );
+};
+
+const Post = ({ frontmatter, markdownBody }) => {
+  return (
+    <main className="blog-post">
       <Head>
-        <title>{data.title}</title>
-        <meta title="description" content={data.description} />
+        <title>{frontmatter.title}</title>
+        <meta title="description" content={frontmatter.description} />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
-    </>
+      <div className="wrapper my-6 md:my-7">
+        <ReactMarkdown
+          escapeHtml={true}
+          source={markdownBody}
+          renderers={{ code: CodeBlock }}
+        />
+      </div>
+    </main>
   );
 };
 
@@ -32,18 +47,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMetadata = fs
-    .readFileSync(path.join("posts", slug + ".md"))
-    .toString();
-
-  const parsedMarkdown = matter(markdownWithMetadata);
-
-  const htmlString = marked(parsedMarkdown.content);
+  const content = await import(`../../posts/${slug}.md`);
+  const data = matter(content.default);
 
   return {
     props: {
-      htmlString,
-      data: parsedMarkdown.data
+      frontmatter: data.data,
+      markdownBody: data.content
     }
   };
 };

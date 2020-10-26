@@ -17,7 +17,7 @@
 
 .newsletter .ml-form-embedContainer h4 {
   letter-spacing: 1.5px !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
   font-weight: 600 !important;
   margin-bottom: 16px !important;
 }
@@ -28,19 +28,26 @@
   line-height: 32px !important;
 }
 
-.newsletter .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+.newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-horizontalRow.jsx-3244091171 button.jsx-3244091171, .newsletter #mlb2-2868019.jsx-3244091171 .ml-mobileButton-horizontal.jsx-3244091171 button.jsx-3244091171 {
   font-size: 16px !important;
-  font-weight: 300;
-  display: block;
-  max-width: 180px;
-  padding: 10px 12px;
+  font-weight: 300 !important; 
+  max-width: 180px !important;
+  padding: 10px 12px !important;
   border-radius: 3px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05), 0 5px 8px 0 rgba(0, 0, 0, 0.05);
+  letter-spacing: 1px !important;
+  cursor: pointer !important;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05), 0 5px 8px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.newsletter .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
+  padding-top: 0 !important;
 }
 
 .newsletter .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
   background: #F7B501 !important;
   border-color: transparent !important;
+}
+
+.newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-embedPermissions.jsx-3244091171 .ml-form-embedPermissionsContent.privacy-policy.jsx-3244091171 p.jsx-3244091171:last-child, .newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-checkboxRow.jsx-3244091171 label.jsx-3244091171 p.jsx-3244091171 {
+  font-size: 16px !important;
 }

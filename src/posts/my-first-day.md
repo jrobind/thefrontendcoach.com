@@ -3,6 +3,11 @@ title: First Day
 description: idk
 ---
 
-# test
+## How do you code so fast?
 
-I am doing good today
+``` javascript
+  function getFullName (user) {
+      const fullName = user.firstName + user.lastName;
+      return fullName;
+  }
+```

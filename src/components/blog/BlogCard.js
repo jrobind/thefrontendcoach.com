@@ -1,7 +1,7 @@
 import Link from "next/link";
 import fs from "fs";
 
-const BlogHome = ({ slugs }) => (
+const BlogCard = ({ slugs }) => (
   <div>
     slugs:
     {slugs.map(slug => {
@@ -16,4 +16,4 @@ const BlogHome = ({ slugs }) => (
   </div>
 );
 
-export default BlogHome;
+export default BlogCard;

@@ -10,9 +10,11 @@
 @import "tailwindcss/components";
 
 /* Extracted components */
-@import "./components/button.css";
-@import "./components/header.css";
-@import "./components/pill.css";
+@import "./components/button";
+@import "./components/header";
+@import "./components/pill";
+@import "./components/bullet";
+@import "./components/mac-window";
 
 /* Custom utility */
 @import "./common/custom-util.css";

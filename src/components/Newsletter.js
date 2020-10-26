@@ -56,23 +56,23 @@ export default function Newsletter({ landing }) {
                             </div>
                           </div>
                         </div>
-                        <div className="ml-button-horizontal primary labelsOn" style={{paddingTop: '0 !important'}}>
-                          <button style={{width: '175px !important'}}  type="submit" className="primary">SUBSCRIBE</button>
+                        <div className="ml-button-horizontal primary labelsOn">
+                          <button type="submit" className="primary">SUBSCRIBE</button>
                           <button disabled="disabled" style={{display:'none'}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
                         </div>
                       </div>
                     </div>
                     <div className="ml-form-embedPermissions">
                       <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
-                        <p style={{fontSize: '14px !important'}}>You can unsubscribe anytime.</p>
+                        <p>You can unsubscribe anytime.</p>
                       </div>
                     </div>
                     <div className="ml-form-checkboxRow ml-validate-required">
-                      <label className="checkbox"> <input type="checkbox"/> <div className="label-description"> <p style={{fontSize: '16px !important'}}>I am happy for The Front End Coach to contact me by email.</p> </div> </label>
+                      <label className="checkbox"> <input type="checkbox"/> <div className="label-description"> <p>I am happy for The Front End Coach to contact me by email.</p> </div> </label>
                     </div>
                     <input type="hidden" name="ml-submit" value="1"/>
                     <div className="ml-mobileButton-horizontal">
-                      <button style={{width: '175px !important'}} type="submit" className="primary">SUBSCRIBE</button>
+                      <button type="submit" className="primary">SUBSCRIBE</button>
                       <button disabled="disabled" style={{display: 'none'}} type="button" className="loading"> <div className="ml-form-embedSubmitLoad"><div></div><div></div><div></div><div></div></div> </button>
                     </div>
                   </form>
