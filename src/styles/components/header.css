@@ -57,6 +57,10 @@
   width: 100%;
 }
 
+.header .menu-icon .nav-icon.black:before, .header .menu-icon .nav-icon.black:after {
+  background-color: black;
+}
+
 .header .menu-icon .nav-icon:before {
   top: 5px;
 }

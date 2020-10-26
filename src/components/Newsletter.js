@@ -2,11 +2,6 @@ import Helmet from 'react-helmet';
 import classnames from 'classnames';
 
 export default function Newsletter({ landing }) {
-
-  //   .newsletter {
-//     border-top: 1px solid rgba(0, 0, 0, 0.3);
-//     padding-top: getSpace(xlarge);
-//   }
   return (
     <>
       <section className={classnames({
