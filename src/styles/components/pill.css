@@ -1,0 +1,7 @@
+@layer components {
+  .pill {
+    border-radius: 35px;
+    @apply py-1 px-2;
+    background: rgba(247, 181, 1, 0.65);
+  }
+}

@@ -1,0 +1,85 @@
+.header {
+  min-height: 85px;
+}
+
+.header__logo {
+  background-position: 0 24px;
+  height: 58px;
+  width: 305px;
+}
+
+.header .menu {
+  transition: max-height 0.2s ease-out;
+  padding-top: 84px;
+}
+
+.header .menu__item a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 330px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after {
+  top: 0;
+}
+
+.header .menu-icon {
+  padding: 40px 16px;
+}
+
+.header .menu-icon .nav-icon {
+  height: 2px;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before, .header .menu-icon .nav-icon:after {
+  content: "";
+  background-color: white;
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+.header .menu-icon .nav-icon.dark {
+  background: black;
+}
+
+.header .menu-icon .nav-icon.dark:before, .header .menu-icon .nav-icon.dark:after {
+  background-color: black;
+}
+
+@media (min-width: 700px) {
+  .header .menu {
+    max-height: none;
+    padding-top: 14px;
+  }
+  
+  .header .menu__item a {
+    border-bottom: none;
+  }
+}

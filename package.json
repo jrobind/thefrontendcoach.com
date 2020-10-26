@@ -4,10 +4,10 @@
   "description": "A dedicated support and learning system those who wish to start a career as a front end developer",
   "main": "index.js",
   "scripts": {
-    "dev": "cd ./app && next dev",
-    "build": "cd ./app && next build",
-    "start": "cd ./app && next start",
-    "export": "cd ./app && next export"
+    "dev": "cd ./src && next dev",
+    "build": "cd ./src && next build",
+    "start": "cd ./src && next start",
+    "export": "cd ./src && next export"
   },
   "repository": {
     "type": "git",

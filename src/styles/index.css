@@ -1,0 +1,21 @@
+/* Font */
+@import "./common/font.css";
+
+@import "tailwindcss/base";
+
+/* Adding styles to override `base` and mailerlite form styles */
+@import "./common/custom-base.css";
+@import "./common/overrides.css";
+
+@import "tailwindcss/components";
+
+/* Extracted components */
+@import "./components/button.css";
+@import "./components/header.css";
+@import "./components/pill.css";
+
+/* Custom utility */
+@import "./common/custom-util.css";
+
+@import "tailwindcss/utilities";
+

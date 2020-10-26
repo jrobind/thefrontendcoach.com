@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Nunito";
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+html,
+body, main {
+  min-height: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:not(.btn), a:not(.btn):hover, a:not(.btn):active, a:not(.btn):visited, a:not(.btn):focus {
+  color: inherit;
+}
+
+a:hover:not(.btn) {
+  text-decoration: underline;
+  transition: all 0.2s;
+}
+
+input,
+button {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+input,
+button { 
+  border:none; 
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  overflow: hidden;
+}
