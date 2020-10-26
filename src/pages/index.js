@@ -42,7 +42,7 @@ const Home = ({ slugs }) => (
             </div>
             <div className="text-center flex flex-1 flex-col items-center">
               <h3 className="font-bold font-medium mb-3 text-xl">Support</h3>
-              <p className="mb-3 text-center text-sm" style={{maxWidth: '350px'}}>
+              <p className="mb-3 text-center text-lg" style={{maxWidth: '380px'}}>
                 Find the support you need by joining our Discord community, Facebook group, or apply for a more personalised support system.
               </p>
               <button className="btn">LEARN MORE</button>
@@ -54,7 +54,7 @@ const Home = ({ slugs }) => (
             </div>
             <div className="flex 1 text-center flex flex-col items-center">
               <h3 className="font-bold mb-3 text-xl">Podcast</h3>
-              <p className="mb-3 text-center text-sm" style={{maxWidth: '350px'}}>
+              <p className="mb-3 text-center text-lg" style={{maxWidth: '380px'}}>
                 Interviews, tips and advice for learning how to build your Front End skillset, getting your first job in the tech industry and more!
               </p>
               <button className="btn">LISTEN NOW</button>
@@ -70,7 +70,7 @@ const Home = ({ slugs }) => (
                   <span>October 2020</span>
                   <span className="pill text-xs">Starting</span>
                 </div>
-                <h3 className="text-m font-bold" style={{maxWidth: '300px'}}>Deciding where to start when you have absolutely no idea</h3>
+                <h3 className="text-lg font-bold" style={{maxWidth: '300px'}}>Deciding where to start when you have absolutely no idea</h3>
                 <a className="flex items-center" href="/">Read more <img alt="" src='./images/arrow-right.svg'/></a>
               </div>
               <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
@@ -80,7 +80,7 @@ const Home = ({ slugs }) => (
                     <span className="pill text-xs">Learning</span>
                   </div>
                 </div>
-                <h3 className="text-m font-bold">How honesty can help improve your learning process</h3>
+                <h3 className="text-lg font-bold">How honesty can help improve your learning process</h3>
                 <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
               </div>
               <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
@@ -91,7 +91,7 @@ const Home = ({ slugs }) => (
                     <span className="pill text-xs">Learning</span>
                   </div>
                 </div>
-                <h3 className="text-m font-bold">Understanding the limitations of web development tutorials</h3>
+                <h3 className="text-lg font-bold">Understanding the limitations of web development tutorials</h3>
                 <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
               </div>
               <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
@@ -102,7 +102,7 @@ const Home = ({ slugs }) => (
                     <span className="pill text-xs">Process</span>
                   </div>
                 </div>
-                <h3 className="text-m font-bold">Why time isn't always the best metric of progress and skill</h3>
+                <h3 className="text-lg font-bold">Why time isn't always the best metric of progress and skill</h3>
                 <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
               </div>
             </div>
@@ -115,14 +115,14 @@ const Home = ({ slugs }) => (
         <div className="px-3 pb-3 bg-main text-white mt-5 rounded shadow-md">
           <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
           <div className="flex items-center flex-col mt-3 m-auto max-w-600">
-            <h4>JOIN THE DISCORD COMMUNITY</h4>
-            <p className="mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring front end developers and myself. A highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front end developer.</p>
+            <h4 className="text-xl">JOIN THE DISCORD COMMUNITY</h4>
+            <p className="text-lg md:text-xl mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring front end developers and myself. A highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front end developer.</p>
             <button className="btn mt-5">JOIN NOW</button>
           </div>
         </div>
       </div>
     </section>
-    <Newsletter/>
+    <Newsletter landing={true}/>
   </main>
 );
 

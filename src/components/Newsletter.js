@@ -1,9 +1,26 @@
-import Helmet from 'react-helmet'
+import Helmet from 'react-helmet';
+import classnames from 'classnames';
 
-export default function Newsletter() {
+export default function Newsletter({ landing }) {
+
+  //   .newsletter {
+//     border-top: 1px solid rgba(0, 0, 0, 0.3);
+//     padding-top: getSpace(xlarge);
+//   }
   return (
     <>
-      <section className="newsletter pt-6 wrapper flex justify-center items-center px-3 pb-7">
+      <section className={classnames({
+        'pt-6': true,
+        'wrapper': true,
+        'justify-center': true,
+        'items-center': true,
+        'px-3': true,
+        'flex': true,
+        'newsletter': true,
+        'pb-7': true,
+        'border-t': !landing,
+        'border-light-grey': !landing,
+      })}>
         <div className="newsletter__form">
           <style jsx>
             {`

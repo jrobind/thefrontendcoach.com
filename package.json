@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "autoprefixer": "9.8.6",
+    "classnames": "2.2.6",
     "gray-matter": "^4.0.2",
     "marked": "^0.8.2",
     "next": "9.5.5",

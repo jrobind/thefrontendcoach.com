@@ -27,9 +27,9 @@ export default function Footer() {
         </div>
         <div className="pt-3 wrapper flex" style={{borderTop: '1px solid rgba(250, 250, 250, 0.45)'}}>
           <span className="mr-4l mt-2">The Front End Coach 2020</span>
-          <span className="mt-2 ml-3">
+          <span className="mt-2 ml-3 flex">
             Built by James Robinson
-            <a class="flex items-center" href="https://github.com/jrobind"><img className="ml-2" alt="GitHub icon" src="/images/github-icon.png" style={{ width: '18px', marginTop: '-4px'}}/></a>
+            <a className="flex items-center" href="https://github.com/jrobind"><img className="ml-2" alt="GitHub icon" src="/images/github-icon.png" style={{ width: '18px', marginTop: '-4px'}}/></a>
           </span>
         </div>
       </footer>  

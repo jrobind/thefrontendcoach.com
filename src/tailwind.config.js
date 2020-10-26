@@ -15,7 +15,8 @@ module.exports = {
       'secondary': '#2B2C28',
       'tertiary': '#F7B501',
       'white': '#fff',
-      'black': '#000'
+      'black': '#000',
+      'light-grey': 'rgba(0, 0, 0, 0.3)',
     },
     spacing: {
       '0': '0',
@@ -41,6 +42,9 @@ module.exports = {
     gridTemplateColumns: {
       'landing-blog-sm': 'repeat(auto-fill, minmax(100%, 1fr));',
       'landing-blog-lg': 'repeat(auto-fill, minmax(400px, 1fr));',
+    },
+    opacity: {
+      '95': '0.95'
     },
     backgroundImage: (theme) => ({
       'logo-black-small': "url('/images/logo-black-small.png')",

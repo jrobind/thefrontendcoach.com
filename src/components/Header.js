@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <>
@@ -8,16 +10,24 @@ export default function Header() {
           <label className="menu-icon cursor-pointer right-0 absolute block select-none sm:hidden" htmlFor="menu-btn"><span className="nav-icon block relative bg-white"></span></label>
           <ul className="menu max-h-0 overflow-hidden sm:absolute sm:flex sm:right-0">
             <li className="menu__item">
-              <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5" href="../about.html">About</a>
+              <Link href="/about">
+                <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">About</a>
+              </Link>
             </li>
             <li className="menu__item">
-              <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5" href="/">Blog</a>
+              <Link href="/blog">
+                <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Blog</a>
+              </Link>
             </li>
             <li className="menu__item">
-              <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5" href="../support.html">Support</a>
+              <Link href="/support">
+                <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Support</a>
+              </Link>
             </li>
             <li className="menu__item">
-              <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5" href="../">Podcast</a>
+              <Link href="/podcast">
+                <a className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Podcast</a>
+              </Link>
             </li>
           </ul>
         </div>
