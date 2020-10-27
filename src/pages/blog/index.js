@@ -5,8 +5,8 @@ import matter from "gray-matter";
 
 
 const BlogHome = ({ posts }) => (
-  <main className="blog bg-blog-blob-landing">
-    <section className="py-6 pb-8 md:px-3">
+  <main className="blog bg-blog-home-blob bg-no-repeat" style={{backgroundPosition: 'right -280px', backgroundSize: '700px'}}>
+    <section className="py-6 pb-8 md:px-3 bg-blog-home-blob-2 bg-no-repeat" style={{backgroundPosition: 'bottom left', backgroundSize: '600px'}}>
       <div className="wrapper px-3">
         <h1 className="text-3xl md:text-4xl mb-4">Latest Articles</h1>
         <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">

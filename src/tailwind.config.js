@@ -53,6 +53,8 @@ module.exports = {
       'logo-white-large': "url('/images/logo-white-large.png')",
       'logo-black-large': "url('/images/logo-black-large.png')",
       'blog-blob-landing': "url('/images/blog-blob.svg')",
+      'blog-home-blob': "url('/images/blog-home-blob.svg')",
+      'blog-home-blob-2': "url('/images/blog-home-blob-2.svg')",
     })
   },
   variants: {},
