@@ -1,4 +1,5 @@
 ---
+date: October 2020
 title: First Day
 description: Learning how to code when you have no idea where to start
 tags: ['beginner', 'starting']

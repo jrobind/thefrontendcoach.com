@@ -36,6 +36,7 @@ module.exports = {
     maxWidth: {
       '600': '600px',
       '750': '750px',
+      'wrapper': '1100px',
     },
     boxShadow: {
       md: '0 7px 30px -10px rgba(150,170,180,0.5)',

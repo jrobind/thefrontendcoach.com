@@ -65,7 +65,7 @@ const Home = ({ slugs }) => (
           <div>
             <h2 className="mb-4 m-auto text-3xl">Latest blog posts</h2>
             <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-              <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
+              <div className="blog-card flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
                 <div className="flex justify-between">
                   <span>October 2020</span>
                   <span className="pill text-xs">Starting</span>

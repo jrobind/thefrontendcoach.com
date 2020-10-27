@@ -14,10 +14,11 @@
 @import "./components/header";
 @import "./components/pill";
 @import "./components/bullet";
-@import "./components/blog-post.css";
-
-/* Custom utility */
-@import "./common/custom-util.css";
+@import "./components/blog-post";
+@import "./components/blog-card";
+@import "./components/dot";
+@import "./components/wrapper";
+@import "./components/img-shadow";
 
 @import "tailwindcss/utilities";
 
