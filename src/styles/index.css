@@ -14,7 +14,7 @@
 @import "./components/header";
 @import "./components/pill";
 @import "./components/bullet";
-@import "./components/mac-window";
+@import "./components/blog-post.css";
 
 /* Custom utility */
 @import "./common/custom-util.css";

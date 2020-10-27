@@ -1,7 +1,7 @@
 ---
 title: First Day
-description: Learning how to code when you have no idea where to start
-tags: ['beginner', 'starting']
+description: Learning how to code lad
+tags: ['javascript', 'ux']
 ---
 
 ## How do you code so fast?

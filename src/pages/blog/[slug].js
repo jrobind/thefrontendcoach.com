@@ -2,8 +2,9 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
+import Link from "next/link";
 import ReactMarkdown from 'react-markdown';
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 const CodeBlock = ({ language, value }) => {
@@ -22,6 +23,9 @@ const Post = ({ frontmatter, markdownBody }) => {
         <meta title="description" content={frontmatter.description} />
       </Head>
       <div className="wrapper my-6 md:my-7">
+        <Link href="/blog">
+          <a className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg'/> Back to articles</a>
+        </Link>
         <ReactMarkdown
           escapeHtml={true}
           source={markdownBody}

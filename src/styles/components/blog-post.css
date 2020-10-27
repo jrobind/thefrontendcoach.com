@@ -1,0 +1,113 @@
+/* purgecss start ignore */
+/* blog-post Styles */
+/* Global */
+.blog-post {
+  @apply leading-relaxed text-sm;
+}
+
+/* Headers */
+.blog-post h1 {
+  @apply text-3xl my-6 ;
+}
+
+.blog-post h2 {
+  @apply text-3xl my-6 ;
+}
+
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6 {
+  @apply text-lg my-3;
+}
+
+@screen md {
+  .blog-post h1{
+    @apply text-4xl;
+  }
+  .blog-post h2 {
+    @apply text-3xl;
+  }
+  .blog-post h3,
+  .blog-post h4,
+  .blog-post h5,
+  .blog-post h6 {
+    @apply text-xl;
+  }
+}
+
+/* Links */
+.blog-post a {
+  @apply text-main;
+}
+
+.blog-post a:hover {
+  @apply underline;
+}
+
+/* Paragraph */
+.blog-post p {
+  @apply mb-4;
+}
+
+/* Lists */
+.blog-post ul,
+.blog-post ol {
+  @apply mb-4 ml-8;
+}
+
+.blog-post li > p,
+.blog-post li > ul,
+.blog-post li > ol {
+  @apply mb-0;
+}
+
+.blog-post ol {
+  @apply list-decimal;
+}
+
+.blog-post ul {
+  @apply list-disc;
+}
+
+/* Blockquotes */
+.blog-post blockquote {
+  @apply p-2 mx-6 bg-light-grey mb-4 border-l-4 border-light-grey italic;
+}
+
+.blog-post blockquote > p {
+  @apply mb-0;
+}
+
+/* Tables */
+.blog-post td,
+.blog-post th {
+  @apply px-2 py-1 border border-light-grey;
+}
+
+.blog-post tr:nth-child(odd) {
+  @apply bg-light-grey;
+}
+
+.blog-post table {
+  @apply mb-6;
+}
+
+/* Prism overrides */
+.blog-post .wrapper pre {
+  padding: 40px 16px 16px 16px !important;
+  border-radius: 8px !important;
+  overflow: auto !important;
+  font-size: 14px !important;
+  margin-bottom: 64px !important;
+  overflow: hidden !important;
+  background-image: url(/images/code-snippet-buttons.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 44px 10px !important;
+  background-position: 16px 16px !important;
+  max-width: 550px !important;
+  margin: auto !important;
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5) !important;
+}
+
+/* purgecss end ignore */
