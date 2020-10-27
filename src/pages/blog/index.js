@@ -1,7 +1,6 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import BlogPost from '../../components/BlogPost'
+import BlogPost from '../../components/BlogPost';
+import { getAllBlogPosts} from '../../lib/api';
+
 
 const BlogHome = ({ posts }) => (
   <main 
@@ -20,7 +19,7 @@ const BlogHome = ({ posts }) => (
       <div className="wrapper px-3">
         <h1 className="text-3xl md:text-4xl mb-4">Latest Articles</h1>
         <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-          <BlogPost posts={posts}/>
+          <BlogPost posts={posts} limit={0}/>
         </div>
       </div>
     </section>
@@ -28,20 +27,9 @@ const BlogHome = ({ posts }) => (
 );
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync("posts");
-  const posts = files.map((filename) => {
-    const slug = filename.replace(".md", "");
-    const markdownWithMetadata = fs
-    .readFileSync(path.join("posts", slug + ".md"))
-    .toString();
-    const parsedMarkdown = matter(markdownWithMetadata);
-
-    return {data: parsedMarkdown.data, slug}
-  })
-
   return {
     props: {
-      posts,
+      posts: getAllBlogPosts(),
     }
   };
 };

@@ -1,12 +1,15 @@
 import Link from "next/link";
 import fs from "fs";
 import Newsletter from "../components/Newsletter";
+import BlogPost from "../components/BlogPost";
+import { getAllBlogPosts } from '../lib/api';
 
-const Home = ({ slugs }) => (
+
+const Home = ({ slugs, posts }) => (
   <main className="landing">
     <section className="hero bg-main px-3 py-4 md:px-3">
-      <div className="wrapper u-px-3 flex justify-between items-center">
-        <div className="text-white flex flex-col md:mr-4 max-w-750 md:max-w-600">
+      <div className="wrapper u-px-3 flex md:justify-between justify-center items-center">
+        <div className="text-white flex flex-col md:mr-4 max-w-600 md:max-w-75- md:max-w-600">
           <h1 className="text-3xl md:text-4xl">Get help starting your career as a <br/> Front End developer</h1>
           <p className="my-3 text-lg md:text-xl">
             Learning to code? Thinking of becoming a Front End developer? The Front End coach is here to help! A free support system to help you land your first development job.
@@ -21,8 +24,8 @@ const Home = ({ slugs }) => (
     </svg>
 
     <section className="about px-3 py-7 md:py-8">
-      <div className="wrapper flex flex-col md:flex-row md:justify-between px-3 justify-between">
-        <img className="img-shadow w-full mb-3 md:mb-0 img-shadow" alt="Man inspecting code block" src="./images/npm.jpg" width='450' height='350' style={{maxWidth: '330px'}}/>
+      <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
+        <img className="max-w-280 md:max-w-330 img-shadow w-full mb-3 md:mb-0 img-shadow" alt="Man inspecting code block" src="./images/npm.jpg" width='450' height='350'/>
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
           <p className="mb-5 text-lg md:text-xl">
@@ -65,46 +68,7 @@ const Home = ({ slugs }) => (
           <div>
             <h2 className="mb-4 m-auto text-3xl">Latest blog posts</h2>
             <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-              <div className="blog-card flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
-                <div className="flex justify-between">
-                  <span>October 2020</span>
-                  <span className="pill text-xs">Starting</span>
-                </div>
-                <h3 className="text-lg font-bold" style={{maxWidth: '300px'}}>Deciding where to start when you have absolutely no idea</h3>
-                <a className="flex items-center" href="/">Read more <img alt="" src='./images/arrow-right.svg'/></a>
-              </div>
-              <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
-                <div className="flex justify-between">
-                  <span>October 2020</span>
-                  <div className="ml-3">
-                    <span className="pill text-xs">Learning</span>
-                  </div>
-                </div>
-                <h3 className="text-lg font-bold">How honesty can help improve your learning process</h3>
-                <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
-              </div>
-              <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
-                <div className="flex justify-between">
-                  <span>October 2020</span>
-                  <div className="ml-3">
-                    <span className="pill mr-1 text-xs">Process</span>
-                    <span className="pill text-xs">Learning</span>
-                  </div>
-                </div>
-                <h3 className="text-lg font-bold">Understanding the limitations of web development tutorials</h3>
-                <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
-              </div>
-              <div className="flex flex-col bg-white justify-between p-2 shadow-md rounded relative z-10" style={{height: '180px'}}>
-                <div className="flex justify-between">
-                  <span>October 2020</span>
-                  <div className="ml-3">
-                    <span className="pill mr-1 text-xs">Starting</span>
-                    <span className="pill text-xs">Process</span>
-                  </div>
-                </div>
-                <h3 className="text-lg font-bold">Why time isn't always the best metric of progress and skill</h3>
-                <a className="flex items-center" href="/">Read more <img alt="" src='/images/arrow-right.svg'/></a>
-              </div>
+              <BlogPost posts={posts} limit={4}/>
             </div>
             <a className="btn" href="/blog">READ THE BLOG</a>
           </div>
@@ -128,9 +92,11 @@ const Home = ({ slugs }) => (
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync("posts");
+
   return {
     props: {
-      slugs: files.map(filename => filename.replace(".md", ""))
+      slugs: files.map(filename => filename.replace(".md", "")),
+      posts: getAllBlogPosts(),
     }
   };
 };

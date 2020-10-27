@@ -17,14 +17,14 @@ const CodeBlock = ({ language, value }) => {
 
 const Post = ({ frontmatter, markdownBody }) => {
   return (
-    <main className="blog-post">
+    <main className="blog-post wrapper">
       <Head>
         <title>{frontmatter.title}</title>
         <meta title="description" content={frontmatter.description} />
       </Head>
-      <div className="wrapper my-6 md:my-7">
+      <div className="max-w-750 m-auto my-5 md:my-6 px-3">
         <Link href="/blog">
-          <a className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg'/> Back to articles</a>
+          <a className="flex items-center text-base font-bold" style={{width: '128px'}}><img alt="" src='/images/arrow-left.svg'/> Back to articles</a>
         </Link>
         <ReactMarkdown
           escapeHtml={true}

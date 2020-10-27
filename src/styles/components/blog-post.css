@@ -1,4 +1,5 @@
 /* purgecss start ignore */
+
 /* blog-post Styles */
 /* Global */
 .blog-post {
@@ -7,11 +8,11 @@
 
 /* Headers */
 .blog-post h1 {
-  @apply text-3xl my-6 ;
+  @apply text-3xl my-6;
 }
 
 .blog-post h2 {
-  @apply text-3xl my-6 ;
+  @apply text-3xl my-6;
 }
 
 .blog-post h3,
@@ -48,6 +49,11 @@
 /* Paragraph */
 .blog-post p {
   @apply mb-4;
+}
+
+/* Image */
+.blog-post img {
+  @apply m-auto my-3 block;
 }
 
 /* Lists */
@@ -94,20 +100,18 @@
 }
 
 /* Prism overrides */
-.blog-post .wrapper pre {
-  padding: 40px 16px 16px 16px !important;
+.blog-post pre {
+  padding: 40px 24px !important;
   border-radius: 8px !important;
   overflow: auto !important;
   font-size: 14px !important;
-  margin-bottom: 64px !important;
-  overflow: hidden !important;
+  margin-bottom: 32px !important;
   background-image: url(/images/code-snippet-buttons.png) !important;
   background-repeat: no-repeat !important;
   background-size: 44px 10px !important;
-  background-position: 16px 16px !important;
-  max-width: 550px !important;
-  margin: auto !important;
+  background-position: 24px 16px !important;
   box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5) !important;
+  margin-top: 32px !important;
 }
 
 /* purgecss end ignore */

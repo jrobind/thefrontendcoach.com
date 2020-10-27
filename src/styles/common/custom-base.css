@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-out;
 }
 
 html {
@@ -21,10 +20,6 @@ a {
   text-decoration: none;
 }
 
-a:not(.btn), a:not(.btn):hover, a:not(.btn):active, a:not(.btn):visited, a:not(.btn):focus {
-  color: inherit;
-}
-
 input,
 button {
   border: none;
@@ -38,4 +33,9 @@ ul {
 
 main {
   overflow: hidden;
+}
+
+.blog *,
+.services * {
+  transition: all 0.2s ease-out;
 }
