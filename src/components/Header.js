@@ -1,15 +1,29 @@
+import { useState } from 'react';
 import Link from "next/link";
-import { withRouter } from 'next/router';
+import Router, { withRouter } from 'next/router';
 
 function Header({ router }) {
   const isRoot = router.pathname === '/';
+  const [checked, setChecked] = useState(false);
+
+  const checkboxHandler = (e) => {
+    setChecked((prevState) => !prevState);
+  }
+
+  Router.events.on('routeChangeComplete', () => setChecked(false));
 
   return (
     <>
       <header className={`header z-3 px-3 w-full ${isRoot ? 'bg-main text-white' : 'bg-white text-black'}`}>
         <div className="wrapper">
           <a className={`header__logo ${isRoot ? 'bg-logo-white-small sm:bg-logo-white-large' : 'bg-logo-black-small sm:bg-logo-black-large'} bg-no-repeat left-0 absolute`} href="../"></a>
-          <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
+          <input
+            onChange={checkboxHandler} 
+            className="menu-btn hidden"
+            checked={checked}
+            type="checkbox" 
+            id="menu-btn"
+          />
           <label className="menu-icon cursor-pointer right-0 absolute block select-none sm:hidden" htmlFor="menu-btn"><span className={`nav-icon ${isRoot ? 'bg-white white' : 'bg-black black'} block relative`}></span></label>
           <ul className="menu max-h-0 overflow-hidden sm:absolute sm:flex sm:right-0">
             <li className="menu__item">
