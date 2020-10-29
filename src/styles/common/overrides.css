@@ -1,5 +1,5 @@
 /* MAILER LITE FORM OVERRIDES */
-.newsletter .ml-field-group.ml-field-email label {
+#newsletter #newsletter-container .ml-field-group.ml-field-email label {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -10,25 +10,25 @@
   width: 1px;
 }
 
-.newsletter input::placeholder {
+#newsletter #newsletter-container input::placeholder {
   opacity: 0.7;
   font-size: 16px;
 }
 
-.newsletter .ml-form-embedContainer h4 {
+#newsletter .ml-form-embedContainer #newsletter-container h4 {
   letter-spacing: 1.5px !important;
   font-size: 17px !important;
   font-weight: 600 !important;
   margin-bottom: 16px !important;
 }
 
-.newsletter .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent #newsletter-description {
+#newsletter .ml-form-embedContainer #newsletter-container #newsletter-description {
   font-size: 24px !important;
   font-weight: 300 !important;
   line-height: 32px !important;
 }
 
-.newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-horizontalRow.jsx-3244091171 button.jsx-3244091171, .newsletter #mlb2-2868019.jsx-3244091171 .ml-mobileButton-horizontal.jsx-3244091171 button.jsx-3244091171 {
+#newsletter #newsletter-container .subscribe-btn {
   font-size: 16px !important;
   font-weight: 300 !important; 
   max-width: 180px !important;
@@ -39,15 +39,16 @@
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.05), 0 5px 8px 0 rgba(0, 0, 0, 0.05) !important;
 }
 
-.newsletter .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
+#newsletter #newsletter-container .ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-button-horizontal.labelsOn {
   padding-top: 0 !important;
 }
 
-.newsletter .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
+#newsletter .ml-form-embedContainer #newsletter-container .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
   background: #F7B501 !important;
   border-color: transparent !important;
 }
 
-.newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-embedPermissions.jsx-3244091171 .ml-form-embedPermissionsContent.privacy-policy.jsx-3244091171 p.jsx-3244091171:last-child, .newsletter #mlb2-2868019.ml-form-embedContainer.jsx-3244091171 .ml-form-embedWrapper.jsx-3244091171 .ml-form-embedBody.jsx-3244091171 .ml-form-checkboxRow.jsx-3244091171 label.jsx-3244091171 p.jsx-3244091171 {
+#newsletter .ml-form-embedContainer #newsletter-container .ml-form-embedPermissionsContent.privacy-policy p:last-child,
+#newsletter .ml-form-embedContainer #newsletter-container .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
   font-size: 16px !important;
 }

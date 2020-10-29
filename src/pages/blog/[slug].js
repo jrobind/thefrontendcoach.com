@@ -1,11 +1,15 @@
 import React from "react";
 import fs from "fs";
+import { join } from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import Link from "next/link";
 import ReactMarkdown from 'react-markdown';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+
+
+const postsDirectory = join(process.cwd(), "/posts");
 
 const CodeBlock = ({ language, value }) => {
   return (
@@ -51,8 +55,10 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  const content = await import(`../../posts/${slug}.md`);
-  const data = matter(content.default);
+  const path = `${postsDirectory}/${slug}.md`;
+  const fileContents = fs.readFileSync(path, "utf8");
+  const { content } = matter(fileContents);
+  const data = matter(content);
 
   return {
     props: {

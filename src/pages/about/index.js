@@ -1,5 +1,3 @@
-import Newsletter from "../../components/Newsletter";
-
 export default function About() {
   return (
     <main className="about">
@@ -54,7 +52,6 @@ export default function About() {
           </div>
         </div>
       </section>
-      <Newsletter landing={false}/>
     </main>
   )
 }

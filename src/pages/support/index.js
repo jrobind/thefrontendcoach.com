@@ -1,5 +1,3 @@
-import Newsletter from "../../components/Newsletter";
-
 export default function Support() {
   return (
     <main className="support">
@@ -54,7 +52,6 @@ export default function Support() {
             <img alt="Woman at computer on a video call with a man" className="absolute w-full img-shadow hidden z-0 md:block" style={{maxWidth: '400px', top: '32px', right: '-48px'}} width="300" src="/images/video-call.svg"/>
           </div>
         </section>
-        <Newsletter landing={false}/>
       </main>
   )
 }

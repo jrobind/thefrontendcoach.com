@@ -7,9 +7,4 @@ tags: ['beginner', 'starting']
 
 ## How do you code so fast?
 
-``` javascript
-  function getFullName (user) {
-      const fullName = user.firstName + user.lastName;
-      return fullName;
-  }
-```
+sasasds sdjjasdjs dja dj djs j

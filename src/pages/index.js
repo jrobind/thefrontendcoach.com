@@ -64,7 +64,7 @@ const Home = ({ slugs, posts }) => (
             </div>
           </div>
         </div>
-        <div className="p-3 mb-3 shadow-md bg-white mt-6 md:mt-7 bg-blog-blob-landing bg-cover" style={{backgroundPosition: '-488px -271px'}}>
+        <div className="p-3 mb-4 shadow-md bg-white mt-6 md:mt-7 bg-blog-blob-landing bg-cover" style={{backgroundPosition: '-488px -271px'}}>
           <div>
             <h2 className="mb-4 m-auto text-3xl">Latest blog posts</h2>
             <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
@@ -74,19 +74,20 @@ const Home = ({ slugs, posts }) => (
           </div>
         </div>
       </div>
+    </section>
 
-      <div className="wrapper px-3 pt-3 mb-4">
-        <div className="px-3 pb-3 bg-main text-white mt-5 rounded shadow-md">
-          <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
-          <div className="flex items-center flex-col mt-3 m-auto max-w-600">
-            <h4 className="text-xl">JOIN THE DISCORD COMMUNITY</h4>
-            <p className="text-lg md:text-xl mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring front end developers and myself. A highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front end developer.</p>
-            <button className="btn mt-5">JOIN NOW</button>
+    <section>
+      <div className="wrapper px-3 pt-6 pb-5 mb-4">
+          <div className="px-3 pb-3 bg-main text-white mt-5 rounded shadow-md">
+            <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
+            <div className="flex items-center flex-col mt-3 m-auto max-w-600">
+              <h4 className="text-xl">JOIN THE DISCORD COMMUNITY</h4>
+              <p className="text-lg md:text-xl mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring front end developers and myself. A highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front end developer.</p>
+              <button className="btn mt-5">JOIN NOW</button>
+            </div>
           </div>
         </div>
-      </div>
     </section>
-    <Newsletter landing={true}/>
   </main>
 );
 
