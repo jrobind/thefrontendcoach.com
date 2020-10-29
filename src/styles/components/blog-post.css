@@ -48,12 +48,13 @@
 
 /* Paragraph */
 .blog-post p {
-  @apply mb-4;
+  @apply mb-4 text-base;
 }
 
 /* Image */
 .blog-post img {
-  @apply m-auto my-3 block;
+  @apply m-auto my-3 block w-full;
+  max-width: 580px;
 }
 
 /* Lists */

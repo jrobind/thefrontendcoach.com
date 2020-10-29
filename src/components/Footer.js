@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Newsletter from './Newsletter';
 
 export default function Footer() {
@@ -11,20 +12,40 @@ export default function Footer() {
         <div className="wrapper flex pb-3">
           <div className="mr-3">
             <ul>
-              <li className="mr-2 mb-2 mt-2"><a href="../about.html">About</a></li>
-              <li className="mr-2 mb-2 mt-2"><a href="../support.html">Support</a></li>
+              <li className="mr-2 mb-2 mt-2">
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li className="mr-2 mb-2 mt-2">
+                <Link href="/support">
+                  <a>Support</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="mr-3">
             <ul>
-              <li className="m-2"><a href="/">Blog</a></li>
-              <li className="m-2"><a href="../">Podcast</a></li>
+              <li className="m-2">
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li className="m-2">
+                <Link href="/podcast">
+                  <a>Podcast</a>
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <ul>
-              <li className="m-2"><a href="/">Contact</a></li>
-              <li className="m-2"><a href="/">Privacy</a></li>
+              <li className="m-2">james@thefrontendcoach.com</li>
+              <li className="m-2">
+                <Link href="https://www.iubenda.com/privacy-policy/79995354">
+                  <a className="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
