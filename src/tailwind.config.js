@@ -18,6 +18,7 @@ module.exports = {
       'black': '#000',
       'light-grey': 'rgba(0, 0, 0, 0.3)',
       'almost-white': '#fcfcff',
+      'code-black': '#1e1e1e',
     },
     spacing: {
       '0': '0',

@@ -19,7 +19,7 @@
 .blog-post h4,
 .blog-post h5,
 .blog-post h6 {
-  @apply text-lg my-3;
+  @apply text-lg my-5 font-bold;
 }
 
 @screen md {
@@ -33,7 +33,7 @@
   .blog-post h4,
   .blog-post h5,
   .blog-post h6 {
-    @apply text-xl;
+    @apply text-xl font-bold;
   }
 }
 
@@ -53,7 +53,7 @@
 
 /* Image */
 .blog-post img {
-  @apply m-auto my-3 block w-full;
+  @apply m-auto mb-5 block w-full;
   max-width: 580px;
 }
 
@@ -74,7 +74,11 @@
 }
 
 .blog-post ul {
-  @apply list-disc;
+  @apply list-disc mb-4 text-base;;
+}
+
+.blog-post li {
+  @apply mb-2
 }
 
 /* Blockquotes */
@@ -98,6 +102,10 @@
 
 .blog-post table {
   @apply mb-6;
+}
+
+code {
+  @apply bg-code-black text-white rounded p-1 whitespace-no-wrap
 }
 
 /* Prism overrides */

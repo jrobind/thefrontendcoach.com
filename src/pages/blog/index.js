@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import BlogPost from '../../components/BlogPost';
 import { getAllBlogPosts} from '../../lib/api';
 
@@ -10,6 +11,9 @@ const BlogHome = ({ posts }) => (
       backgroundSize: '700px',
     }}
   >
+    <NextSeo
+      description="Keep up to date with Front End development tips, tricks, advice and learning resources."
+    />
     <section 
       className="py-6 pb-8 md:px-3 bg-blog-home-blob-2 bg-no-repeat" style={{
         backgroundPosition: 'bottom left',

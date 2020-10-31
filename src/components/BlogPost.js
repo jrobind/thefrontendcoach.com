@@ -17,7 +17,7 @@ const BlogPost = ({ posts, limit }) => {
                   })}
                 </div>
               </div>
-              <h3 className="text-lg font-bold" style={{maxWidth: '300px'}}>{data.description}</h3>
+              <h3 className="text-lg font-bold" style={{maxWidth: '300px'}}>{data.cardTitle}</h3>
               <span className="flex items-center">Read more <img alt="" src='./images/arrow-right.svg'/></span>
             </a>
           </Link>
