@@ -28,7 +28,7 @@ const Post = ({ frontmatter, markdownBody }) => {
       </Head>
       <div className="max-w-750 m-auto my-5 md:my-6 px-3">
         <Link href="/blog">
-          <a className="flex items-center text-base font-bold" style={{width: '128px'}}><img alt="" src='/images/arrow-left.svg'/> Back to articles</a>
+          <a className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg' style={{width: '22px', margin: '0'}}/> Back to articles</a>
         </Link>
         <ReactMarkdown
           escapeHtml={true}

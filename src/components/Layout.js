@@ -12,6 +12,7 @@ export default function Layout({ children }) {
         <title>The Front End Coach</title>
         <meta name="description" content="the front end coach is a dedicated support and learning system those who wish to start a career as a front end developer."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <main>
         <Header/>
