@@ -6,7 +6,7 @@
   "scripts": {
     "compress": "gulp",
     "dev": "cd ./src && next dev",
-    "build": "cd ./src && next build && cd ./src && next export",
+    "build": "cd ./src && next build && next export",
     "start": "cd ./src && next start"
   },
   "repository": {
