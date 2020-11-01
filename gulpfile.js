@@ -2,111 +2,28 @@ const browserSync = require('browser-sync');
 const server = browserSync.create();
 
 const gulp = require('gulp');
-const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
-const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
-const terser = require('gulp-terser');
-const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const cssnano = require('cssnano');
-const autoprefixer = require('autoprefixer');
 const { src, series, parallel, dest, watch } = require('gulp');
-const del = require('del');
 
 sass.compiler = require('node-sass');
 
 const IMG_PATH = 'src/public/images/*';
-const BLOG_PATH = 'src/blog/out/**/*';
-const BLOG_PATHS = ['src/blog/out/**/*', '!src/blog/out/404.html', '!src/blog/out/public/'];
-const HTML_PATH = 'src/**/*.html';
-const HTML_PATH_PAGES = 'src/pages/*.html';
-const FONT_PATH = 'src/fonts/*';
-
-
-function reload(done) {
-  server.reload();
-  done();
-}
-
-function serve(done) {
-  server.init({
-    port: 4000,
-    server: {
-      baseDir: './dist',
-    }
-  });
-  done();
-}
-
-function copyBlog(done) {
-  return src(BLOG_PATHS)
-    .pipe(gulp.dest('dist/blog'))
-    .on('end', () => {
-      del('dist/blog/out').then(done)
-    })
-}
-
-function copyRedirects() {
-  return src('src/_redirects')
-    .pipe(gulp.dest('dist'));
-}
-
-function copyHtmlTask() {
-  return src([HTML_PATH])
-    .pipe(fileinclude({
-        prefix: '@@',
-        basepath: '@file'
-    }))
-    .pipe(gulpif(HTML_PATH_PAGES, rename({dirname: ''})) // NEED TO USE GULP FILTER FOR THIS 
-    .pipe(gulp.dest('dist')));
-}
-
-function copyFontTask() {
-  return src(FONT_PATH)
-    .pipe(gulp.dest('dist/fonts'));
-}
 
 function imgOptimTask() {
   return src(IMG_PATH)
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'))
-}
-
-function jsTask() {
-  return src(JS_PATH)
-    .pipe(sourcemaps.init())
-    .pipe(concat('index.js'))
-    .pipe(terser())
-    .pipe(sourcemaps.write('.'))
-    .pipe(dest('dist/js'));
-}
-
-function cssTask() {
-  return src(CSS_PATH)
-    .pipe(concat('style.scss'))
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(dest('dist/css'))
-    .pipe(rename('styles.css'))
-    .pipe(dest('src/blog/', {overwrite: true}))
-    .pipe(dest('src/blog/public', {overwrite: true}))
+    .pipe(gulp.dest('src/public/images'))
 }
 
 function watchTask() {
   watch(
-    [CSS_PATH, JS_PATH, IMG_PATH, HTML_PATH, BLOG_PATH],
+    [IMG_PATH],
     { interval: 1000 },
-    series(parallel(copyHtmlTask, copyBlog, copyRedirects, imgOptimTask, jsTask, cssTask), reload))
+    series(parallel(imgOptimTask)))
 }
 
-exports.jsTask = jsTask;
-exports.cssTask = cssTask;
-exports.copyHtmlTask = copyHtmlTask;
-exports.copyRedirects = copyRedirects;
-exports.copyBlog = copyBlog;
-exports.copyFontTask = copyFontTask;
 exports.imgOptimTask = imgOptimTask;
-exports.default = series(parallel(imgOptimTask, copyBlog, copyHtmlTask, copyRedirects, copyFontTask, serve, jsTask, cssTask), watchTask);
+exports.default = series(parallel(imgOptimTask), watchTask);
