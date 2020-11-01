@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./pages/*.js', './components/*.js'],
+  purge: ['./pages/**/*.js', './components/*.js'],
   theme: {
     screens: {
       'sm': '700px',
@@ -31,7 +31,7 @@ module.exports = {
       '0': '0',
     },
     maxWidth: {
-      '280': '280px',
+      '250': '250px',
       '330': '380px',
       '600': '600px',
       '750': '750px',

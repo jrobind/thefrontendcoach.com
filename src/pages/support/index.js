@@ -10,7 +10,7 @@ export default function Support() {
         <div className="pb-7 flex justify-center">
           <div className="z-1 mt-5 md:mt-7" style={{maxWidth: '500px'}}>
             <h1 className="mb-5 text-3xl md:text-4xl text-center">Need some help?</h1>
-            <p className="text-lg md:text-xl text-center m-auto">Do you want to become a Front End Developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
+            <p className="text-base md:text-lg text-center m-auto">Do you want to become a Front End Developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
           </div>
         </div>
         <img className="w-full img-shadow absolute hidden md:block" alt="Man pondering a question" style={{maxWidth: '400px', right: '-64px', top: '32px'}} src="/images/question.svg"/>
@@ -24,7 +24,7 @@ export default function Support() {
           <div className="md:ml-5">
             <h2 className="text-3xl mb-4 mt-3 md:max-w-600" style={{maxWidth: '500px'}}>Join The Front End Coach Discord Community</h2>
             <h3 className="mb-3 font-bold text-xl">Why should I join?</h3>
-            <ul className="mb-4 text-lg md:text-xl">
+            <ul className="mb-4 text-base md:text-lg">
               <li className="pb-2"><span className="bullet mr-1"></span> It's completely free, which is always nice.</li>
               <li className="pb-2"><span className="bullet mr-1"></span> Get support from other newbie coders on a similar mission to you.</li>
               <li className="pb-2"><span className="bullet mr-1"></span> A safe environment where you can feel confident asking any questions.</li>
@@ -43,7 +43,7 @@ export default function Support() {
 
       <section className="mentorship wrapper py-6 px-3">
         <div className="mb-3 relative flex justify-center md:block">
-          <div className="text-lg md:text-xl flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
+          <div className="text-base md:text-lg flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
             <h2 className="text-3xl">Direct mentorship</h2>
             <h4 className="text-xl mb-4 font-bold underline">Limited spots available</h4>
             <p className="my-3">For a limited number of students, I will be providing more focused mentorship support. This will involve weekly one-to-one video calls. For many students, the focus of these calls will be to help structure their learning pathway but for others, we may decide to point our focus elsewhere. This may include a range of different topics. For instance, specific Front End code related issues, portfolio/CV review, etc.</p>

@@ -37,6 +37,11 @@
   }
 }
 
+/* Emphasis */
+.blog-post strong {
+  @apply font-bold underline
+}
+
 /* Links */
 .blog-post a {
   @apply text-main;
@@ -53,14 +58,14 @@
 
 /* Image */
 .blog-post img {
-  @apply m-auto mb-5 block w-full;
+  @apply m-auto mb-5 block w-full img-shadow;
   max-width: 580px;
 }
 
 /* Lists */
 .blog-post ul,
 .blog-post ol {
-  @apply mb-4 ml-8;
+  @apply mb-4 ml-6;
 }
 
 .blog-post li > p,
@@ -74,11 +79,16 @@
 }
 
 .blog-post ul {
-  @apply list-disc mb-4 text-base;;
+  @apply list-disc ml-4 mb-4 text-base;
 }
 
 .blog-post li {
-  @apply mb-2
+  @apply mb-1 list-none
+}
+
+.blog-post li::before {
+  content: "\2022";
+  @apply text-tertiary font-bold inline-block mr-2 text-xl
 }
 
 /* Blockquotes */
@@ -105,7 +115,7 @@
 }
 
 code {
-  @apply bg-code-black text-white rounded p-1 whitespace-no-wrap
+  @apply bg-code-black text-white text-xs rounded p-1 whitespace-no-wrap
 }
 
 /* Prism overrides */

@@ -18,9 +18,7 @@ const del = require('del');
 
 sass.compiler = require('node-sass');
 
-const JS_PATH = 'src/js/**/*.js';
-const CSS_PATH = 'src/scss/**/*.scss';
-const IMG_PATH = 'src/images/*';
+const IMG_PATH = 'src/public/images/*';
 const BLOG_PATH = 'src/blog/out/**/*';
 const BLOG_PATHS = ['src/blog/out/**/*', '!src/blog/out/404.html', '!src/blog/out/public/'];
 const HTML_PATH = 'src/**/*.html';

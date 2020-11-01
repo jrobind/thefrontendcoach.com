@@ -30,10 +30,10 @@ const Home = ({ slugs, posts }) => (
 
     <section className="about px-3 py-7 md:py-8">
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
-        <img className="max-w-280 md:max-w-330 img-shadow w-full mb-3 md:mb-0 img-shadow" alt="Man inspecting code block" src="./images/npm.jpg" width='450' height='350'/>
+        <img className="max-w-250 md:max-w-330 img-shadow w-full mb-3 md:mb-0 img-shadow" alt="Man inspecting code block" src="./images/npm.jpg" width='450' height='350'/>
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
-          <p className="mb-5 text-lg md:text-xl">
+          <p className="mb-5 text-base md:text-lg">
             Hey. I'm James Robinson, a self-taught Front End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front End Developer.
           </p>
           <Link href="/about">
@@ -48,11 +48,11 @@ const Home = ({ slugs, posts }) => (
         <div className="flex flex-col mb-5 md:flex-row justify-center">
           <div className="flex justify-center flex-col mb-3 items-center md:mr-7">
             <div className="flex justify-center items-center">
-              <img className="m-auto block img-shadow" alt="" src="./images/coach.svg" style={{maxWidth: '300px'}} width='450' height='350'/>
+              <img className="m-auto block img-shadow" alt="" src="./images/coach.svg" style={{maxWidth: '290px'}} width='450' height='350'/>
             </div>
             <div className="text-center flex flex-1 flex-col items-center">
               <h3 className="font-bold font-medium mb-3 text-xl">Support</h3>
-              <p className="mb-3 text-center text-lg" style={{maxWidth: '380px'}}>
+              <p className="mb-3 text-base md:text-lg" style={{maxWidth: '380px'}}>
                 Find the support you need by joining our Discord community. Alternatively, apply for a more personalised support.
               </p>
               <Link href="/support">
@@ -62,11 +62,11 @@ const Home = ({ slugs, posts }) => (
           </div>
           <div className="flex flex-col mb-3 items-center">
             <div className="flex justify-center items-center flex-1">
-              <img className="m-auto block img-shadow" alt="" src="./images/radio-presenter.svg" style={{width: '300px'}} width='450' height='350'/>
+              <img className="m-auto block img-shadow" alt="" src="./images/radio-presenter.svg" style={{width: '290px'}} width='450' height='350'/>
             </div>
             <div className="flex 1 text-center flex flex-col items-center">
               <h3 className="font-bold mb-3 text-xl">Podcast</h3>
-              <p className="mb-3 text-center text-lg" style={{maxWidth: '380px'}}>
+              <p className="mb-3 text-base md:text-lg" style={{maxWidth: '380px'}}>
                 Interviews, advice on learning how to build your Front End skillset, getting your first job in the tech industry and more!
               </p>
               <Link href="/podcast">
@@ -94,8 +94,8 @@ const Home = ({ slugs, posts }) => (
           <div className="px-3 pb-3 bg-main text-white mt-5 rounded shadow-md">
             <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
-              <h4 className="text-xl">JOIN THE DISCORD COMMUNITY</h4>
-              <p className="text-lg md:text-xl mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a Front End Developer.</p>
+              <h4 className="text-xl text-center">JOIN THE DISCORD COMMUNITY</h4>
+              <p className="text-base md:text-lg mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a Front End Developer.</p>
               <a href="https://discord.gg/YMsd9sgZ4f" className="btn mt-5">JOIN NOW</a>
             </div>
           </div>
