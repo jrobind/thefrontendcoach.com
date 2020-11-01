@@ -15,7 +15,7 @@ const Home = ({ slugs, posts }) => (
         <div className="text-white flex flex-col md:mr-4 max-w-600 md:max-w-75- md:max-w-600">
           <h1 className="text-3xl md:text-4xl">Get help starting your career as a <br/> Front End Developer</h1>
           <p className="my-3 text-lg md:text-xl">
-            Learning to code? Thinking of becoming a Front End developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
+            Learning to code? Thinking of becoming a Front End Developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
           <Link href="/support">
             <a className="btn btn--yellow">LEARN MORE</a>

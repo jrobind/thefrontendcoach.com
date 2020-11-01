@@ -20,7 +20,7 @@ export default function About() {
           </div>
 
           <div className="text-base md:text-lg m-auto max-w-600 md:max-w-750">
-            <p className="my-3">I am a completely self-taught, Front End Developer. I do not have a computer science degree, nor have I ever paid for an expensive coding Bootcamp. After finding myself at a crossroads in life, I decided on a whim to give coding 'a go'. Three years later, and I haven't looked back. In the past, I've worked as a strength and conditioning coach, a night-shift warehouse worker and I've also pulled pints behind a bar. I've taught myself everything I needed to know using a glorious little thing called the internet.</p>
+            <p className="my-3">I am a completely self-taught, Front End Developer. I do not have a computer science degree, nor have I ever paid for an expensive coding Bootcamp. After finding myself at a crossroads in life, I decided on a whim to give coding 'a go'. Over three years later, and I haven't looked back. In the past, I've worked as a strength and conditioning coach, a night-shift warehouse worker and i've also pulled pints behind a bar. I've taught myself everything I needed to know using a glorious little thing called the internet.</p>
             <p>After just under a year of intensive learning, I managed to bag my first job as a Junior Front End Developer. Now, I want to share my journey and help aspiring developers get their first jobs in the industry. Having reflected on what worked well for me (and what didn't), I want to use my experience in the tech industry and my own learning processes to help you acquire the skills <strong className="font-bold underline">you actually need</strong>.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function About() {
           </div>
           <div className="max-w-600 m-auto">
             <img className="m-auto mb-2 img-shadow block" style={{maxWidth: '340px'}} alt="" src="/images/team-work.svg"/>
-            <p className="text-center mb-5 text-base md:text-lg">Get started by <strong className="font-bold underline">joining our Discord community</strong>, reading some of the latest articles, and head over to the podcast for some real world insight, interviews, and advice. Alternatively, if you want to reach out to me privately for anything, then please do - I'll get back to you as soon as I can.</p>
+            <p className="text-center mb-5 text-base md:text-lg">Get started by <strong className="font-bold underline">joining our Discord community</strong>, read some of the latest articles, and head over to the podcast for some real world insight, interviews, and advice. Alternatively, if you want to reach out to me privately for anything, then please do - I'll get back to you as soon as I can.</p>
             <Link href="/support">
               <a className="btn m-auto">GET SUPPORT</a>
             </Link>

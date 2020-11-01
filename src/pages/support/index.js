@@ -46,7 +46,7 @@ export default function Support() {
           <div className="text-base md:text-lg flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
             <h2 className="text-3xl">Direct mentorship</h2>
             <h4 className="text-xl mb-4 font-bold underline">Limited spots available</h4>
-            <p className="my-3">For a limited number of students, I will be providing more focused mentorship support. This will involve weekly one-to-one video calls. For many students, the focus of these calls will be to help structure their learning pathway but for others, we may decide to point our focus elsewhere. This may include a range of different topics. For instance, specific Front End code related issues, portfolio/CV review, etc.</p>
+            <p className="my-3">For a limited number of students, I will be providing more focused mentorship support. This will involve weekly one-to-one video calls. For many students, the focus of these calls will be to help structure their learning pathway but for others, we may decide to point our focus elsewhere. This may include a range of different topics. For instance, specific code related issues, portfolio/CV review, etc.</p>
             <p className="mb-3">To apply, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
             <ul>
               <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction about yourself.</li>
