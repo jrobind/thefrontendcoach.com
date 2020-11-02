@@ -27,6 +27,11 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
         title={frontmatter.title}
         description={frontmatter.description}
         canonical={`${rootURL}blog/${slug}`}
+        openGraph={{
+          url: `${rootURL}blog/${slug}`,
+          title: frontmatter.title,
+          description: frontmatter.description,
+        }}  
       />
       <div className="max-w-750 m-auto my-5 md:my-6 px-3">
         <Link href="/blog">

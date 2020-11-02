@@ -9,7 +9,7 @@ import { rootURL } from '../lib/constants';
 const Home = ({ slugs, posts }) => (
   <div className="landing">
     <NextSeo
-      description="The Front End Coach is a support system to help budding developers on their quest to become Front End developers"
+      description="The Front End Coach is a unique support system created to help self-taught coders on their quest to become Front End Developers."
       canonical={rootURL}
     />
     <section className="hero bg-main px-3 py-4 md:px-3">

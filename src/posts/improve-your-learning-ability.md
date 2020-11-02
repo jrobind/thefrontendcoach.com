@@ -2,7 +2,7 @@
 date: October 2020
 title: "Improve your learning ability to help you learn to code"
 cardTitle: How improving your ability to learn can help you learn to code
-description: Improving your ability to learn can help you teach yourself to code more effectively. Utilise these 5 learning tips to improve your learning ability.
+description: Improving your ability to learn can help you teach yourself to code more effectively. Utilise these 5 tips to improve your learning ability.
 tags: ['beginner', 'learning']
 ---
 
