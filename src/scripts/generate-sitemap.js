@@ -5,7 +5,9 @@ const globby = require('globby');
 (async () => {
   const pages = await globby([
     'pages/**/*{.js,.md}',
+    'posts/**/*{.js,.md}',
     '!pages/_*.js',
+    '!pages/blog/[slug].js',
     '!pages/api'
   ]);
   const sitemap = `
@@ -16,8 +18,11 @@ const globby = require('globby');
           const path = page
             .replace('pages', '')
             .replace('.js', '')
-            .replace('.md', '');
+            .replace('.md', '')
+            .replace('posts', '/blog')
+            .replace('index', '');
           const route = path === '/index' ? '' : path;
+          console.log(page)
 
           return `
             <url>
@@ -29,5 +34,5 @@ const globby = require('globby');
     </urlset>
   `;
 
-  fs.writeFileSync('public/sitemap.xml', formatted);
+  fs.writeFileSync('public/sitemap.xml', sitemap);
 })();

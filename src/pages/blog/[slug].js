@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import ReactMarkdown from 'react-markdown';
 import { NextSeo } from 'next-seo';
+import { rootURL } from '../../lib/constants';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
