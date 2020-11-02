@@ -10,7 +10,7 @@ const { src, series, parallel, dest, watch } = require('gulp');
 
 sass.compiler = require('node-sass');
 
-const IMG_PATH = 'src/public/images/*';
+const IMG_PATH = 'src/public/images/**/*';
 
 function imgOptimTask() {
   return src(IMG_PATH)

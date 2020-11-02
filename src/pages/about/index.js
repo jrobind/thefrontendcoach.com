@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Link from "next/link";
+import { rootURL } from '../../lib/constants';
 
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
       <NextSeo
         title= "About the Front End Coach by James Robinson"
         description="Hi, I am James Robinson, a self-taught developer and the creator of The Front End Coach. The Front End Coach is a site to help beginners who are looking to become Front End developers."
+        canonical={`${rootURL}about`}
       />
       <section className="wrapper px-3">
         <div className="mb-8">

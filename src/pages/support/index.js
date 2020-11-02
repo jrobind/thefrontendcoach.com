@@ -1,4 +1,6 @@
 import { NextSeo } from 'next-seo';
+import { rootURL } from '../../lib/constants';
+
 
 export default function Support() {
   return (
@@ -6,6 +8,7 @@ export default function Support() {
       <NextSeo
         title= "The Front End Coach | Support options"
         description="Don't learn alone. Find the support and help you need on your journey to becoming a Front End developer."
+        canonical={`${rootURL}support`}
       />
       <section className="wrapper px-3 relative" style={{minHeight: '300px'}}>
         <div className="pb-7 flex justify-center">
@@ -47,7 +50,9 @@ export default function Support() {
           <div className="text-base md:text-lg flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
             <h2 className="text-3xl">Direct mentorship</h2>
             <h4 className="text-xl mb-4 font-bold underline">Limited spots available</h4>
-            <p className="my-3">For a limited number of students, I will be providing more focused mentorship support. This will involve weekly one-to-one video calls. For many students, the focus of these calls will be to help structure their learning pathway but for others, we may decide to point our focus elsewhere. This may include a range of different topics. For instance, specific code related issues, portfolio/CV review, etc.</p>
+            <p className="my-3">For a limited number of students, I will be providing a more personalised support. This will be most suited to students who are struggling to progress with their learning or who are looking for more guidance on their CV, job applications, and portfolios.</p>
+            <p className="mb-3">
+              The format of this support will involve weekly one-to-one scheduled video calls. Direct mentorship can be incredibly rewarding for both parties. These sessions will help to provide you with the right level of accountability and support to help you reach your development goals.</p>
             <p className="mb-3">To apply, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
             <ul>
               <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction about yourself.</li>

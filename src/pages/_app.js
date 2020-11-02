@@ -13,7 +13,7 @@ export default class MyApp extends App {
     return (
       <Layout>
         <DefaultSeo 
-          title= "The Front End Coach | Get help starting your career as a Front End Developer"
+          title= "The Front End Coach | Start your career as a Front End Developer"
           openGraph = {{
             type: 'website',
             url: 'https://thefrontendcoach.com',

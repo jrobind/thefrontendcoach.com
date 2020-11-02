@@ -31,7 +31,7 @@ export default function Newsletter() {
                 <div className="ml-form-embedWrapper embedForm">
                   <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
                     <div className="ml-form-embedContent">
-                      <h4>SUBSCRIBE TO THE NEWSLETTER</h4>
+                      <h3>SUBSCRIBE TO THE NEWSLETTER</h3>
                       <p id="newsletter-description">Stay up-to-date with new articles, podcast episodes and latest news.</p>
                     </div>
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
@@ -57,7 +57,7 @@ export default function Newsletter() {
                         </div>
                       </div>
                       <div className="ml-form-checkboxRow ml-validate-required">
-                        <label className="checkbox"> <input type="checkbox"/> <span className="label-description"> <p>I am happy for The Front End Coach to contact me by email.</p> </span> </label>
+                        <label className="checkbox"> <input type="checkbox"/> <span className="label-description"> <span>I am happy for The Front End Coach to contact me by email.</span> </span> </label>
                       </div>
                       <input type="hidden" name="ml-submit" value="1"/>
                       <div className="ml-mobileButton-horizontal">

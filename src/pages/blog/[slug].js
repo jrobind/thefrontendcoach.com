@@ -19,12 +19,13 @@ const CodeBlock = ({ language, value }) => {
   );
 };
 
-const Post = ({ frontmatter, markdownBody }) => {
+const Post = ({ frontmatter, markdownBody, slug }) => {
   return (
     <div className="blog-post wrapper">
       <NextSeo
         title={frontmatter.title}
         description={frontmatter.description}
+        canonical={`${rootURL}${slug}`}
       />
       <div className="max-w-750 m-auto my-5 md:my-6 px-3">
         <Link href="/blog">
@@ -65,7 +66,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
   return {
     props: {
       frontmatter: data,
-      markdownBody: parsedData.content
+      markdownBody: parsedData.content,
+      slug,
     }
   };
 };

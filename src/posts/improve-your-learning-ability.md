@@ -11,13 +11,13 @@ tags: ['beginner', 'learning']
 It's something we are all guilty of. We watch a video, attend a lecture, or read an article on a subject matter we wish to learn. More often than not, when it comes to an end, we feel a small sense of accomplishment that we have learned something - we close our laptop or our book and we carry on under the assumption that we have furthered our knowledge on the subject at hand. The truth is, for a lot of people, this process is extremely ineffective. In fact, it is the way that we approach learning, and subsequently the learning processes that let us down. Whilst a lucky minority has an innate ability to easily absorb information, it is not so straightforward for the rest of us. But it doesn't have to be that way. **Learning is a learned behaviour** and because of this, we can become better at it. Doing so could make all the difference in your coding journey. It may not make you the next coding prodigy, but almost certainly, it will make you a better developer.
 
 ## Start with honesty
-![Person looking out over the ocean deep in thought](https://source.unsplash.com/01htj6kYvIo/1600x900)
+![Person looking out over the ocean deep in thought](/images/blog/honesty.jpg)
 
 **Improving your ability to learn can only ever work if you're honest with yourself**. I know, I know, it sounds a little cliche I hear ya. But think about it, if you're truly honest with yourself (and this doesn't always mean being highly critical) this will open up many doors that will inevitably lead to self-improvement.
 
 In the context of learning to code, this will become crucial - not only as you learn to code initially, but also throughout your career as a developer. Your ability to learn, and learn well, will be incredibly important to you as a developer. From the perspective of a Front End Developer, this couldn't be more true. The tech landscape on this side of the stack is forever changing, maturing, and evolving. With new frameworks and libraries launched almost every day it seems, at some point in time you will almost certainly be required to learn something new, be it for a business purpose at work, a side project, or even for a new client.
 
-# Improve your learning process
+## Improve your learning process
 
 Now you're totally cool with being honest with yourself. Whatever you're currently learning **there is always an improvement you can make to your processes** (or lack thereof). For instance, let's say you want to teach yourself how to code, with the end goal of becoming a Front End Developer. Let us assume you have a solid grasp of the fundamentals of HTML and CSS but now you wish to learn JavaScript. You decide to follow some online tutorial courses. The courses (like many) are structured as a progressive learning experience, i.e. you start with the very basic foundational concepts of the language and gradually move on to more challenging, tricky aspects. Whilst you rattle through a particular course, you are probably encouraged to build small, contrived projects as you go, and by the end of the course, you may work toward building something a little more substantial with the focus being to build upon the concepts you have covered during the course.
 
@@ -45,7 +45,7 @@ Make sure you look over your notes. It's best to have a quick look either a few 
 
 Whilst you're learning, open up the developer tools console, your IDE, or whatever coding environment you are using and test things out. For instance, using our example above, if `const` is useful for protecting against involuntary reassignments, actually test it out. See if the console spits out an error when you try to reassign a variable already declared with `const`.
 
-![A screenshot of the Google developer tools console](/images/blog-console-const.png)
+![A screenshot of the Google developer tools console](/images/blog/blog-console-const.png)
 
 If you're unsure of anything you're learning, always try and **test out any assumptions you may have**. Using developer tools is a perfect environment for doing this.
 
@@ -69,7 +69,7 @@ Conversely, if you did understand a topic, but at some point, your future self a
 
 ### 5. Beware of the rabbit hole
 
-![Looking up, out of a hole toward the sky](https://source.unsplash.com/jNSJE8dMro0/1600x900)
+![Looking up, out of a hole toward the sky](/images/blog/hole.jpg)
 
 Finding yourself in a rabbit hole is a common occurrence in the development world. Learning when it's okay to venture deeper and when you should climb back out is the real challenge. For those teaching themselves to code, **try to stick closely to the topic you are covering**. Just learn what you need to learn for now. It's not possible to cover everything.
 

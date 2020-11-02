@@ -14,12 +14,12 @@ export default function Footer() {
             <ul>
               <li className="mr-2 mb-2 mt-2">
                 <Link href="/about">
-                  <a>About</a>
+                  <a className="p-1">About</a>
                 </Link>
               </li>
               <li className="mr-2 mb-2 mt-2">
                 <Link href="/support">
-                  <a>Support</a>
+                  <a className="p-1">Support</a>
                 </Link>
               </li>
             </ul>
@@ -28,20 +28,20 @@ export default function Footer() {
             <ul>
               <li className="mr-2 mb-2 mt-2">
                 <Link href="/blog">
-                  <a>Blog</a>
+                  <a className="p-1">Blog</a>
                 </Link>
               </li>
               <li className="mr-2 mb-2 mt-2">
                 <Link href="/podcast">
-                  <a>Podcast</a>
+                  <a className="p-1">Podcast</a>
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <ul>
-              <li className="mr-2 mb-2 mt-2">james@thefrontendcoach.com</li>
-              <li className="mr-2 mb-2 mt-2">
+              <li className="mr-2 p-1 mt-1">james@thefrontendcoach.com</li>
+              <li className="mr-2 mb-2 p-1">
                 <Link href="https://www.iubenda.com/privacy-policy/79995354">
                   <a className="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a>
                 </Link>
@@ -49,9 +49,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="pt-3 wrapper flex" style={{borderTop: '1px solid rgba(250, 250, 250, 0.45)'}}>
-          <span className="mr-4l mt-2">The Front End Coach 2020</span>
-          <span className="mt-2 ml-3 flex">
+        <div className="pt-3 wrapper flex flex-wrap" style={{borderTop: '1px solid rgba(250, 250, 250, 0.45)'}}>
+          <span className="mr-4 mt-2">The Front End Coach 2020</span>
+          <span className="mt-2 flex">
             Built by James Robinson
             <a className="flex items-center" href="https://github.com/jrobind"><img className="ml-2" alt="GitHub icon" src="/images/github-icon.png" style={{ width: '18px', marginTop: '-4px'}}/></a>
           </span>

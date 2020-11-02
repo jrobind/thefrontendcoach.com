@@ -3,12 +3,14 @@ import fs from "fs";
 import { NextSeo } from 'next-seo';
 import BlogPost from "../components/BlogPost";
 import { getAllBlogPosts } from '../lib/api';
+import { rootURL } from '../lib/constants';
 
 
 const Home = ({ slugs, posts }) => (
   <div className="landing">
     <NextSeo
       description="The Front End Coach is a support system to help budding developers on their quest to become Front End developers"
+      canonical={rootURL}
     />
     <section className="hero bg-main px-3 py-4 md:px-3">
       <div className="wrapper u-px-3 flex md:justify-between justify-center items-center">
@@ -30,7 +32,11 @@ const Home = ({ slugs, posts }) => (
 
     <section className="about px-3 py-7 md:py-8">
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
-        <img className="max-w-250 md:max-w-340 img-shadow w-full mb-3 md:mb-0 img-shadow" alt="Man inspecting code block" src="./images/james-robinson.jpg" width='450' height='350'/>
+        <img 
+          className="max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0 img-shadow" 
+          src="/images/james-robinson.jpg"
+          alt="Photo of James Robinson on a mountain"
+        />
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
           <p className="mb-5 text-base md:text-lg">

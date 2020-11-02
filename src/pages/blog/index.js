@@ -1,6 +1,7 @@
 import { NextSeo } from 'next-seo';
 import BlogPost from '../../components/BlogPost';
-import { getAllBlogPosts} from '../../lib/api';
+import { getAllBlogPosts } from '../../lib/api';
+import { rootURL } from '../../lib/constants';
 
 
 const BlogHome = ({ posts }) => (
@@ -12,8 +13,9 @@ const BlogHome = ({ posts }) => (
     }}
   >
     <NextSeo
-      title= "The Front End Coach | Latest articles"
-      description="Keep up to date with Front End development tips, tricks, advice and learning resources."
+      title="The Front End Coach | Latest articles"
+      description="Keep up-to-date with Front End Development tips, tricks, advice, and learning resources for those looking to break into the industry."
+      canonical={`${rootURL}blog`}
     />
     <section 
       className="py-6 pb-8 md:px-3 bg-blog-home-blob-2 bg-no-repeat" style={{
