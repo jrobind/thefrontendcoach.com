@@ -57,7 +57,7 @@
 }
 
 /* Image */
-.blog-post img {
+.blog-post__content img {
   @apply m-auto mb-5 block w-full img-shadow;
   max-width: 580px;
 }

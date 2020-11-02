@@ -1,5 +1,6 @@
 ---
 date: October 2020
+title: "Improve your learning ability to help you learn to code"
 cardTitle: How improving your ability to learn can help you learn to code
 description: Improving your ability to learn can help you teach yourself to code more effectively, saving you time and money.
 tags: ['beginner', 'learning']
@@ -62,15 +63,17 @@ Explaining something to yourself out loud can be a really useful learning tool. 
 
 This is a super important point too. Don't become overly obsessive about understanding something. There is a *fine line* between trying to understand something and then trying to memorise something. I would advise against memorising programming concepts. **There is too much content to memorise**. Plus, there is no need. You have the internet at hand and a plethora of resources at your fingers tips to jog your memory if you have forgotten the name of a particular array method, for instance.
 
-What's crucial, is that you feel comfortable with your understanding of a given topic. Once you do, you should move on. Having said this, if you thought you understood a topic and you subsequently moved on only to realise when future content became more complex that in fact, you didn't really understand, then you should go back and cover that content until you do. If you understood said topic fully, but at some point, your future self appears to have forgotten it, a quick Google search will jog your memory and you'll realise that in actual fact you only needed a quick reminder.
+What's crucial, is that you feel comfortable with your understanding of a given topic. Once you do, you should move on. Having said this, if you thought you understood a topic and moved on, only to realise - when future content became more complex - that you actually didn't understand, then you should go back and cover that content again. 
+
+Conversely, if you did understand a topic, but at some point, your future self appears to have forgotten it, a Google search will jog your memory and you'll realise that in actual fact you only needed a quick reminder.
 
 ### 5. Beware of the rabbit hole
 
 ![Looking up, out of a hole toward the sky](https://source.unsplash.com/jNSJE8dMro0/1600x900)
 
-Finding yourself in a rabbit hole is a common occurrence in the development world. Learning when it's okay to venture deeper down the hole and when you should climb back out is the real challenge. For those teaching themselves to code, **try to stick closely to the topic you are covering**. Just learn what you need to learn for now. It's not possible to cover everything.
+Finding yourself in a rabbit hole is a common occurrence in the development world. Learning when it's okay to venture deeper and when you should climb back out is the real challenge. For those teaching themselves to code, **try to stick closely to the topic you are covering**. Just learn what you need to learn for now. It's not possible to cover everything.
 
-Using our JavaScript variable example above, you may find your variable research leads you to a variety of other concepts. Maybe your research leads you toward an important concept called 'scope'. If you have no understanding of scope at this time, it may be best to move on for now and come back to this more advanced topic when you are ready. Do note, I'm not saying you *shouldn't* learn about scope in JavaScript, I'm merely suggesting you focus on learning one topic (if you can) in detail at a time.
+Using our JavaScript variable example above, you may find your research leads you to a variety of other concepts. Maybe your research lead you toward an important concept in JavaScript called 'scope'. If you have no understanding of scope at this time, it may be best to move on for now and come back to this more advanced topic when you are ready. Do note, I'm not saying you *shouldn't* learn about scope in JavaScript, I'm merely suggesting you focus on learning one topic (if you can) in detail at a time.
 
 ## Final thoughts
 

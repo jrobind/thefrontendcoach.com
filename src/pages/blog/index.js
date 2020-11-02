@@ -12,6 +12,7 @@ const BlogHome = ({ posts }) => (
     }}
   >
     <NextSeo
+      title= "The Front End Coach | Latest articles"
       description="Keep up to date with Front End development tips, tricks, advice and learning resources."
     />
     <section 

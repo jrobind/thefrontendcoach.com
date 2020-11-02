@@ -4,6 +4,7 @@ export default function Podcast() {
   return (
     <main className="podcast">
       <NextSeo
+        title= "The Front End Coach Podcast"
         description="Listen to interviews, advice on learning how to build your Front End skillset, getting your first job in the tech industry and more!"
       />
       <section className="wrapper px-3">

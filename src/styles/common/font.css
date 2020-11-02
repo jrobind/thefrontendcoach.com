@@ -5,4 +5,5 @@
   src: local('Nunito Regular'), local('Nunito-Regular'),
        url('/fonts/nunito-v14-latin-regular.woff2') format('woff2'),
        url('/fonts/nunito-v14-latin-regular.woff') format('woff');
+  font-display: swap;
 }

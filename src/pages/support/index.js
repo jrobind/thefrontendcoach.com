@@ -4,6 +4,7 @@ export default function Support() {
   return (
     <main className="support">
       <NextSeo
+        title= "The Front End Coach | Support options"
         description="Don't learn alone. Find the support and help you need on your journey to becoming a Front End developer."
       />
       <section className="wrapper px-3 relative" style={{minHeight: '300px'}}>

@@ -6,6 +6,7 @@ export default function About() {
   return (
     <main className="about">
       <NextSeo
+        title= "About the Front End Coach by James Robinson"
         description="Hi, I am James Robinson, a self-taught developer and the creator of The Front End Coach. The Front End Coach is a site to help beginners who are looking to become Front End developers."
       />
       <section className="wrapper px-3">
@@ -15,13 +16,13 @@ export default function About() {
               Hey! <br/> I'm James Robinson,<br/> <span style={{minWidth:"250px"}} className="font-bold text-xl md:text-2xl mt-2 italic opacity-95">a self-taught<br/> Front End Developer</span>
             </h1>
             <div>
-              <img className="img-shadow relative w-full sm:ml-3" style={{maxWidth: "200px", maxHeight: "200px", minWidth: "150px"}} alt="Photo of man sitting on a mountain top" src="/images/npm.jpg"/>
+              <img className="img-shadow relative w-full sm:ml-3" style={{maxWidth: "200px", maxHeight: "200px", minWidth: "150px"}} alt="Photo of man sitting on a mountain top" src="/images/james-robinson.jpg"/>
             </div>
           </div>
 
           <div className="text-base md:text-lg m-auto max-w-600 md:max-w-750">
             <p className="my-3">I am a completely self-taught, Front End Developer. I do not have a computer science degree, nor have I ever paid for an expensive coding Bootcamp. After finding myself at a crossroads in life, I decided on a whim to give coding 'a go'. Over three years later, and I haven't looked back. In the past, I've worked as a strength and conditioning coach, a night-shift warehouse worker and i've also pulled pints behind a bar. I've taught myself everything I needed to know using a glorious little thing called the internet.</p>
-            <p>After just under a year of intensive learning, I managed to bag my first job as a Junior Front End Developer. Now, I want to share my journey and help aspiring developers get their first jobs in the industry. Having reflected on what worked well for me (and what didn't), I want to use my experience in the tech industry and my own learning processes to help you acquire the skills <strong className="font-bold underline">you actually need</strong>.
+            <p>After less than a year of intensive learning, I managed to bag my first job as a Junior Front End Developer. Now, since working on a variety of exciting projects, for high-profile industry-leading brands such as Google, I want to share my journey and help aspiring developers get their first jobs in the industry. Having reflected on what worked well for me (and what didn't), I want to use my experience in the tech industry and my own learning processes to help you acquire the skills <strong className="font-bold underline">you actually need</strong>.
             </p>
           </div>
         </div>
