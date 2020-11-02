@@ -26,7 +26,7 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
       <NextSeo
         title={frontmatter.title}
         description={frontmatter.description}
-        canonical={`${rootURL}${slug}`}
+        canonical={`${rootURL}blog/${slug}`}
       />
       <div className="max-w-750 m-auto my-5 md:my-6 px-3">
         <Link href="/blog">
