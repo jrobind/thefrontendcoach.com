@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <main className="about">
+    <div className="about">
       <NextSeo
         title= "About the Front End Coach by James Robinson"
         description="Hi, I am James Robinson, a self-taught developer and the creator of The Front End Coach. The Front End Coach is a site to help beginners who are looking to become Front End developers."
@@ -62,6 +62,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   )
 }

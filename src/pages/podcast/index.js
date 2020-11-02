@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 
 export default function Podcast() {
   return (
-    <main className="podcast">
+    <div className="podcast">
       <NextSeo
         title= "The Front End Coach Podcast"
         description="Listen to interviews, advice on learning how to build your Front End skillset, getting your first job in the tech industry and more!"
@@ -12,6 +12,6 @@ export default function Podcast() {
           <h1 className="text-3xl md:text-4xl text-center">Episodes Coming soon!</h1>
         </div>
       </section>
-    </main>
+    </div>
   )
 }

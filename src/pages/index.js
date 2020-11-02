@@ -6,7 +6,7 @@ import { getAllBlogPosts } from '../lib/api';
 
 
 const Home = ({ slugs, posts }) => (
-  <main className="landing">
+  <div className="landing">
     <NextSeo
       description="The Front End Coach is a support system to help budding developers on their quest to become Front End developers"
     />
@@ -18,7 +18,7 @@ const Home = ({ slugs, posts }) => (
             Learning to code? Thinking of becoming a Front End Developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
           <Link href="/support">
-            <a className="btn btn--yellow">LEARN MORE</a>
+            <a className="btn btn--yellow">GET SUPPORT</a>
           </Link>
         </div>
         <img className="img-shadow hidden md:block" alt="Man inspecting code block" src="./images/web-development.svg" width='450' height='450'/>
@@ -37,7 +37,7 @@ const Home = ({ slugs, posts }) => (
             Hey. I'm James Robinson, a self-taught Front End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry, I've worked on a variety of exciting projects, for high-profile industry-leading brands such as Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front End Developer.
           </p>
           <Link href="/about">
-            <a className="btn">LEARN MORE</a>
+            <a className="btn">MY JOURNEY</a>
           </Link>
         </div>
       </div>
@@ -56,7 +56,7 @@ const Home = ({ slugs, posts }) => (
                 Find the support you need by joining our Discord community. Alternatively, apply for a more personalised support.
               </p>
               <Link href="/support">
-                <a className="btn">LEARN MORE</a>
+                <a className="btn">GET SUPPORT</a>
               </Link>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Home = ({ slugs, posts }) => (
           </div>
         </div>
     </section>
-  </main>
+  </div>
 );
 
 export const getStaticProps = async () => {

@@ -4,7 +4,7 @@ import { getAllBlogPosts} from '../../lib/api';
 
 
 const BlogHome = ({ posts }) => (
-  <main 
+  <div 
     className="blog bg-blog-home-blob bg-no-repeat"
     style={{
       backgroundPosition: 'right -280px',
@@ -28,7 +28,7 @@ const BlogHome = ({ posts }) => (
         </div>
       </div>
     </section>
-  </main>
+  </div>
 );
 
 export const getStaticProps = async () => {

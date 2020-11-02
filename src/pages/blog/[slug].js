@@ -21,7 +21,7 @@ const CodeBlock = ({ language, value }) => {
 
 const Post = ({ frontmatter, markdownBody }) => {
   return (
-    <main className="blog-post wrapper">
+    <div className="blog-post wrapper">
       <NextSeo
         title={frontmatter.title}
         description={frontmatter.description}
@@ -38,7 +38,7 @@ const Post = ({ frontmatter, markdownBody }) => {
           />
         </section>
       </div>
-    </main>
+    </div>
   );
 };
 

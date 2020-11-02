@@ -16,7 +16,7 @@ function Header({ router }) {
     <>
       <header className={`header z-3 px-3 w-full ${isRoot ? 'bg-main text-white' : 'bg-white text-black'}`}>
         <div className="wrapper">
-          <a className={`header__logo ${isRoot ? 'bg-logo-white-small sm:bg-logo-white-large' : 'bg-logo-black-small sm:bg-logo-black-large'} bg-no-repeat left-0 absolute`} href="../"></a>
+          <a aria-label="The Front End Coach logo" className={`header__logo ${isRoot ? 'bg-logo-white-small sm:bg-logo-white-large' : 'bg-logo-black-small sm:bg-logo-black-large'} bg-no-repeat left-0 absolute`} href="../"></a>
           <input
             onChange={checkboxHandler} 
             className="menu-btn hidden"

@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 
 export default function Support() {
   return (
-    <main className="support">
+    <div className="support">
       <NextSeo
         title= "The Front End Coach | Support options"
         description="Don't learn alone. Find the support and help you need on your journey to becoming a Front End developer."
@@ -58,6 +58,6 @@ export default function Support() {
           <img alt="Woman at computer on a video call with a man" className="absolute w-full img-shadow hidden z-0 md:block" style={{maxWidth: '400px', top: '32px', right: '-48px'}} width="300" src="/images/video-call.svg"/>
         </div>
       </section>
-    </main>
+    </div>
   )
 }
