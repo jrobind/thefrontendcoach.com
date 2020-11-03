@@ -40,7 +40,7 @@ const Home = ({ slugs, posts }) => (
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
           <p className="mb-5 text-base md:text-lg">
-            Hey. I'm James Robinson, a self-taught Front-End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry, I've worked on a variety of exciting projects, for high-profile industry-leading brands such as Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front-End Developer.
+            Hey. I'm James Robinson, a self-taught Front-End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry I've worked on a variety of exciting projects, for high-profile industry-leading brands including Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front-End Developer.
           </p>
           <Link href="/about">
             <a className="btn">MY JOURNEY</a>

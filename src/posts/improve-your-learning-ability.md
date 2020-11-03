@@ -6,7 +6,7 @@ description: Improving your ability to learn can help enhance your self-teaching
 tags: ['Beginner', 'Learning']
 ---
 
-# What did you learn from that tutorial you just watched?
+# What did you learn from the tutorial you just watched?
 
 It's something we are all guilty of. We watch a video, attend a lecture, or read an article on a subject matter we wish to learn. More often than not, when it comes to an end, we feel a small sense of accomplishment that we have learned something - we close our laptop or our book and we carry on under the assumption that we have furthered our knowledge on the subject at hand. The truth is, for a lot of people, this process is extremely ineffective. In fact, it is the way that we approach learning, and subsequently the learning processes that let us down. Whilst a lucky minority has an innate ability to easily absorb information, it is not so straightforward for the rest of us. But it doesn't have to be that way. **Learning is a learned behaviour** and because of this, we can become better at it. Doing so could make all the difference in your coding journey. It may not make you the next coding prodigy, but almost certainly, it will make you a better developer.
 
