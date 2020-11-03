@@ -14,7 +14,7 @@ const BlogHome = ({ posts }) => (
   >
     <NextSeo
       title="The Front End Coach | Latest articles"
-      description="Keep up-to-date with Front End Development tips, tricks, advice, and learning resources for those looking to break into the industry."
+      description="Keep up-to-date with Front-End Development tips, tricks, advice, and learning resources for those looking to break into the industry."
       canonical={`${rootURL}blog`}
     />
     <section 

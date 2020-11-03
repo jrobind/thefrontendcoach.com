@@ -100,9 +100,17 @@
 }
 
 code {
-  @apply bg-code-black text-white text-xs rounded p-1 whitespace-no-wrap
+  @apply text-main text-sm whitespace-no-wrap font-bold tracking-wide;
+  font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono, Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
+code::before {
+  content: "`";
+}
+
+code::after {
+  content: "`";
+}
 
 @screen md {
   .blog-post h1{
@@ -118,8 +126,9 @@ code {
     @apply text-xl font-bold;
   }
 
-  .blog-post p {
-    @apply text-lg
+  .blog-post p,
+  .blog-post ul {
+    @apply text-lg;
   }
 }
 

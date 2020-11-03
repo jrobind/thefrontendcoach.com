@@ -3,7 +3,7 @@ date: October 2020
 title: Improve your learning ability to help you learn to code
 cardTitle: How improving your ability to learn can help you learn to code
 description: Improving your ability to learn can help enhance your self-teaching processes. Utilising these 5 tips will prepare you well for a career of learning.
-tags: ['beginner', 'learning']
+tags: ['Beginner', 'Learning']
 ---
 
 # What did you learn from that tutorial you just watched?
@@ -15,11 +15,11 @@ It's something we are all guilty of. We watch a video, attend a lecture, or read
 
 **Improving your ability to learn can only ever work if you're honest with yourself**. I know, I know, it sounds a little cliche I hear ya. But think about it, if you're truly honest with yourself (and this doesn't always mean being highly critical) this will open up many doors that will inevitably lead to self-improvement.
 
-In the context of learning to code, this will become crucial - not only as you learn to code initially, but also throughout your career as a developer. Your ability to learn, and learn well, will be incredibly important to you as a developer. From the perspective of a Front End Developer, this couldn't be more true. The tech landscape on this side of the stack is forever changing, maturing, and evolving. With new frameworks and libraries launched almost every day it seems, at some point in time you will almost certainly be required to learn something new, be it for a business purpose at work, a side project, or even for a new client.
+In the context of learning to code, this will become crucial - not only as you learn to code initially, but also throughout your career as a developer. Your ability to learn, and learn well, will be incredibly important to you as a developer. From the perspective of a Front-End Developer, this couldn't be more true. The tech landscape on this side of the stack is forever changing, maturing, and evolving. With new frameworks and libraries launched almost every day it seems, at some point in time you will almost certainly be required to learn something new, be it for a business purpose at work, a side project, or even for a new client.
 
 ## Improve your learning process
 
-Now you're totally cool with being honest with yourself. Whatever you're currently learning **there is always an improvement you can make to your processes** (or lack thereof). For instance, let's say you want to teach yourself how to code, with the end goal of becoming a Front End Developer. Let us assume you have a solid grasp of the fundamentals of HTML and CSS but now you wish to learn JavaScript. You decide to follow some online tutorial courses. The courses (like many) are structured as a progressive learning experience, i.e. you start with the very basic foundational concepts of the language and gradually move on to more challenging, tricky aspects. Whilst you rattle through a particular course, you are probably encouraged to build small, contrived projects as you go, and by the end of the course, you may work toward building something a little more substantial with the focus being to build upon the concepts you have covered during the course.
+Now you're totally cool with being honest with yourself. Whatever you're currently learning **there is always an improvement you can make to your processes** (or lack thereof). For instance, let's say you want to teach yourself how to code, with the end goal of becoming a Front-End Developer. Let us assume you have a solid grasp of the fundamentals of HTML and CSS but now you wish to learn JavaScript. You decide to follow some online tutorial courses. The courses (like many) are structured as a progressive learning experience, i.e. you start with the very basic foundational concepts of the language and gradually move on to more challenging, tricky aspects. Whilst you rattle through a particular course, you are probably encouraged to build small, contrived projects as you go, and by the end of the course, you may work toward building something a little more substantial with the focus being to build upon the concepts you have covered during the course.
 
 What often happens with this approach, is that you get some way through the course, maybe just past the foundational concepts (maybe not even that far) and you hit a roadblock. This usually occurs when one of two things happen:
 

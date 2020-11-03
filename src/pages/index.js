@@ -9,15 +9,15 @@ import { rootURL } from '../lib/constants';
 const Home = ({ slugs, posts }) => (
   <div className="landing">
     <NextSeo
-      description="The Front End Coach is a unique support system created to help self-taught coders on their quest to become Front End Developers."
+      description="The Front End Coach is a unique support system created to help self-taught coders on their quest to become Front-End Developers."
       canonical={rootURL}
     />
     <section className="hero bg-main px-3 py-4 md:px-3">
       <div className="wrapper u-px-3 flex md:justify-between justify-center items-center">
         <div className="text-white flex flex-col md:mr-4 max-w-600 md:max-w-75- md:max-w-600">
-          <h1 className="text-3xl md:text-4xl">Get help starting your career as a <br/> Front End Developer</h1>
+          <h1 className="text-3xl md:text-4xl">Get help starting your career as a <br/> Front-End Developer</h1>
           <p className="my-3 text-lg md:text-xl">
-            Learning to code? Thinking of becoming a Front End Developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
+            Learning to code? Thinking of becoming a Front-End Developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
           <Link href="/support">
             <a className="btn btn--yellow">GET SUPPORT</a>
@@ -40,7 +40,7 @@ const Home = ({ slugs, posts }) => (
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
           <p className="mb-5 text-base md:text-lg">
-            Hey. I'm James Robinson, a self-taught Front End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry, I've worked on a variety of exciting projects, for high-profile industry-leading brands such as Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front End Developer.
+            Hey. I'm James Robinson, a self-taught Front-End Developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry, I've worked on a variety of exciting projects, for high-profile industry-leading brands such as Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a Front-End Developer.
           </p>
           <Link href="/about">
             <a className="btn">MY JOURNEY</a>
@@ -101,7 +101,7 @@ const Home = ({ slugs, posts }) => (
             <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
               <h4 className="text-xl text-center">JOIN THE DISCORD COMMUNITY</h4>
-              <p className="text-base md:text-lg mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a Front End Developer.</p>
+              <p className="text-base md:text-lg mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a Front-End Developer.</p>
               <a href="https://discord.gg/YMsd9sgZ4f" className="btn mt-5">JOIN NOW</a>
             </div>
           </div>

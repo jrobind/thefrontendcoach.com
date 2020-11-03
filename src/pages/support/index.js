@@ -7,14 +7,14 @@ export default function Support() {
     <div className="support">
       <NextSeo
         title= "The Front End Coach | Support options"
-        description="Don't learn alone. Find the support and help you need on your journey to becoming a Front End developer."
+        description="Don't learn alone. Find the support and help you need on your journey to becoming a Front-End developer."
         canonical={`${rootURL}support`}
       />
       <section className="wrapper px-3 relative" style={{minHeight: '300px'}}>
         <div className="pb-7 flex justify-center">
           <div className="z-1 mt-5 md:mt-7" style={{maxWidth: '500px'}}>
             <h1 className="mb-5 text-3xl md:text-4xl text-center">Need some help?</h1>
-            <p className="text-base md:text-lg text-center m-auto">Do you want to become a Front End Developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
+            <p className="text-base md:text-lg text-center m-auto">Do you want to become a Front-End Developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
           </div>
         </div>
         <img className="w-full img-shadow absolute hidden md:block" alt="Man pondering a question" style={{maxWidth: '400px', right: '-64px', top: '32px'}} src="/images/question.svg"/>
@@ -56,7 +56,7 @@ export default function Support() {
             <p className="mb-3">To apply, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
             <ul>
               <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction about yourself.</li>
-              <li className="pb-2"><span className="bullet mr-1"></span> Why you want to become a Front End Developer.</li>
+              <li className="pb-2"><span className="bullet mr-1"></span> Why you want to become a Front-End Developer.</li>
               <li><span className="bullet mr-1"></span> Your biggest blockers to learning and pursuing your goals at the current time.</li>
             </ul>
           </div>
