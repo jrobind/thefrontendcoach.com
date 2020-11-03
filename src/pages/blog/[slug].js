@@ -8,6 +8,7 @@ import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { Twitter, Facebook, Linkedin } from 'react-social-sharing'
 
 
 const postsDirectory = join(process.cwd(), "/posts");
@@ -33,10 +34,17 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
           description: frontmatter.description,
         }}  
       />
-      <div className="max-w-750 m-auto my-5 md:my-6 px-3">
-        <Link href="/blog">
-  <a className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg' style={{width: '22px', margin: '0'}}/> Back to articles</a>
-        </Link>
+      <div className="max-w-750 m-auto my-6 md:my-7 px-3">
+        <div className="flex justify-between">
+          <Link href="/blog">
+            <a style={{width: 'fit-content'}} className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg' style={{width: '22px', margin: '0 0 0 -8px'}}/> Back to articles</a>
+          </Link>
+          <div>
+            {frontmatter.tags.map((tag, i) => {
+              return <span key={i} className="pill text-xs mr-1">{tag}</span>
+            })}
+          </div>
+        </div>
         <section className="blog-post__content">
           <ReactMarkdown
             escapeHtml={true}
@@ -44,6 +52,16 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
             renderers={{ code: CodeBlock }}
           />
         </section>
+        <div className="flex justify-between my-6 md:my-7">
+          <Link href="/blog">
+            <a style={{width: 'fit-content'}} className="flex items-center text-base font-bold"><img alt="" src='/images/arrow-left.svg' style={{width: '22px', margin: '0 0 0 -8px'}}/> Back to articles</a>
+          </Link>
+          <div className="flex">
+            <Facebook solid small link={`${rootURL}blog/${slug}`}/>
+            <Twitter solid small link={`${rootURL}blog/${slug}`}/>
+            <Linkedin solid small link={`${rootURL}blog/${slug}`}/>
+          </div>
+        </div>
       </div>
     </div>
   );

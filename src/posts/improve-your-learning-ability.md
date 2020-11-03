@@ -1,8 +1,8 @@
 ---
 date: October 2020
-title: "Improve your learning ability to help you learn to code"
+title: Improve your learning ability to help you learn to code
 cardTitle: How improving your ability to learn can help you learn to code
-description: Improving your ability to learn can help you teach yourself to code more effectively. Utilise these 5 tips to improve your learning ability.
+description: Improving your ability to learn can help enhance your self-teaching processes. Utilising these 5 tips will prepare you well for a career of learning.
 tags: ['beginner', 'learning']
 ---
 
@@ -30,7 +30,7 @@ Sadly, a lot of people become disheartened, their progress stalls, they think th
 
 Most of these individuals will be self-teaching, they may be working a full-time job, have a family, and/or juggling lots of different things in their life at once. The solution for these individuals is multifaceted, it isn't just a 'one quick trick solution'. One particular facet of this solution will be improving their learning process. Time management will be in their too. But in keeping with the main topic of this article, we will focus on the learning process itself. Here are **five actions** these individuals could take to improve their process:
 
-### 1. Make some form of notes as you learn
+### 1. Make notes as you learn
 
 The notes you make could be handwritten or they could be typed. They do not have to be extensive, nor do they have to cover every nook and cranny of a particular topic. If you decide to write more elaborate and detailed notes then great, but most of the time a short list of key points and take-aways will suffice. Also noting down what you did not understand can be super useful, especially when you go back to reflect on these notes (which you should do). They could be as brief as the example below which looks at some key differences and similarities between `let` and `const`:
 

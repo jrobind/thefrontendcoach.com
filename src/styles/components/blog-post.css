@@ -22,21 +22,6 @@
   @apply text-lg my-5 font-bold;
 }
 
-@screen md {
-  .blog-post h1{
-    @apply text-4xl;
-  }
-  .blog-post h2 {
-    @apply text-3xl;
-  }
-  .blog-post h3,
-  .blog-post h4,
-  .blog-post h5,
-  .blog-post h6 {
-    @apply text-xl font-bold;
-  }
-}
-
 /* Emphasis */
 .blog-post strong {
   @apply font-bold underline
@@ -116,6 +101,26 @@
 
 code {
   @apply bg-code-black text-white text-xs rounded p-1 whitespace-no-wrap
+}
+
+
+@screen md {
+  .blog-post h1{
+    @apply text-4xl;
+  }
+  .blog-post h2 {
+    @apply text-3xl;
+  }
+  .blog-post h3,
+  .blog-post h4,
+  .blog-post h5,
+  .blog-post h6 {
+    @apply text-xl font-bold;
+  }
+
+  .blog-post p {
+    @apply text-lg
+  }
 }
 
 /* Prism overrides */
