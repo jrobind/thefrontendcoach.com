@@ -80,9 +80,8 @@ export default function Newsletter() {
                 {`function ml_webform_success_2868019(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-2868019 .row-success").show(),r(".ml-subscribe-form-2868019 .row-form").hide()}`}
               </script>
             </Helmet>
-            <img src="https://track.mailerlite.com/webforms/o/2868019/r3a1b8?v1603356736" width="1" height="1" style={{maxWidth: '1px', maxHeight: '1px',visibility: 'hidden', padding: '0', margin: '0', display: 'block'}} alt="." border="0"/>
             <Helmet>
-              <script src="https://static.mailerlite.com/js/w/webforms.min.js?v3fd38428efea6ca0487b1230e27a86c6" type="text/javascript"></script>
+              <script src="https://static.mailerlite.com/js/w/webforms.min.js?v3fd38428efea6ca0487b1230e27a86c6" type="text/javascript" defer></script>
             </Helmet>
           </div>
         </div>
