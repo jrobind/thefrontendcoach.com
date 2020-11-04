@@ -99,16 +99,16 @@
   @apply mb-6;
 }
 
-code {
+code:not(.language-javascript) {
   @apply text-main text-sm whitespace-no-wrap font-bold tracking-wide;
   font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono, Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
-code::before {
+code:not(.language-javascript)::before {
   content: "`";
 }
 
-code::after {
+code:not(.language-javascript)::after {
   content: "`";
 }
 

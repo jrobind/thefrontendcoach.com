@@ -21,7 +21,6 @@ const globby = require('globby');
             .replace('posts', '/blog')
             .replace('index', '');
           const route = path === '/index' ? '' : path;
-          console.log(page)
 
           return `
             <url>

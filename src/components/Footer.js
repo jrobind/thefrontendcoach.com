@@ -53,7 +53,7 @@ export default function Footer() {
           <span className="mr-4 mt-2">The Front End Coach 2020</span>
           <span className="mt-2 flex">
             Built by James Robinson
-            <a className="flex items-center" href="https://github.com/jrobind"><img className="ml-2" alt="GitHub icon" src="/images/github-icon.png" style={{ width: '18px', marginTop: '-4px'}}/></a>
+            <a className="flex items-center" href="https://github.com/jrobind"><img className="ml-2" alt="GitHub icon" src="/images/github-icon.png" width="18" height="18" style={{ marginTop: '-4px'}}/></a>
           </span>
         </div>
       </footer>  
