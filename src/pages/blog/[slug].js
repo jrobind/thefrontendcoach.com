@@ -6,8 +6,17 @@ import Link from "next/link";
 import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
+import Loader from 'react-loader-spinner';
 
-const DynamicRenderer = dynamic(() => import('../../components/MarkdownRenderer'));
+const DynamicRenderer = dynamic(
+  () => import('../../components/MarkdownRenderer'),
+  { 
+    loading: () =>  
+      <div className="flex justify-center">
+        <Loader type="ThreeDots" color="#2B8275" height={100} width={100} />
+      </div>
+  }
+ );
 const DynamicSharing = dynamic(() => import('../../components/Sharing'));
 const postsDirectory = join(process.cwd(), "/posts");
 

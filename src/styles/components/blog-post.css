@@ -8,7 +8,7 @@
 
 /* Headers */
 .blog-post h1 {
-  @apply text-3xl my-6;
+  @apply text-3xl mt-6 mb-3;
 }
 
 .blog-post h2 {
@@ -41,9 +41,14 @@
   @apply mb-4 text-base;
 }
 
+/* Date - em */
+.blog-post p:first-of-type em {
+  @apply not-italic text-base mb-6 block
+}
+
 /* Image */
 .blog-post__content img {
-  @apply m-auto mb-5 block w-full img-shadow;
+  @apply m-auto my-6 block w-full img-shadow;
   max-width: 580px;
 }
 

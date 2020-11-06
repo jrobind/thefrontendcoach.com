@@ -39,7 +39,7 @@ export default function Podcast() {
     <div className="podcast">
       <NextSeo
         title= "The Front End Coach Podcast"
-        description="Listen to interviews, advice on learning how to build your Front-End skillset, getting your first job in the tech industry and more!"
+        description="Listen to interviews, advice on learning how to build your front end skillset, getting your first job in the tech industry and more!"
         canonical={`${rootURL}podcast`}
       />
       <section className="bg-main">

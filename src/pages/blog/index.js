@@ -14,7 +14,7 @@ const BlogHome = ({ posts }) => (
   >
     <NextSeo
       title="The Front End Coach | Latest articles"
-      description="Keep up-to-date with Front-End Development tips, tricks, advice, and learning resources for those looking to break into the industry."
+      description="Keep up-to-date with front-end development tips, tricks, advice, and learning resources for those looking to break into the industry."
       canonical={`${rootURL}blog`}
     />
     <section 
@@ -23,10 +23,10 @@ const BlogHome = ({ posts }) => (
         backgroundSize: '600px',
         minHeight: 'calc(100vh - 85px)'
       }}>
-      <div className="wrapper px-3">
+      <div className="wrapper px-3" style={{minHeight: '700px'}}>
         <h1 className="text-3xl md:text-4xl mb-4">Latest Articles</h1>
         <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-          <BlogPost posts={posts} limit={1}/>
+          <BlogPost posts={posts} limit={0}/>
         </div>
       </div>
     </section>
