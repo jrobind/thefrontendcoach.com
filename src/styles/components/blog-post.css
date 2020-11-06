@@ -29,7 +29,7 @@
 
 /* Links */
 .blog-post a {
-  @apply text-main;
+  @apply text-main underline;
 }
 
 .blog-post a:hover {

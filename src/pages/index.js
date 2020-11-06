@@ -85,7 +85,7 @@ const Home = ({ slugs, posts }) => (
           <div>
             <h2 className="mb-4 m-auto text-3xl">Latest blog posts</h2>
             <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-              <BlogPost posts={posts} limit={4}/>
+              <BlogPost posts={posts} limit={1}/>
             </div>
             <Link href="/blog">
               <a className="btn">READ THE BLOG</a>

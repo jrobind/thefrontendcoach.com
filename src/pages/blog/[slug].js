@@ -28,6 +28,10 @@ const Image = ({ alt, src }) => {
   return <img alt={alt} src={src} width="600" height="400"/>
 }
 
+const Heading = ({ value }) => { // TODO
+  return <img alt={alt} src={src} width="600" height="400"/>
+}
+
 const Post = ({ frontmatter, markdownBody, slug }) => {
   return (
     <div className="blog-post wrapper">

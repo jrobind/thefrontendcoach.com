@@ -26,7 +26,7 @@ const BlogHome = ({ posts }) => (
       <div className="wrapper px-3">
         <h1 className="text-3xl md:text-4xl mb-4">Latest Articles</h1>
         <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
-          <BlogPost posts={posts} limit={0}/>
+          <BlogPost posts={posts} limit={1}/>
         </div>
       </div>
     </section>
