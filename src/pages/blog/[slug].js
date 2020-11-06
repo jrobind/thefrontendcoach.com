@@ -3,34 +3,14 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import ReactMarkdown from 'react-markdown';
+import dynamic from 'next/dynamic'
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import js from 'react-syntax-highlighter/dist/cjs/languages/hljs/javascript';
-import vs2015 from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
-import { Twitter, Facebook, Linkedin } from 'react-social-sharing';
 
-SyntaxHighlighter.registerLanguage('javascript', js);
-
+const DynamicRenderer = dynamic(() => import('../../components/MarkdownRenderer'));
+const DynamicSharing = dynamic(() => import('../../components/Sharing'));
 const postsDirectory = join(process.cwd(), "/posts");
 
-
-const CodeBlock = ({ language, value }) => {
-  return (
-    <SyntaxHighlighter style={vs2015} language={language}>
-      {value}
-    </SyntaxHighlighter>
-  );
-};
-
-const Image = ({ alt, src }) => {
-  return <img alt={alt} src={src} width="600" height="400"/>
-}
-
-const Heading = ({ value }) => { // TODO
-  return <img alt={alt} src={src} width="600" height="400"/>
-}
 
 const Post = ({ frontmatter, markdownBody, slug }) => {
   return (
@@ -68,11 +48,7 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
           </div>
         </div>
         <section className="blog-post__content">
-          <ReactMarkdown
-            escapeHtml={true}
-            source={markdownBody}
-            renderers={{ code: CodeBlock, image: Image}}
-          />
+            <DynamicRenderer markdownBody={markdownBody} />
         </section>
         <div className="flex justify-between my-6 md:my-7">
           <Link href="/blog">
@@ -89,11 +65,7 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
               /> Back to articles
             </a>
           </Link>
-          <div className="flex">
-            <Facebook solid small link={`${rootURL}blog/${slug}`}/>
-            <Twitter solid small link={`${rootURL}blog/${slug}`}/>
-            <Linkedin solid small link={`${rootURL}blog/${slug}`}/>
-          </div>
+          <DynamicSharing rootURL={rootURL} slug={slug} />
         </div>
       </div>
     </div>
