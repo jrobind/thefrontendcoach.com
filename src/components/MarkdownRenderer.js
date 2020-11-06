@@ -22,15 +22,14 @@ const Heading = ({ value }) => { // TODO
   return <img alt={alt} src={src} width="600" height="400"/>
 }
 
-export default function({ markdownBody }) {
+export default function MarkdownRenderer({ markdownBody, hasCodeBlock }) {
+  const renderers =  hasCodeBlock ? { code: CodeBlock, image: Image } : { image: Image };
+
   return (
     <ReactMarkdown
       escapeHtml={true}
       source={markdownBody}
-      renderers={{
-        code: CodeBlock, 
-        image: Image
-      }}
+      renderers={renderers}
     />
   );
 }

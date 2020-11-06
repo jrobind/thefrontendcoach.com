@@ -4,6 +4,7 @@ title: Everything you need to know to become a Front-End Developer
 cardTitle: Everything you need to know to become a Front-End Developer 
 description: Everything you need to know to become a modern Front-End Developer. An honest guide, helping you to plan your learning pathway
 tags: ['Skills', 'Front End']
+codeBlock: false
 ---
 
 

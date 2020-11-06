@@ -48,7 +48,7 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
           </div>
         </div>
         <section className="blog-post__content">
-            <DynamicRenderer markdownBody={markdownBody} />
+            <DynamicRenderer markdownBody={markdownBody} hasCodeBlock={frontmatter.codeBlock} />
         </section>
         <div className="flex justify-between my-6 md:my-7">
           <Link href="/blog">
