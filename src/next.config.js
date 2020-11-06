@@ -1,4 +1,8 @@
-module.exports = {
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = withBundleAnalyzer({
   webpack: function(config, { isServer }) {
     config.module.rules.push({
       test: /\.md$/,
@@ -11,4 +15,4 @@ module.exports = {
 
     return config;
   }
-}
+});

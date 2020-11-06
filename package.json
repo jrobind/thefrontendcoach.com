@@ -7,7 +7,9 @@
     "compress": "gulp",
     "dev": "cd ./src && next dev",
     "build": "cd ./src && next build && next export",
-    "start": "cd ./src && next start"
+    "start": "cd ./src && next start",
+    "analyse": "ANALYZE=true && cd ./src && next build",
+    "analyse:browser": "BUNDLE_ANALYZE=browser && cd ./src && next build"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "tailwindcss": "1.9.6"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "10.0.1",
     "classnames": "2.2.6",
     "gray-matter": "^4.0.2",
     "next": "9.5.5",
