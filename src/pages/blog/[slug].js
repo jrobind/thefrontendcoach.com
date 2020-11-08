@@ -32,7 +32,11 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
           url: `${rootURL}blog/${slug}`,
           title: frontmatter.title,
           description: frontmatter.description,
-        }}  
+        }}
+        twitter={{
+          handle: '@FrontEndCoach',
+          cardType: 'summary_large_image',
+        }}
       />
       <div className="max-w-750 m-auto my-6 md:my-7 px-3">
         <div className="flex justify-between">
