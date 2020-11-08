@@ -35,7 +35,8 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
         }}
         twitter={{
           handle: '@FrontEndCoach',
-          cardType: 'summary_large_image',
+          cardType: 'summary',
+          image: '/images/james-robinson.jpg',
         }}
       />
       <div className="max-w-750 m-auto my-6 md:my-7 px-3">
