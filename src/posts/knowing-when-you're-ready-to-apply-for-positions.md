@@ -13,23 +13,22 @@ codeBlock: false
 
 When I was learning front-end development I would Google this question often. When you’re teaching yourself it’s a lot more difficult to measure your own ‘readiness’. When you take a course or attend a Bootcamp it’s easier to define this because there is a set start and finish. Those that are self-teaching will have to define this for themselves.
 
-There are many factors that play into this state of ‘readiness’. The main factor is people's own expectations, one developer's definition of ready may be the complete polar opposite to another’s. What really matters to us is **what employers think**. In this article, we will attempt to refine this definition to put your mind at ease.
+Many factors that play into this state of ‘readiness’. The main factor is people's own expectations, one developer's definition of ready may be the complete polar opposite to another’s. What really matters to us is **what employers think**. In this article, we will attempt to produce a definition to put your mind at ease.
 
 
 ## My own experience
  
 I am completely self-taught with no previous relatable experience in tech. I did build my own computer many moons ago but that had little bearing on my ability to code, I’d just about heard of HTML! 
-From the day I decided to start learning and wrote my first line, until the day I accepted a job offer was around **11 months**. On reflection, I felt I could have started applying for roles a little sooner than I did. I was all too focused on trying to perfect my knowledge and get to a place where I considered myself to be ‘ready’.
+It took me around 11 months to land my first position and on reflection, I felt I could have started applying for roles a little sooner than I did. I was all too focused on trying to perfect my knowledge and get to a place where I considered myself to be ‘ready’.
 
-<IMG using my whiteboard>
-
-The truth is, you’ll probably never reach a place where you are entirely happy with your readiness. If I had waited until I felt ready, my hair would be white and I’d be collecting my pension and I’d still be asking the same question. Thankfully my hair is still (mostly) brown and I have a few more years before I can start collecting my pension.
+The truth is, you’ll probably never reach a place where you are entirely happy with your readiness. If I had waited until I felt ready, my hair would be white and I’d be collecting my pension and **I’d still be asking the same question**. Thankfully my hair is still (mostly) brown and I have a few more years before I can start collecting my pension. Ultimately, it's about learning just enough to land yourself a job - you'll learn so much faster once you have one.
 
 ## Defining ‘ready’
 
 If you are seriously willing to put in the time to learn, you’ll inevitably give yourself the best chances of landing a junior developer position. My definition of job-ready would look something like this:
 
 * Thorough knowledge of HTML, CSS, and JavaScript (especially JavaScript)
+* An understanding of web accessibility
 * Some experience with a JavaScript framework and libraries
 * Some understanding and experience with build tools, task runners & preprocessors
 * Willingness and aptitude to learn
@@ -56,6 +55,12 @@ I’ve compiled some results on a random selection of 20 job adverts (for junior
 Personally, I wouldn’t lose too much sleep over this one.  As you can see there are plenty of jobs that look for JavaScript proficiency in general, rather than tied to a specific framework.
 
 If you’ve got the basics nailed down, then by all means have a play with a framework that takes your fancy. Build a small project to show you can pick up some new tech and make something productive. Ultimately, you’re applying for junior developer positions so there **shouldn’t be too much expectation on you to know a wide range of frameworks**. Employers should be hiring junior developers with the expectation that you will have little to no commercial experience with JavaScript frameworks/libraries.
+
+### An understanding of web accessibility
+
+Thankfully, more companies are now taking the accessibility of their websites more seriously. Inaccessible websites shouldn't just be the responsibility of designers. As front-end developers, it is important that we take web accessibility seriously and with the growing complexity of the front-end landscape sometimes accessibility get's left behind.
+
+You don't need to be an expert, but showing an **understanding and appreciation** for web accessibility will certainly help once you start applying for positions. The chances are high that you'll be asked a question on this in an interview too. 
 
 ### Some experience with build tools, task runners, and preprocessors
 
