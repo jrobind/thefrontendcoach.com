@@ -5,6 +5,7 @@ cardTitle: How improving your ability to learn can help you learn to code
 description: Improving your ability to learn can help enhance your self-teaching processes. Utilising these 5 tips will prepare you well for a career of learning.
 tags: ['Beginner', 'Learning']
 codeBlock: false
+timestamp: 1603294987
 ---
 
 # What did you learn from the tutorial you just watched?

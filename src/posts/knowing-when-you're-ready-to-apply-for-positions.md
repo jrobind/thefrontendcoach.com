@@ -5,6 +5,7 @@ cardTitle: How to know when you're ready to apply for front-end developer positi
 description: For self-teaching developers it can be a real challenge knowing when you're ready to start applying for positions. In this article we attempt to define this 'readiness'.
 tags: ['Jobs', 'Front-end']
 codeBlock: false
+timestamp: 1605109387
 ---
 
 

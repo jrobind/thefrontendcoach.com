@@ -1,11 +1,12 @@
 import Link from "next/link";
 
 const BlogPost = ({ posts, limit }) => {
-  const postsLimited = limit ? posts.slice(0, limit) : posts;
+  const orderedPosts = posts.sort((a, b) => b.data.timestamp - a.data.timestamp);
+  const postsToRender = limit ? orderedPosts.slice(0, limit) : orderedPosts;
 
   return (
     <>
-      {postsLimited.map(({slug, data}) => {
+      {postsToRender.map(({slug, data}) => {
         return (
           <Link key={slug} href={"/blog/" + slug}>
             <a className="blog-card" style={{height: '180px'}}>
