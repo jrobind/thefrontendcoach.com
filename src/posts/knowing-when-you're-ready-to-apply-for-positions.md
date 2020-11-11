@@ -12,7 +12,7 @@ timestamp: 1605109387
 # How do you know when you’re ready to apply for front-end developer positions?
 *November 2020*
 
-When I was learning front-end development I would Google this question often. When you’re teaching yourself it’s a lot more difficult to measure your own ‘readiness’. When you take a course or attend a Bootcamp it’s easier to define this because there is a set start and finish. Those that are self-teaching will have to define this for themselves.
+When I was learning front-end development I would Google this question often. When you’re teaching yourself it’s a lot more difficult to measure your own ‘readiness’. When you take a course or attend a boot camp it’s easier to define this because there is a set start and finish. Those that are self-teaching will have to define this for themselves.
 
 Many factors play into this state of ‘readiness’. The main factor is people's own expectations, one developer's definition of ready may be the complete polar opposite to another’s. What really matters to us is **what employers think**. In this article, we will attempt to produce a definition to put your mind at ease.
 
@@ -49,14 +49,13 @@ For those that are looking to become UX-focused front-end developers you’ll pr
 
 This is probably the most contentious of all of the items on this list. It’s become very common for job descriptions to ask for proficiency or some experience with a front-end framework or library (usually, Angular, Vue, or React. Sometimes jQuery is thrown into the mix even though it’s a less opinionated utility library).  
 
-I’ve compiled some results on a random selection of 20 job adverts (for junior front-end developer positions advertised in the UK), to see what proportion places an emphasis on JavaScript frameworks as an essential prerequisite for the job.
+I’ve compiled some results on a random selection of 20 job adverts (for junior front-end developer positions advertised in the UK), to see what proportion place an emphasis on JavaScript frameworks as an essential prerequisite for the job.
 
 ![A pie chart representing the proportion of JavaScript frameworks mentioned in a random selection of job adverts](/images/blog/proportion-of-frameworks.png)
 
 Personally, I wouldn’t lose too much sleep over this one.  As you can see there are plenty of jobs that look for JavaScript proficiency in general, rather than tied to a specific framework.
 
-If you’ve got the basics nailed down, then by all means have a play with a framework that takes your fancy. Build a small project to show you can pick up some new tech and make something productive. Ultimately, you’re applying for junior developer positions so there **shouldn’t be too much expectation on you to know a wide range of frameworks**. Employers should be hiring junior developers with the expectation that you will have little to no commercial experience with JavaScript frameworks/libraries.
-
+If you’ve got the basics nailed down, then by all means have a play with a framework that takes your fancy. Build a small project to show you can pick up some new tech and make something productive. Ultimately, you’re applying for junior developer positions so there **shouldn’t be too much expectation on you to know a wide range of frameworks**.
 ### An understanding of web accessibility
 
 Thankfully, more companies are now taking the accessibility of their websites more seriously. Inaccessible websites shouldn't just be the responsibility of designers. As front-end developers, it is important that we take web accessibility seriously and with the growing complexity of the front-end landscape sometimes accessibility get's left behind.
@@ -106,6 +105,6 @@ This is essentially what you’ll be doing in a real job, so having these experi
 
 # Final thoughts
 
-If you can tick off most of the items in my ‘ready’ list, then you’ll probably be set to start applying for positions. The length of time it takes to get here will be highly individualized and will depend on whether you can commit to learning full-time or part-time, so your mileage will vary. Don’t become too fixated on time and hours invested. Although there will be a correlation between time invested and progress, time spent is **not always the best measure of progress**. Likewise, don't fuss over every item in the list too much. If your learning processes are polished and you think you’re ready to start applying a little sooner than you originally envisioned then I would encourage you to go for it.
+If you can tick off most of the criteria in my ‘ready’ list, then you’ll probably be set to start applying for positions. The length of time it takes to get here will be highly individualized and will depend on whether you can commit to learning full-time or part-time, so your mileage will vary. Don’t become too fixated on time and hours invested. Although there will be a correlation between time invested and progress, time spent is **not always the best measure of progress**. Likewise, don't fuss over every item in the list, If your learning processes are polished and you think you’re ready to start applying a little sooner than you originally envisioned then I would encourage you to go for it.
 
 The job searching process probably warrants an article of its own but for now, just bear in mind that to many companies, entry level-really means “senior-level experience at an entry-level salary”, so don’t become too disheartened when you get rejected for positions. Persist, keep learning and you’ll eventually land a job.
