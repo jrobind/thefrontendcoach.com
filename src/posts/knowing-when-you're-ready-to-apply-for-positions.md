@@ -14,7 +14,7 @@ timestamp: 1605109387
 
 When I was learning front-end development I would Google this question often. When you’re teaching yourself it’s a lot more difficult to measure your own ‘readiness’. When you take a course or attend a Bootcamp it’s easier to define this because there is a set start and finish. Those that are self-teaching will have to define this for themselves.
 
-Many factors that play into this state of ‘readiness’. The main factor is people's own expectations, one developer's definition of ready may be the complete polar opposite to another’s. What really matters to us is **what employers think**. In this article, we will attempt to produce a definition to put your mind at ease.
+Many factors play into this state of ‘readiness’. The main factor is people's own expectations, one developer's definition of ready may be the complete polar opposite to another’s. What really matters to us is **what employers think**. In this article, we will attempt to produce a definition to put your mind at ease.
 
 
 ## My own experience
@@ -108,4 +108,4 @@ This is essentially what you’ll be doing in a real job, so having these experi
 
 If you can tick off most of the items in my ‘ready’ list, then you’ll probably be set to start applying for positions. The length of time it takes to get here will be highly individualized and will depend on whether you can commit to learning full-time or part-time, so your mileage will vary. Don’t become too fixated on time and hours invested. Although there will be a correlation between time invested and progress, time spent is **not always the best measure of progress**. Likewise, don't fuss over every item in the list too much. If your learning processes are polished and you think you’re ready to start applying a little sooner than you originally envisioned then I would encourage you to go for it.
 
-The job searching process probably warrants an article of its own but for now, just bear in mind that that to many companies, entry level-really means “senior-level experience at an entry-level salary”, so don’t become too disheartened when you get rejected for positions. Persist, keep learning and you’ll eventually land a job.
+The job searching process probably warrants an article of its own but for now, just bear in mind that to many companies, entry level-really means “senior-level experience at an entry-level salary”, so don’t become too disheartened when you get rejected for positions. Persist, keep learning and you’ll eventually land a job.
