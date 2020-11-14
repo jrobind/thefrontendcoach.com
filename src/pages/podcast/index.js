@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
+import Wave from '../../components/Wave';
 import classnames from 'classnames';
 
 
@@ -50,9 +51,7 @@ export default function Podcast() {
           </p>
           </div>
         </section>
-        <svg className="wave" viewBox="-605.588 168.766 1903.513 129.016" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 207.067 212.347 C 88.01 151.461 37.625 366.644 -167.21 260.215 C -298.471 192.014 -464.906 237.14 -615.012 293.548 L -615.012 145.359 L 1304.988 145.359 L 1304.988 293.548 C 1124.523 312.044 951.798 112.641 763.115 212.418 C 574.432 312.195 326.124 273.233 207.067 212.347 Z" style={{fill: 'rgb(43, 130, 117)'}}/>
-        </svg>
+        <Wave alignment="bottom"/>
         <section className="pt-8 pb-6 px-3">
           <div style={{maxWidth: '800px', minHeight: `${width < 800 ? '98px' : '161px'}`}} className="shadow-md m-auto flex justify-center items-center flex-col">
             {!loaded && <span className="block text-xl">Loading episode...</span>}
