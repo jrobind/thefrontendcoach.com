@@ -52,6 +52,14 @@
   max-width: 580px;
 }
 
+/* Image caption */
+
+.blog-post__content img + em {
+  @apply m-auto not-italic text-sm mb-6 block;
+  max-width: 580px;
+  margin-top: -30px;
+}
+
 /* Lists */
 .blog-post ul,
 .blog-post ol {

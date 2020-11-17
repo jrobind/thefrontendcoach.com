@@ -40,6 +40,7 @@ As a front-end developer, your job and your ultimate focus is to make things wor
 Several front-end developer pathway illustrations are quite useful for gaining a more holistic overview of what’s required for the modern front-end developer. As you can see from the one below, there are quite a number of technologies and concepts here, and this is not necessarily the route I would recommend. However, many of these skills you’ll commonly find listed in job descriptions.
 
 ![Diagram of a front-end developer learning pathway courtesy of GitHub user: Z8264](/images/blog/roadmap.png)
+*Learning pathway courtesy of GitHub user Z8264*
 
 Before rattling through each of these technologies, you should start with the basics - the very foundations of the front-end; HTML, CSS, and JavaScript.
 
