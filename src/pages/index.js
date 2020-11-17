@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 import BlogPost from "../components/BlogPost";
 import { getAllBlogPosts } from '../lib/api';
 import { rootURL } from '../lib/constants';
+import Wave from '../components/Wave';
 
 
 const Home = ({ slugs, posts }) => (
@@ -26,9 +27,7 @@ const Home = ({ slugs, posts }) => (
         <img className="img-shadow hidden md:block" alt="Man inspecting code block" src="./images/web-development.svg" width='450' height='450'/>
       </div>
     </section>
-    <svg className="wave" viewBox="-605.588 168.766 1903.513 129.016" xmlns="http://www.w3.org/2000/svg">
-      <path d="M 207.067 212.347 C 88.01 151.461 37.625 366.644 -167.21 260.215 C -298.471 192.014 -464.906 237.14 -615.012 293.548 L -615.012 145.359 L 1304.988 145.359 L 1304.988 293.548 C 1124.523 312.044 951.798 112.641 763.115 212.418 C 574.432 312.195 326.124 273.233 207.067 212.347 Z" style={{fill: 'rgb(43, 130, 117)'}}/>
-    </svg>
+    <Wave alignment="bottom"/>
 
     <section className="about px-3 py-7 md:py-8">
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
@@ -52,7 +51,7 @@ const Home = ({ slugs, posts }) => (
     <section className="services py-6 md:py-7" style={{backgroundColor: 'rgba(0, 0, 0, 0.025)'}}>
       <div className="wrapper flex-col px-3">
         <div className="flex flex-col mb-5 md:flex-row justify-center">
-          <div className="flex justify-center flex-col mb-6 md:mb-3 items-center md:mr-7">
+          <div className="block justify-center flex-col mb-6 md:mb-3 items-center md:mr-7">
             <div className="flex justify-center items-center">
               <img className="m-auto block img-shadow" alt="" src="./images/coach.svg" style={{maxWidth: '290px'}} width='450' height='350'/>
             </div>
@@ -67,7 +66,7 @@ const Home = ({ slugs, posts }) => (
             </div>
           </div>
           <div className="flex flex-col mb-3 items-center">
-            <div className="flex justify-center items-center flex-1">
+            <div className="block justify-center items-center flex-1">
               <img className="m-auto block img-shadow" alt="" src="./images/radio-presenter.svg" style={{width: '290px'}} width='450' height='350'/>
             </div>
             <div className="flex 1 text-center flex flex-col items-center">
