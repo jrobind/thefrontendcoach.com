@@ -44,7 +44,7 @@ export default function Support() {
       <section className="mentorship wrapper py-6 px-3">
         <div className="mb-3 relative flex justify-center md:block">
           <div className="text-base md:text-lg flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
-            <h2 className="text-3xl">Direct mentorship</h2>
+            <h2 id="direct-mentorship" className="text-3xl">Direct mentorship</h2>
             <h4 className="text-xl mb-4 font-bold underline">Limited spots available</h4>
             <p className="my-3">For a limited number of students, I will be providing a more personalised support. This will be most suited to students who are struggling to progress with their learning or who are looking for more guidance on their CV, job applications, and portfolios.</p>
             <p className="mb-3">
