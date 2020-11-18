@@ -45,13 +45,13 @@ export default function Support() {
         <div className="mb-3 relative flex justify-center md:block">
           <div className="text-base md:text-lg flex-col flex mt-4md:block md:mt-5" style={{maxWidth: '700px'}}>
             <h2 id="direct-mentorship" className="text-3xl">Direct mentorship</h2>
-            <h4 className="text-xl mb-4 font-bold underline">Limited spots available</h4>
+            <h4 className="text-xl mb-4 font-bold underline">All spots are currently filled</h4>
             <p className="my-3">For a limited number of students, I will be providing a more personalised support. This will be most suited to students who are struggling to progress with their learning or who are looking for more guidance on their CV, job applications, and portfolios.</p>
             <p className="mb-3">
               The format of this support will involve weekly one-to-one scheduled video calls. Direct mentorship can be incredibly rewarding for both parties. These sessions will help to provide you with the right level of accountability and support to help you reach your development goals.</p>
-            <p className="mb-3">To apply, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
+            <p className="mb-3"><span className="font-bold underline">To join the waiting list</span>, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
             <ul>
-              <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction about yourself.</li>
+              <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction, including information about your current progress and experience level.</li>
               <li className="pb-2"><span className="bullet mr-1"></span> Why you want to become a front-end developer.</li>
               <li><span className="bullet mr-1"></span> Your biggest blockers to learning and pursuing your goals at the current time.</li>
             </ul>
