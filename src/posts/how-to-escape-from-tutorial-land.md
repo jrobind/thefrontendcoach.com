@@ -12,7 +12,7 @@ timestamp: 1605729865
 # How to escape from tutorial land
 *November 2020*
 
-So you’ve decided you're going to learn how to code and you’re going to teach yourself. You curate a small list of tutorials that you plan to start watching. You’re feeling super excited about your code-learning journey, you start working through your list - everything is going well and things seem to make sense. You end up having to rewatch a couple of videos as a few more advanced concepts start to rear their ugly heads. Nevertheless, you persevere and you manage to get through most of the tutorials. You’ve religiously followed them through, you’ve spent weeks doing so - months even. After finishing and feeling really impressed with your progress, you come up with a project idea. With this idea, you then decide to try and create something on your own and all hell breaks loose, you find yourself completely stuck, disheartened, and thinking you don’t know anything at all. 
+So you’ve decided you're going to learn how to code and you’re going to teach yourself. You curate a small list of tutorials that you plan to start watching. You’re feeling super excited about your code-learning journey, you start working through your list - everything is going well and things seem to make sense. You end up having to rewatch a couple of videos as a few more advanced concepts start to rear their ugly heads. Nevertheless, you persevere and you manage to get through most of the tutorials. You’ve religiously followed them through, you’ve spent weeks doing so - months even. After finishing and feeling really impressed with your progress, you come up with a project idea. With this idea, you then decide to try and create something on your own, and all hell breaks loose, you hit a brick wall, you feel disheartened, and now you think you don’t know anything at all. 
 
 Sound familiar? I’ve been there and I’m sure the overwhelming majority of self-taught developers have too. You’re stuck in tutorial-land or even ‘tutorial-hell’ as some term it. Don’t fret, and certainly don’t give up - you *will* be able to escape from this common trap that beginner coders find themselves in.
 
@@ -26,7 +26,7 @@ I’m not suggesting tutorials aren’t useful, nor am I suggesting you shouldn�
 
 For you to truly understand something you will need to practically apply what you’re learning and doing so will improve your understanding and cement those concepts. Those that are self-teaching probably already recognise this, and are most likely being encouraged to build code-along projects as part of some tutorials. In my opinion, this isn’t always the best way to learn - it’s a **very passive learning experience** and all too easy. A lot of students that I mentor often tell me that they watch tutorials and code along but still feel like they’re not actually learning. If you’re learning how to code and you aren’t constantly hitting your head up against a brick wall then you’re doing something wrong. In reality, the process is enjoyable but also very challenging, frustrating, and at times incredibly tedious.
 
-The truth is, ‘tutorial-land’ or ‘tutorial-hell’ will most likely come down to a couple of things:
+The truth is, being stuck in ‘tutorial-land’ or ‘tutorial-hell’ will most likely come down to a couple of things:
 
 * You are coming up with project ideas that are too ambitious for your current skill set
 * You are trying to learn too many things at the same time
@@ -43,7 +43,7 @@ During this process of churning out smaller apps, try not to copy and paste code
 
 If you’re concurrently learning Vanilla JS, React, Angular, Vue, etc, how can you possibly find the time or have the mental energy left to learn any of these technologies thoroughly? I understand why people do this, they see junior developer job descriptions that list half a million technologies and skills so the logical approach is to start learning all of them. In reality, **you may end up only working with a few of those skills**, decent employers will be willing to give you a shot if you are well versed in the fundamentals and can show an appetite for learning.
 
-Ultimately, you should aim to focus on learning one topic at a time, remove any unnecessary distractions, and eventually you’ll feel way more comfortable with the things you’re learning. 
+Ultimately, you should aim to focus on one topic at a time, remove any unnecessary distractions, and eventually you’ll feel way more comfortable with the things you’re learning. 
 
 ## What next?
 
