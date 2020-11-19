@@ -28,14 +28,14 @@ For you to truly understand something you will need to practically apply what yo
 
 The truth is, ‘tutorial-land’ or ‘tutorial-hell’ will most likely come down to a couple of things:
 
-* You are coming up with project ideas that are too ambitious for your current skill set.
-* You are trying to learn too many things at the same time.
+* You are coming up with project ideas that are too ambitious for your current skill set
+* You are trying to learn too many things at the same time
 
 ## Lower your expectations
 
-If you’ve just started learning a new technology, let's say React for instance. You may have followed an extensive tutorial and you’re ready and eager to build a project using it - it may even be a project that you want to add to your portfolio and showcase to employers. I would almost definitely hold back on creating something too complex. Start with a very very simple app, and build lots of them. **Lower the standards of the project you want to create**, I guarantee the one you were thinking of was probably too complex for you at this time. With this approach you can focus on truly understanding the code you’re writing and because your project expectations are a lot lower so you can focus on the things that matter.
+If you’ve just started learning a new technology, let's say React for instance. You may have followed an extensive tutorial and you’re ready and eager to build a project using it - it may even be a project that you want to add to your portfolio and showcase to employers. I would almost definitely hold back on creating something too complex. Start with a very very simple app, and build lots of them. **Lower the standards of the project you want to create**, I guarantee the one you were thinking of was probably too complex for you at this time. With this approach you can focus on truly understanding the code you’re writing and because your project expectations are a lot lower you can focus on the things that matter.
 
-Ultimately your goal should be to churn out lots of small, almost ugly projects that vary ever so slightly. After you’ve done this you might start finding the process kind of well, boring. That is a fantastic place to be! If the process becomes boring then you know it’s time to add some more complexity, but as mentioned make sure you’re realistic about this complexity, don’t go full steam ahead trying to build a full-stack CRUD (link) app when you’re just starting to learn React.
+Ultimately your goal should be to churn out lots of small, almost ugly projects that vary ever so slightly. After you’ve done this you might start finding the process kind of well, boring. That is a fantastic place to be! If the process becomes boring then you know it’s time to add some more complexity, but as mentioned make sure you’re realistic about this complexity, don’t go full steam ahead trying to build a full-stack [CRUD](https://www.codecademy.com/articles/what-is-crud) app when you’re just starting to learn React.
 
 During this process of churning out smaller apps, try not to copy and paste code. Be honest with yourself if you’re pasting code that you don’t understand. This will potentially bite you in the rear in the future especially when you’re trying to debug issues that involve that pasted code. This process might seem a little underwhelming. The thing is, a large part of effectively learning how to code is carrying out repetitive processes, being incredibly persistent, and practicing over and over again until it becomes second nature. That is how you cement what you’ve learned. Going forward, it will be much easier to build something more complex upon a solid foundation.
 

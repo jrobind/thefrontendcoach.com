@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
 import Wave from '../../components/Wave';
-import classnames from 'classnames';
+import PodcastIframe from '../../components/PodcastIframe';
+
+const episodeSlugs = ['Welcome-to-The-Front-End-Coach-Podcast-elvm9t', 'From-Sport-Science-to-Software-Engineer-emmtjb'];
 
 
 // Custom hook for returning current size of the browser window
@@ -53,22 +55,22 @@ export default function Podcast() {
         </section>
         <Wave alignment="bottom"/>
         <section className="pt-8 pb-6 px-3">
-          <div style={{maxWidth: '800px', minHeight: `${width < 800 ? '98px' : '161px'}`}} className="shadow-md m-auto flex justify-center items-center flex-col">
-            {!loaded && <span className="block text-xl">Loading episode...</span>}
-            <iframe
-              onLoad={handleIframeLoad}
-              className={classnames({
-                'hidden': !loaded,
-                'm-auto': true,
-                'w-full': true
-              })}
-              src="https://anchor.fm/thefrontendcoach/embed/episodes/Welcome-to-The-Front-End-Coach-Podcast-elvm9t" 
-              height={`${width < 800 ? '98px' : '161px'}`}
-              width="800px"
-              frameBorder="0" 
-              scrolling="no"
-              ></iframe> 
+          <PodcastIframe 
+            slug={episodeSlugs[1]}
+            loaded={loaded} 
+            width={width} 
+            handleIframeLoad={handleIframeLoad}
+          />
+          <div className="m-auto mt-4 mb-7 md:mt-5 md:mb-8 text-base md:text-lg" style={{maxWidth: '800px'}}>
+            <p className="mb-3">In this episode I interview <a className="udnerline text-main" href="https://www.linkedin.com/in/david-bayley-940762a5/">David Bayley</a>, a former Sport and Exercise Science graduate who is now a very successful software engineer for Lloyds Bank in London. David is a self-taught developer and has some fantastic insight into the tech world along with his own tips and advice for learning and breaking into the industry.</p>
           </div>
+
+          <PodcastIframe 
+            slug={episodeSlugs[0]} 
+            loaded={loaded} 
+            width={width}
+            handleIframeLoad={handleIframeLoad}
+          />
           <div className="m-auto mt-4 md:mt-5 text-base md:text-lg" style={{maxWidth: '800px'}}>
             <p className="mb-3">I am very excited to share with you the first episode of The Front End Coach Podcast! This very first episode is a little different in format from regular episodes. Instead, it’s an introduction to me, the podcast, what you can expect, and The Front End Coach itself.</p>
             <p className="mt-3">Any feedback, or requests for content I should cover in later episodes would be greatly appreciated. Please reach out to me at: <strong className="font-bold">james@thefrontendcoach.com</strong></p>
