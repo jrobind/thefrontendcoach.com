@@ -2,7 +2,7 @@
 date: November 2020
 title: How to escape from tutorial land
 cardTitle: How to escape from tutorial land
-description: Many beginners who are learning to code find themselves stuck watching tutorials. To really understand what you're learning you need to step out of this safe, guided environment
+description: Many beginners who are learning to code find themselves stuck watching tutorials. To really understand what you're learning you need to step out of this safe, guided environment.
 tags: ['Beginner', 'Learning']
 codeBlock: false
 timestamp: 1605729865

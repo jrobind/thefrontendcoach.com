@@ -2,7 +2,7 @@
 date: November 2020
 title: Everything you need to know to become a front-end developer
 cardTitle: Everything you need to know to become a front-end developer 
-description: Everything you need to know to become a modern front-end developer. An honest guide, helping you to plan your learning pathway
+description: Everything you need to know to become a modern front-end developer. An honest guide, helping you to plan your learning pathway.
 tags: ['Guide', 'Front-end']
 codeBlock: false
 timestamp: 1604331787

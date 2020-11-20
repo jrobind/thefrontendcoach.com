@@ -2,14 +2,14 @@ import React from "react";
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import Link from "next/link";
 import dynamic from 'next/dynamic'
+import Link from "next/link";
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
 import Loader from 'react-loader-spinner';
 
 const DynamicRenderer = dynamic(
-  () => import('../../components/MarkdownRenderer'),
+  () => import('../../components/BlogPostRenderer'),
   { 
     loading: () =>  
       <div className="flex justify-center">
@@ -17,7 +17,6 @@ const DynamicRenderer = dynamic(
       </div>
   }
  );
-const DynamicSharing = dynamic(() => import('../../components/Sharing'));
 const postsDirectory = join(process.cwd(), "/posts");
 
 
@@ -61,25 +60,12 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
           </div>
         </div>
         <section className="blog-post__content">
-            <DynamicRenderer markdownBody={markdownBody} hasCodeBlock={frontmatter.codeBlock} />
+            <DynamicRenderer 
+              slug={slug} 
+              markdownBody={markdownBody} 
+              hasCodeBlock={frontmatter.codeBlock} 
+            />
         </section>
-        <div className="flex justify-between my-6 md:my-7">
-          <Link href="/blog">
-            <a 
-              style={{width: 'fit-content'}} 
-              className="flex items-center text-base font-bold"
-            >
-              <img 
-                alt="" 
-                src='/images/arrow-left.svg'
-                width="22"
-                height="22" 
-                style={{margin: '0 0 0 -8px'}}
-              /> Back to articles
-            </a>
-          </Link>
-          <DynamicSharing rootURL={rootURL} slug={slug} />
-        </div>
       </div>
     </div>
   );
