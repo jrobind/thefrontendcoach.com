@@ -59,13 +59,11 @@ const Post = ({ frontmatter, markdownBody, slug }) => {
             })}
           </div>
         </div>
-        <section className="blog-post__content">
-            <DynamicRenderer 
-              slug={slug} 
-              markdownBody={markdownBody} 
-              hasCodeBlock={frontmatter.codeBlock} 
-            />
-        </section>
+        <DynamicRenderer 
+          slug={slug} 
+          markdownBody={markdownBody} 
+          hasCodeBlock={frontmatter.codeBlock} 
+        />
       </div>
     </div>
   );

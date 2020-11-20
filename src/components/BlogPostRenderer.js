@@ -55,11 +55,13 @@ export default function MarkdownRenderer({ markdownBody, hasCodeBlock, slug }) {
 
   return (
     <>
-      <ReactMarkdown
-        escapeHtml={true}
-        source={markdownBody}
-        renderers={renderers}
-      />
+      <section className="blog-post__content">
+        <ReactMarkdown
+          escapeHtml={true}
+          source={markdownBody}
+          renderers={renderers}
+        />
+      </section>
       <div className="flex justify-between my-6 md:my-7">
         <Link href="/blog">
           <a 
