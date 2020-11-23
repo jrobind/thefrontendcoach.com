@@ -33,7 +33,7 @@ const Home = ({ slugs, posts }) => (
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
         <img 
           className="max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0 img-shadow" 
-          src="/images/james-robinson.jpg"
+          src="/images/james-robinson.jpeg"
           alt="Photo of James Robinson on a mountain"
         />
         <div className="md:max-w-600 md:ml-4">
