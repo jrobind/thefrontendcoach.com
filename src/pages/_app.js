@@ -21,7 +21,7 @@ export default class MyApp extends App {
             locale: 'en_GB',
             images: [
               {
-                url: 'https://www.thefrontendcoach.com/images/james-robinson.jpg',
+                url: 'https://www.thefrontendcoach.com/images/james-robinson.jpeg',
                 width: 800,
                 height: 600,
                 alt: 'Photo of James Robinson on a mountain',
