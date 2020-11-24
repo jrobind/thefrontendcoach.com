@@ -1,36 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 import { rootURL } from '../../lib/constants';
+import { useWindowSize } from '../../lib/hooks'; 
 import Wave from '../../components/Wave';
 import PodcastIframe from '../../components/PodcastIframe';
 
+
 const episodeSlugs = ['Welcome-to-The-Front-End-Coach-Podcast-elvm9t', 'From-Sport-Science-to-Software-Engineer-emmtjb'];
-
-
-// Custom hook for returning current size of the browser window
-const useWindowSize = () => {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return windowSize;
-}
-
 
 export default function Podcast() {
   const [loaded, setLoaded] = useState(false);
