@@ -78,7 +78,7 @@
 }
 
 @media (min-width: 700px) {
-  .menu {
+  .header ul {
     max-height: none;
     padding-top: 14px;
   }
