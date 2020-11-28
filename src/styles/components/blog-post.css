@@ -38,12 +38,25 @@
 
 /* Paragraph */
 .blog-post p {
-  @apply mb-4 text-base;
+  @apply text-base mb-4;
 }
 
 /* Date - em */
 .blog-post p:first-of-type em {
-  @apply not-italic text-base mb-6 block
+  @apply not-italic text-base block
+}
+
+.blog-post p:first-of-type em:nth-of-type(2) {
+  @apply mx-2
+}
+
+.blog-post p:first-of-type {
+  @apply flex
+}
+
+/* Horizontal rule */
+.blog-post hr:first-of-type {
+  @apply mb-6 text-light-grey
 }
 
 /* Image */

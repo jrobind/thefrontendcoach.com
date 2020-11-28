@@ -10,7 +10,9 @@ timestamp: 1605729865
 
 
 # How to escape from tutorial land
-*November 2020*
+*November 2020* *-* *8 minute read*
+
+***
 
 So you’ve decided you're going to learn how to code and you’re going to teach yourself. You curate a small list of tutorials that you plan to start watching. You’re feeling super excited about your code-learning journey, you start working through your list - everything is going well and things seem to make sense. You end up having to rewatch a couple of videos as a few more advanced concepts start to rear their ugly heads. Nevertheless, you persevere and you manage to get through most of the tutorials. You’ve religiously followed them through, you’ve spent weeks doing so - months even. After finishing and feeling really impressed with your progress, you come up with a project idea. With this idea, you then decide to try and create something on your own, and all hell breaks loose. You hit a brick wall, you feel disheartened, and now you're thinking you don’t know anything at all. 
 

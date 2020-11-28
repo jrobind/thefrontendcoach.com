@@ -9,7 +9,9 @@ timestamp: 1603294987
 ---
 
 # What did you learn from the tutorial you just watched?
-*October 2020*
+*October 2020* *-* *9 minute read*
+
+***
 
 It's something we are all guilty of. We watch a video, attend a lecture, or read an article on a subject matter we wish to learn. More often than not, when it comes to an end, we feel a small sense of accomplishment that we have learned something - we close our laptop or our book and we carry on under the assumption that we have furthered our knowledge on the subject at hand. 
 

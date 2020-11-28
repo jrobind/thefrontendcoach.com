@@ -10,7 +10,9 @@ timestamp: 1604331787
 
 
 # Everything you need to know to become a front-end developer – **an honest guide**.
-*November 2020*
+*November 2020* *-* *15 minute read*
+
+***
 
 Now, more than ever, people want to learn to code, with many hoping to be skilled enough to land themselves a job. A sizeable proportion of these individuals will be looking to become front-end developers. Even in these difficult times, the market still looks good - the ongoing skills shortage for developers isn’t going anywhere [anytime soon](https://www.verdict.co.uk/tech-sector-jobs-uk/).
 

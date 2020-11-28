@@ -10,7 +10,9 @@ timestamp: 1605726004
 
 
 # How do you know when you’re ready to apply for front-end developer positions?
-*November 2020*
+*November 2020* *-* *8 minute read*
+
+***
 
 When I was learning front-end development I would Google this question often. When you’re teaching yourself it’s a lot more difficult to measure your own ‘readiness’. When you take a course or attend a boot camp it’s easier to define this because there is a set start and finish. Those that are self-teaching will have to define this for themselves.
 
