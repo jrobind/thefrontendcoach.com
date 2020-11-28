@@ -30,7 +30,7 @@ If you are seriously willing to put in the time to learn, you’ll inevitably gi
 
 * Thorough knowledge of HTML, CSS, and JavaScript (especially JavaScript)
 * An understanding of web accessibility
-* Some experience with a JavaScript framework and libraries
+* Some experience with a JavaScript framework/library
 * Some understanding and experience with build tools, task runners & preprocessors
 * Willingness and aptitude to learn
 * Passion and enthusiasm for development
