@@ -3,11 +3,13 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import js from 'react-syntax-highlighter/dist/cjs/languages/hljs/javascript';
+import html from 'react-syntax-highlighter/dist/cjs/languages/hljs/htmlbars';
 import vs2015 from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
 import Link from "next/link";
 import { rootURL } from '../lib/constants';
 
 SyntaxHighlighter.registerLanguage('javascript', js);
+SyntaxHighlighter.registerLanguage('html', html);
 
 const DynamicSharing = dynamic(() => import('./Sharing'));
 
