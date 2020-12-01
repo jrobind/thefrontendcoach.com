@@ -66,7 +66,6 @@
 }
 
 /* Image caption */
-
 .blog-post__content img + em {
   @apply m-auto not-italic text-sm mb-6 block;
   max-width: 580px;
@@ -85,26 +84,31 @@
   @apply mb-0;
 }
 
-.blog-post ol {
+.blog-post ol li {
   @apply list-decimal;
 }
 
-.blog-post ul {
+.blog-post ul,
+.blog-post ol {
   @apply list-disc ml-4 mb-4 text-base;
 }
 
-.blog-post li {
+.blog-post ul li {
   @apply mb-1 list-none
 }
 
-.blog-post li::before {
+.blog-post ol li {
+  @apply mb-2
+}
+
+.blog-post ul li::before {
   content: "\2022";
   @apply text-tertiary font-bold inline-block mr-2 text-xl
 }
 
 /* Blockquotes */
 .blog-post blockquote {
-  @apply p-2 mx-6 bg-light-grey mb-4 border-l-4 border-light-grey italic;
+  @apply p-2 mx-6 mb-4 border-l-4 border-tertiary italic;
 }
 
 .blog-post blockquote > p {
@@ -125,16 +129,16 @@
   @apply mb-6;
 }
 
-code:not(.language-javascript) {
+code:not(.language-javascript):not(.language-html):not(.language-bash) {
   @apply text-main text-sm whitespace-no-wrap font-bold tracking-wide;
   font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono, Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
-code:not(.language-javascript)::before {
+code:not(.language-javascript):not(.language-html):not(.language-bash):before {
   content: "`";
 }
 
-code:not(.language-javascript)::after {
+code:not(.language-javascript):not(.language-html):not(.language-bash):after {
   content: "`";
 }
 
@@ -153,7 +157,8 @@ code:not(.language-javascript)::after {
   }
 
   .blog-post p,
-  .blog-post ul {
+  .blog-post ul,
+  .blog-post ol {
     @apply text-lg;
   }
 }
