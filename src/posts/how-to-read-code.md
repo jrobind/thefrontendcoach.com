@@ -98,11 +98,13 @@ With the project set up it's time to examine the file structure and the file nam
 
 The main file that we are looking at in this example is `index.ts` and the full file path is `details-dialog-element/src/index.ts`. The codebase isn’t exceptionally large and it’s not too difficult to determine which files contain the main JavaScript for the project. From the file extension, we can already determine that this file contains [TypeScript](https://www.typescriptlang.org/) which is a superset of JavaScript.
 
+Although the code is written in TypeScript, eventually when we come to inspect it in the browser the code will be plain JavaScript. To run TypeScript in a browser, it first needs to be transpiled into JavaScript with the TypeScript compiler (tsc). Without digressing too much, I'll leave it up to you to explore how this works. Try and utilise some of the steps in this code reading process to help your understanding. If you're still left wondering where this transpilation takes place I'd encourage you to check the `package.json` and `tsconfig.json` at the [project root](https://github.com/github/details-dialog-element). 
+
 For beginners, it can be overwhelming working in a codebase with a complex file structure - especially if you’re used to working on smaller projects that you’ve created from scratch. It’s useful to spend some time figuring out where your code sits within this structure. You can also determine other pieces of useful information that may assist you later, such as where the tests or documentation live.
 
 ### 4. Research unfamiliar terms/concepts
 
-Now take some time to read over the code with `index.ts`. There are nearly 300 lines of code in this file so you might feel a little lost and overwhelmed by it, but I encourage you to be patient and stick to the process and things will start to make sense.
+Now take some time to read over the code within `index.ts`. There are nearly 300 lines of code in this file so you might feel a little lost and overwhelmed by it, but I encourage you to be patient and stick to the process and things will start to make sense.
 
 Make sure you go through the code line by line. The main outcome from this step of the process is to produce a list of terms/vocabulary that you either don’t understand or you’re unsure of. 
 
@@ -181,7 +183,7 @@ After you've refreshed the page you'll see that execution has paused.
 
 You can go ahead and step through the code, executing each line. Once the developer tools are paused in debugger mode you’ll also be able to see some really useful things about the code you’re inspecting such as checking where a function you’ve invoked sits within the call stack and also the value of local and global variables defined in the scope panel on the right.
 
-Now you’ve effectively isolated and ran part of the code, I'd encourage you to repeat this process for other methods and functions in the source code. I’d also encourage you to dive a little deeper and to try and break the code in some way. For instance, try modifying the markup, or you can even go as far as altering the JavaScript source code. By breaking the code this will give you further insight into how it works and functions.  
+Now you’ve effectively isolated and ran part of the code, I'd encourage you to repeat this process for other methods and functions within `index.ts`. I’d also encourage you to dive a little deeper and to try and break the code in some way. For instance, try modifying the HTML, or you can even go as far as altering the JavaScript source code. By breaking the code this will give you further insight into how it works and functions.  
 
 ### 6. Make comments as you go
 
