@@ -25,12 +25,12 @@ Sounds pretty frustrating, right? Well, it doesn’t have to be. In reality writ
 * It reduces technical debt
 * It doesn't impede the development process
 * The code will be easier to maintain
-* The code is easier to understand and reason about
+* The code will be easier to understand and reason about
 * It speeds up onboarding processes
 
 However, this isn’t always possible and as a result the codebase you end up working with might carry a significant amount of technical debt and the documentation might suck. Because of this, it will be more of a challenge to figure out how things work. In this case, your best source of truth will be the source code. If you’re good at reading code you’ll be well equipped for dealing with any challenging codebases!
 
-Coding professionally is often a very interactive and team-based experience. For those who are self-teaching and not enrolled in a course or a Bootcamp, it is important to consider this as you might be rather comfortable coding and learning on your own. In a real job, you’ll almost definitely find yourself conducting and receiving code reviews from other developers. Being able to effectively read and decipher code that someone else has written will be an incredibly crucial skill when it comes to code reviews.
+Coding professionally is often a very interactive and team-based experience. For those who are self-teaching and not enrolled in a course or a Bootcamp, it is important to consider this as you might be rather comfortable coding and learning on your own. In a real job, you’ll almost definitely find yourself conducting and receiving code reviews from other developers. Being able to effectively read and decipher code that someone else has written will be an incredibly valuable skill when it comes to code reviews.
 
 Now we've established that being good at reading code is a crucial skill to have, I want to share with you a process that I have successfully followed to improve my code reading ability.
 
@@ -60,7 +60,7 @@ Once you start to pull apart the source code you’ll remember back to a particu
 
 ### 2. Get set up
 
-Depending on your circumstances this situation may involve you having to request access to certain services and platforms. If for instance, you've just started working on a new project in a new team, you may have restricted access to certain services that are pivotal to you actually being able to access and run the code. You may need access to certain credentials and environment variables. Experienced members of your team will be able to point you in the right direction. If you're lucky everything you need might already be documented in the project wiki or README. Once you have resolved any access issues, you can now go ahead and get the project running. 
+Depending on your circumstances this situation may require you to request access to certain services and platforms. If for instance, you've just started working on a new project in a new team, you may have restricted access to certain services that are pivotal to you actually being able to access and run the code. You may need access to certain credentials and environment variables. Experienced members of your team will be able to point you in the right direction. If you're lucky everything you need might already be documented in the project wiki or README. Once you have resolved any access issues, you can now go ahead and get the project running. 
 
 The setup process for our example is really easy. You can either clone the repo:
 
@@ -68,7 +68,7 @@ The setup process for our example is really easy. You can either clone the repo:
 git clone https://github.com/github/details-dialog-element.git
 ```
 
-Or you can set up an empty project directory and include the project source code yourself. By following the README instructions we can install the library using NPM and include it in a HTML file using a script tag. If you copy over the example markup, your HTML file should look something like this:
+Or you can set up a new project and include the project source code yourself. By following the README instructions we can install the library using NPM and include it in a HTML file using a script tag. If you copy over the example markup, your HTML file should look something like this:
 
 ```html
 <!DOCTYPE html>
@@ -90,11 +90,11 @@ Or you can set up an empty project directory and include the project source code
 </html>
 ```
 
-Now we have all we need to actually run the code. I would recommend running the code using the VSCode [live server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Otherwise, you may encounter [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors if you try to access files on your local filesystem with JavaScript.
+Now we have all we need to actually run the code. I would recommend running the code using the VS Code [live server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Otherwise, you may encounter [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) errors if you try to access files on your local filesystem with JavaScript.
 
 ### 3. Establish an overview
 
-The first step of your process should be to examine the file structure and the file naming conventions. Try to obtain an overview of where the code you’re examining sits within the codebase. If the codebase is well structured and well written, you’ll find that file and directory names will give you some pretty good clues. 
+With the project set up it's time to examine the file structure and the file naming conventions. Try to obtain an overview of where the code you’re examining sits within the codebase. If the codebase is well structured and well written, you’ll find that file and directory names will give you some pretty good clues. 
 
 The main file that we are looking at in this example is `index.ts` and the full file path is `details-dialog-element/src/index.ts`. The codebase isn’t exceptionally large and it’s not too difficult to determine which files contain the main JavaScript for the project. From the file extension, we can already determine that this file contains [TypeScript](https://www.typescriptlang.org/) which is a superset of JavaScript.
 
@@ -143,15 +143,15 @@ Here is the term and the associated code pulled directly from the source code:
   }
  ```
 
-Google is a developer's best friend and knowing what to Google is actually a skill in itself. A quick search with the term takes us to the [MDN documentation for custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), and in my opinion, MDN should be ‘your source of truth’ for all things front end. Although the article doesn’t immediately mention `connectedCallback`. The first paragraph already gives us a pretty good idea that this method has something to do with custom elements:
+Google is a developer's best friend and knowing what to Google is actually a skill in itself. A quick search with the term takes us to the [MDN documentation for custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). Although the article doesn’t immediately mention `connectedCallback`. The first paragraph already gives us a pretty good idea that this method has something to do with custom elements:
 
 >One of the key features of the Web Components standard is the ability to create custom elements that encapsulate your functionality on an HTML page, rather than having to make do with a long, nested batch of elements that together provide a custom page feature.
 
-Essentially, we can utilise the web component API to create custom HTML elements. Once a custom element is defined, we can use it the same as we would with built-in HTML elements. A quick keyword search on the page brings up a section on lifecycle callbacks. Here we find `connectedCallback` is:
+Essentially, we can utilise the Web Component API to create custom HTML elements. Once a custom element is defined, we can use it the same as we would with built-in HTML elements. A quick keyword search on the page brings up a section on lifecycle callbacks. Here we find `connectedCallback` is:
 
 >Invoked each time the custom element is appended into a document-connected element. This will happen each time the node is moved, and may happen before the element's contents have been fully parsed.
 
-Our `connectedCallback` is thus a method that is useful for running logic once a component is inserted to the DOM (readers familiar with React will notice the similarities with React component lifecycle methods). Because the custom element API includes these lifecycle methods this enables us to do things we wouldn’t be able to do with a native HTML element. Custom elements are commonly used to build custom controls such as dropdowns, disclosures, tooltips, and dialogs/modals such as in our example.
+Our `connectedCallback` is thus a method that is useful for running logic once a component is inserted to the DOM (readers familiar with React will notice the similarities with React component lifecycle methods). Because the Custom Element API includes these lifecycle methods this enables us to do things we wouldn’t be able to do with a native HTML element. Custom elements are commonly used to build custom controls such as dropdowns, disclosures, tooltips, and dialogs/modals such as in our example.
 
 I’d recommend creating your own custom element to cement your understanding. This might seem like a distraction but once you’ve understood how custom elements work, understanding the rest of the source code for this project will be a breeze!
 
@@ -163,7 +163,7 @@ To truly understand how the source code in our project example works we need to 
 * Add debugger statements to pause code execution at certain points
 * Add breakpoints using browser developer tools
 
-No approach is necessarily better than the other, you will find a combination of some or all them useful. However, I would definitely recommend utilising the Chrome developer debugging tools. Using breakpoints and debugging statements will enable us to pause code execution. Using the debugger allows you to do some really powerful things with the code you’re inspecting. For instance, you can step through the code execution flow and doing this will allow you to walk through the execution pathway step by step, which makes it easier for you to process what’s actually going on.
+No approach is necessarily better than the other, you will find a combination of some or all them useful. However, I would definitely recommend utilising the Chrome developer debugging tools. Using breakpoints and debugger statements will enable us to pause code execution. Using the debugger allows you to do some really powerful things with the code you’re inspecting. For instance, you can step through the code execution flow and doing this will allow you to walk through the execution pathway step by step, which makes it easier for you to process what’s actually going on.
 
 Before we dive straight in we need a place to start. Finding one is usually the hardest step, especially if you're presented with hundreds of lines of code. The best approach is to narrow your initial focus to one particular piece of functionality - this could be a method for instance. By doing so, we are able to break things down into smaller chunks to work through which will help us to process information in a more manageable way. Seeing as we've already looked at the `connectedCallback` method that seems like a good place to start.
 
@@ -173,17 +173,19 @@ In the image below you can see that I have set a breakpoint at the beginning of 
 
 ![Applying a line-of-code breakpoint in Chrome developer tools](/images/blog/dev-tools-break-point.png)
 
-There are actually different types of breakpoints, the most common is the line-of-code breakpoint which we are using but it's worth knowing [the different types](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints#overview) so you can pick the one which best fits your use case. Once you have placed your line-of-code breakpoint to pause code execution we need to actually trigger the method we have applied the breakpoint to. We already know that the `connectedCallback` method is run once a component is inserted to the DOM. Given this, a page refresh should do the trick. After you've refreshed the page you'll see that execution has paused.
+There are actually different types of breakpoints, the most common is the line-of-code breakpoint which we are using but it's worth knowing [the different types](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints#overview) so you can pick the one which best fits your use case. Once you have placed your line-of-code breakpoint to pause code execution we need to actually trigger the method. We already know that the `connectedCallback` method is run once a component is inserted to the DOM. Given this, a page refresh should do the trick.
+
+After you've refreshed the page you'll see that execution has paused.
 
 ![Debugger mode executed in Chrome developer tools](/images/blog/dev-tools-debugger-mode.png)
 
 You can go ahead and step through the code, executing each line. Once the developer tools are paused in debugger mode you’ll also be able to see some really useful things about the code you’re inspecting such as checking where a function you’ve invoked sits within the call stack and also the value of local and global variables defined in the scope panel on the right.
 
-Now you’ve effectively isolated and ran part of the code, I'd encourage you to repeat this process for other methods and functions in the source code. I’d also encourage you to dive a little deeper and to try and break the code in some way. For instance, try modifying the HTML for the custom element in some way, or you can even go as far as altering the JavaScript source code. By breaking the code this will give you further insight into how it works and functions.  
+Now you’ve effectively isolated and ran part of the code, I'd encourage you to repeat this process for other methods and functions in the source code. I’d also encourage you to dive a little deeper and to try and break the code in some way. For instance, try modifying the markup, or you can even go as far as altering the JavaScript source code. By breaking the code this will give you further insight into how it works and functions.  
 
 ### 6. Make comments as you go
 
-Whilst you are carrying out this debugging process and stepping through the code, make sure you actually write comments as you go. The act of actually writing comments will help to further cement your understanding of how the code works. Plus, if there is a considerable amount of code for you to work through, having comments will make it much easier for you to conceptualise what you’re learning and also jog your memory if you come back to a particular snippet of code after some time away. If it helps to actually print out the code and write comments beside each line then I’d encourage you to do so.
+Whilst you are carrying out this debugging process and stepping through the code, make sure you write comments as you go. The act of actually writing comments will help to further cement your understanding of how the code works. Plus, if there is a considerable amount of code for you to work through, having comments will make it much easier for you to conceptualise what you’re learning and also jog your memory if you come back to a particular snippet of code after some time away. If it helps to actually print out the code and write comments beside each line then I’d encourage you to do so.
 
 ### 7. Run the tests (if they exist)
 
@@ -191,12 +193,12 @@ There won’t always be tests and if there are, sometimes the test coverage may 
 
 Tests are also useful if you’re not sure how to actually invoke/trigger the code you’re investigating. In our example, the relevant test files are conveniently located at the [root of the project](https://github.com/github/details-dialog-element/tree/main/test) within a `test` directory. If you feel as though playing around with the tests will further benefit your understanding then I’d encourage you to clone the repo and run them. 
 
-As these tests are written using [Karma](https://karma-runner.github.io/latest/index.html) you’ll have to do a little bit of extra work to get these running. If you’re unfamiliar with JavaScript testing and the syntax in the test files, this is a perfect opportunity for you to run through our step-by-step process again 😊
+As these tests are written using [Karma](https://karma-runner.github.io/latest/index.html) you’ll have to do a little bit of extra work to get these running. If you’re unfamiliar with JavaScript testing and the syntax in the test files, this is a perfect opportunity for you to run through the code reading process again 😊
 
 ## Final thoughts
 
 This code reading process might seem tedious and time-consuming but ultimately it’s an extremely effective way to familiarise yourself with foreign code and to truly understand the code you’re working with. In a real development job, most of your time will be spent reading code and if you’re reading code then there is a high chance the code you’re reading won’t be written by you. This process is there to help you get used to working with other people's code. Being able to effectively read code is a skill in itself and it’s such a key, crucial skill that is often overlooked, especially by junior developers and those self-teaching.
 
-The process might be tough and a little monotonous but this is what you’ll actually be doing day in day out in a real job so I’d recommend you get used to it now so you’re not overwhelmed once you start. Think of this as **short term pain for long term gain** - in the end, improving this skill requires some deliberate effort. In additon to this, you will also no longer be dependent on documentation. Even with extensive documentation, the source code is the ultimate source of truth anyway.
+The process might be tough and a little monotonous but think of this as **short term pain for long term gain**. In the end, improving this skill requires some deliberate effort. Once you have refined this skill, you will no longer be dependent on documentation. Even with extensive documentation, the source code is the ultimate source of truth anyway.
 
 Having an effective well-defined code reading process will also make you a better developer in the long run because **it’s one of the best ways to learn**. Sometimes the most important skills are the ones that are a little boring, tedious, and less fancy. Don’t get too distracted by the latest frameworks, libraries, and buzzwords otherwise you’ll end up abandoning the skills that really matter.
