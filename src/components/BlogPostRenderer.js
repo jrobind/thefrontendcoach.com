@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import js from 'react-syntax-highlighter/dist/cjs/languages/hljs/javascript';
 import html from 'react-syntax-highlighter/dist/cjs/languages/hljs/htmlbars';
+import xml from 'react-syntax-highlighter/dist/cjs/languages/hljs/xml';
 import bash from 'react-syntax-highlighter/dist/cjs/languages/hljs/bash';
 import vs2015 from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
 import Link from "next/link";
@@ -12,6 +13,7 @@ import { rootURL } from '../lib/constants';
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('html', html);
 SyntaxHighlighter.registerLanguage('bash', bash);
+SyntaxHighlighter.registerLanguage('xml', xml);
 
 const DynamicSharing = dynamic(() => import('./Sharing'));
 
