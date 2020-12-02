@@ -106,7 +106,7 @@ Now take some time to read over the code with `index.ts`. There are nearly 300 l
 
 Make sure you go through the code line by line. The main outcome from this step of the process is to produce a list of terms/vocabulary that you either don’t understand or you’re unsure of. 
 
-For this example, I will pull out a few terms and presume that we do not understand them. Note, you don’t have to be exhaustive with this, try to pick out terms/vocabulary that you feel might be pivotal to the main functionality of the code. Your list might look a little something like this:
+For this example, I will pull out a few terms and presume that we do not understand them. Note, you don’t have to be exhaustive with this, try to pick out terms/vocabulary that you feel might be pivotal to the main functionality of the code. Your list might look something like this:
 
 * `connectedCallback`
 * `disconnectedCallback`
@@ -143,11 +143,11 @@ Here is the term and the associated code pulled directly from the source code:
   }
  ```
 
-Google is a developer's best friend and knowing what to Google is actually a skill itself. A quick search with the term takes us to the [MDN documentation for custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), and in my opinion, MDN should be ‘your source of truth’ for all things front end. Although the article doesn’t immediately mention `connectedCallback`. The first paragraph already gives us a pretty good idea that this method has something to do with custom elements:
+Google is a developer's best friend and knowing what to Google is actually a skill in itself. A quick search with the term takes us to the [MDN documentation for custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements), and in my opinion, MDN should be ‘your source of truth’ for all things front end. Although the article doesn’t immediately mention `connectedCallback`. The first paragraph already gives us a pretty good idea that this method has something to do with custom elements:
 
 >One of the key features of the Web Components standard is the ability to create custom elements that encapsulate your functionality on an HTML page, rather than having to make do with a long, nested batch of elements that together provide a custom page feature.
 
-Essentially, we can utilise the web component API to create custom HTML elements. Once a custom element is defined, we can use it the same as would with built-in HTML elements. A quick keyword search on the page brings up a section on lifecycle callbacks. Here we find `connectedCallback` is:
+Essentially, we can utilise the web component API to create custom HTML elements. Once a custom element is defined, we can use it the same as we would with built-in HTML elements. A quick keyword search on the page brings up a section on lifecycle callbacks. Here we find `connectedCallback` is:
 
 >Invoked each time the custom element is appended into a document-connected element. This will happen each time the node is moved, and may happen before the element's contents have been fully parsed.
 
