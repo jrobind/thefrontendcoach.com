@@ -38,7 +38,7 @@ export default function About() {
             <h2 className="text-3xl text-center md:text-left mb-4">Launching The Front End Coach</h2>
             <div className="text-base md:text-lg">
               <p className="max-w-750 m-auto md:my-3 md:mx-0">I've been through the process myself. Learning to code isn't easy and it's certainly not easy teaching yourself. Knowing where to start, what resources to use, and what to learn can become a real headache, fast. Trying to sift your way through the never-ending sea of guides, tutorials and blog posts can be off-putting, and quite frankly, damn right confusing.</p>
-              <p className="mt-3">I've launched this site and support system to give you my BS-free, honest advice and support, helping you to learn only what <strong className="font-bold underline">you need to learn</strong> and in the most time-efficient way possible, helping to give you every chance at kick-starting your career as a front-end developer.</p>
+              <p className="max-w-750 m-auto mt-3">I've launched this site and support system to give you my BS-free, honest advice and support, helping you to learn only what <strong className="font-bold underline">you need to learn</strong> and in the most time-efficient way possible, helping to give you every chance at kick-starting your career as a front-end developer.</p>
             </div>
           </div>
           <img className="hidden md:block md:relative w-full img-shadow" alt="Man riding a rocket ship" style={{maxWidth: '400px', right: '-16px'}}src="/images/rocket-boy.svg"/>

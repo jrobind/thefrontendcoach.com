@@ -109,8 +109,8 @@ const Home = ({ slugs, posts }) => (
     <section  className="wrapper px-3 pb-6 md:pb-7">
     <img className="m-auto block" style={{maxWidth: '400px'}} alt="Scrum board illustration" src="./images/scrum-board.svg"/>
     <div className="flex flex-col items-center">
-      <h2 className="mb-3 text-3xl">Contribute to Open Source</h2>
-      <p className="text-base md:text-lg m-auto max-w-600 md:max-w-750 text-center">The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.</p>
+      <h2 className="mb-3 text-3xl text-center">Contribute to Open Source</h2>
+      <p className="text-base md:text-lg m-auto max-w-600 md:max-w-750 md:text-center">The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.</p>
       <a href="https://github.com/jrobind/dev-jot" className="btn mt-5">GO TO PROJECT</a>
     </div>
     </section>
