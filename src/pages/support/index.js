@@ -18,7 +18,14 @@ export default function Support() {
             <p className="text-base md:text-lg text-center m-auto">Do you want to become a front-end developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
           </div>
         </div>
-        <img className="w-full img-shadow absolute hidden md:block" alt="Man pondering a question" style={{maxWidth: '400px', right: '-64px', top: '32px'}} src="/images/question.svg"/>
+        <img 
+          className="w-full img-shadow absolute hidden md:block"
+          alt="Man pondering a question"
+          height="300"
+          width="400"
+          style={{maxWidth: '400px', right: '-64px', top: '32px'}}
+          src="/images/question.svg"
+        />
       </section>
 
       <Wave alignment="top"/>
