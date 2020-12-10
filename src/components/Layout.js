@@ -13,9 +13,9 @@ export default function Layout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://cdn.iubenda.com/" crossOrigin=""/>
-        <link rel="preload" href="/images/question.svg" as="image"/>
-        <link rel="preload" href="/images/blog-home-blob-2.svg" as="image"/>
-        <link rel="preload" href="/images/blog-home-blob.svg" as="image"/>
+        <link rel="prefetch" href="/images/question.svg" as="image"/>
+        <link rel="prefetch" href="/images/blog-home-blob-2.svg" as="image"/>
+        <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
       </Head>
       <main>
         <Header/>
