@@ -72,7 +72,7 @@ const Home = ({ slugs, posts }) => (
             <div className="flex 1 text-center flex flex-col items-center">
               <h3 className="font-bold mb-3 text-xl">Podcast</h3>
               <p className="mb-3 text-base md:text-lg" style={{maxWidth: '380px'}}>
-                Interviews, advice on learning how to build your Front End skillset, getting your first job in the tech industry and more!
+                Interviews, advice on learning how to build your front-end skillset, getting your first job in the tech industry and more!
               </p>
               <Link href="/podcast">
                 <a className="btn">LISTEN NOW</a>
