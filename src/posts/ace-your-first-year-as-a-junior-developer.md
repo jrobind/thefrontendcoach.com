@@ -2,7 +2,7 @@
 date: December 2020
 title: 5 tips for acing your first year as a junior developer
 cardTitle: 5 tips for acing your first year as a junior developer
-description: Starting a new job is a daunting prospect, starting a new job as a developer can be even more daunting especially if you’re coming from a self-taught background. For many junior developers starting a new job for the first time is coupled with feelings of intense excitement and also terrified inadequacy.
+description: Starting a new job as a developer can be a daunting prospect especially if you’re coming from a self-taught background. For many junior developers starting their first job may evoke feelings of excitement as well as inadequacy. Based on my own experiences during my first year as a junior front-end developer, I have reflected on what I felt I did well and also what I didn’t do too well. I’ve compiled my 5 top tips for acing your first 12 months as a junior developer.
 tags: ['Advice', 'Jobs']
 codeBlock: false
 timestamp: 1607945363
