@@ -16,13 +16,13 @@ timestamp: 1607945363
 
 Starting a new job as a developer can be a daunting prospect especially if you’re coming from a self-taught background. For many junior developers starting their first job may evoke feelings of excitement as well as inadequacy. The manifestation of the latter is collectively termed [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). These feelings of inadequacy are common for experienced as well as inexperienced developers and are usually the result of working in a complex and constantly changing landscape. There is so much to learn it’s inconceivable to understand all of it in any detail. These feelings of imposter syndrome can be a little more intensified for those just starting out in the industry because, well, they’re new to it.
 
-Your first job as a junior developer is an important one. Mainly because this experience can ultimately determine whether this career path is for you or not. As a junior developer, it is up to you to ensure you do what it takes to make the most of this opportunity and experience. You’ve already cleared the first, hardest hurdle, you’ve managed to teach yourself how to code and now you’ve bagged yourself a job doing it. Your next hurdle is surviving your first 6-12 months as a junior developer. This will be a challenging experience, but if you approach it the right way it will be an incredibly rewarding one, and you’ll learn a heck of a lot. Based on my own experiences during my first year as a junior front-end developer, I have reflected on what I felt I did well and also what I didn’t do too well. I’ve compiled my 5 top tips for acing your first 12 months as a junior developer.
+Your first job as a junior developer is an important one. Mainly because this experience can ultimately determine whether this career path is for you or not. As a junior developer, it is up to you to ensure you do what it takes to make the most of this opportunity and experience. You’ve already cleared the first, hardest hurdle, you’ve managed to teach yourself how to code and now you’ve bagged yourself a job doing it. Your next hurdle is surviving your first 6-12 months as a junior developer. This will be a challenging experience, but if you approach it the right way it will be an incredibly rewarding one, and you’ll learn a heck of a lot. Based on my own experiences during my first year as a junior front-end developer, I’ve compiled my 5 top tips for acing your first 12 months as a junior developer.
 
 ## 1. Prepare for a mindfork
 
 ![Pink road signs over iced lake](/images/blog/confusion.jpg)
 
-In all honesty, there’s no polite way of putting this. You will be experiencing information overload on a daily basis (this never really stops but it tends to calm down as you gain more experience and settle into a job). This can be pretty overwhelming, and alongside the other conventions that come with a new job - like getting to know a new surrounding, new coworkers, processes, and coffee machines - things can get on top of you really quickly - but only if you let them. 
+In all honesty, there’s no polite way of putting this. You will be experiencing information overload on a daily basis (this never really stops but it tends to calm down as you gain more experience and settle into a job). This can be pretty overwhelming, and alongside the other conventions that come with a new job - like getting to know a new surrounding, new co-workers, processes, and coffee machines - things can get on top of you really quickly - but only if you let them. 
 
 Preparing yourself for this can go a long way toward helping you handle and cope with the rate of information overload. Aside from merely preparing yourself, here are a few approaches I took to handle this:
 
@@ -36,12 +36,12 @@ Ask a senior developer or your mentor which areas of information you should be f
 
 ## 2. Communicate
 
-This sounds like the standard tip of ‘be good at communicating’. But honestly, as a junior developer your communication skills are just as, if not more important, than your technical ability. Often, because you feel embarrassed that you might not know something and you’re hyper-aware that you feel out of your depth, it becomes tempting to silo yourself and hide away when you’re completely stuck on something - eventually, you might decide to ask for help begrudgingly. The problem is, if you don’t tell your coworkers or boss when things are hard or when you’re stuck then you risk shooting yourself and possibly your team in the foot. You won't help yourself and you won't allow your team and coworkers to help you. For instance, if you put off asking a question regarding a task that you do not understand you may end up blocked by this for a long time which may have been fixed really quickly if only you’d asked. The repercussions could be:
+This sounds like the standard tip of ‘be good at communicating’. But honestly, as a junior developer your communication skills are just as, if not more important, than your technical ability. Often, because you feel embarrassed that you might not know something and you’re hyper-aware that you feel out of your depth, it becomes tempting to silo yourself and hide away when you’re completely stuck on something - eventually, you might decide to ask for help begrudgingly. The problem is, if you don’t tell your co-workers or boss when things are hard or when you’re stuck then you risk shooting yourself and possibly your team in the foot. You won't help yourself and you won't allow your team and co-workers to help you. For instance, if you put off asking a question regarding a task that you do not understand you may end up blocked by this for a long time which may have been fixed really quickly if only you’d asked. The repercussions could be:
 
 * Your team might miss a sprint goal or particular objective
 * You may be perceived as underperforming
 
-As long as you keep communicating you’ll allow yourself to progress at a much faster rate and you’ll allow your coworkers to help you too.
+As long as you keep communicating you’ll allow yourself to progress at a much faster rate and you’ll allow your co-workers to help you too.
 
 ## 3. Be enthusiastic 
 
@@ -78,8 +78,6 @@ Find the middle ground between asking questions too quickly and waiting too long
 Asking lots of questions is fine, but distracting the developer next to you with five questions in less than 10 minutes might be quite frustrating for them. Especially as [context switching](https://blog.trello.com/why-context-switching-ruins-productivity) is a massive productivity drain for developers so it helps to be mindful of this. Instead, try to group/batch multiple questions together - you’ll find a lot of them will be related in some way too.
 
 Please don’t let my advice put you off asking questions! Developers like to have their egos stroked (at least a little), so asking them about things they probably already know will usually result in you learning something valuable.
-
-Please don’t let my advice put you off of asking questions! Developers like to have their egos stroked (at least a little), so asking them about things they probably already know will usually result in you learning something valuable.
 
 ## 5. Find a mentor
 
