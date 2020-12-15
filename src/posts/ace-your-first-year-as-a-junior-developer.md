@@ -14,7 +14,7 @@ timestamp: 1607945363
 
 ***
 
-Starting a new job as a developer can be a daunting prospect especially if you’re coming from a self-taught background. For many junior developers starting their first job may evoke feelings of excitement as well as inadequacy. The manifestation of the latter is collectively termed [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). These feelings of inadequacy are common for experienced as well as inexperienced developers and are usually the result of working in a complex and constantly changing landscape. There is so much to learn it’s inconceivable to understand all of it in any detail. These feelings of imposter syndrome can be a little more intensified for those just starting out in the industry because, well, they’re new to it.
+Starting a new job as a developer can be a daunting prospect especially if you’re coming from a self-taught background. For many junior developers starting their first job may evoke feelings of excitement as well as inadequacy. The feelings of inadequacy are commonly termed [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome). This is common for experienced as well as inexperienced developers and these feelings are usually the result of working in a complex and constantly changing landscape. There is so much to learn it’s almost impossible to understand all of it in any detail. Feelings of imposter syndrome can be even more intense for those just starting out in the industry because, well, they’re new to it.
 
 Your first job as a junior developer is an important one. Mainly because this experience can ultimately determine whether this career path is for you or not. As a junior developer, it is up to you to ensure you do what it takes to make the most of this opportunity and experience. You’ve already cleared the first, hardest hurdle, you’ve managed to teach yourself how to code and now you’ve bagged yourself a job doing it. Your next hurdle is surviving your first 6-12 months as a junior developer. This will be a challenging experience, but if you approach it the right way it will be an incredibly rewarding one, and you’ll learn a heck of a lot. Based on my own experiences during my first year as a junior front-end developer, I’ve compiled my 5 top tips for acing your first 12 months as a junior developer.
 
@@ -26,9 +26,9 @@ In all honesty, there’s no polite way of putting this. You will be experiencin
 
 Preparing yourself for this can go a long way toward helping you handle and cope with the rate of information overload. Aside from merely preparing yourself, here are a few approaches I took to handle this:
 
-### Keep a markdown notes file
+### Keep notes in a markdown file
 
-Keep a markdown file noting key pieces of information that would be wise for you to remember. Using markdown is cool because you can easily format your notes and they can live in your text editor so you can easily reach them when you're coding. Your notes can be codebase specific, they could relate to technologies the company/project uses - they can even be company-specific information such as payroll and time tracking information, even where to find the toilet.
+Keep a markdown file noting key pieces of information that would be wise for you to remember. Using markdown is cool because you can easily format your notes and they can live in your text editor so you can easily reach them when you're coding. Your notes can be codebase specific, they could relate to technologies the company/project uses - they can even be company-specific such as payroll and time tracking information, even where to find the toilet.
 
 ### Ask for direction
 
