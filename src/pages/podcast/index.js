@@ -40,6 +40,7 @@ export default function Podcast() {
             loaded={loaded} 
             width={width} 
             handleIframeLoad={handleIframeLoad}
+            id="episode-3"
           />
           <div className="m-auto mt-4 mb-7 md:mt-5 md:mb-8 text-base md:text-lg" style={{maxWidth: '800px'}}>
             <p className="mb-3">In this episode, I interview <a className="underline text-main" href="http://mstrutt.co.uk">Michael Strutt</a>, a Tech Community Lead at <a className="underline text-main" href="https://p.ota.to/">Potato</a>. Michael shares his thoughts on what it takes to become a great developer, alongside tips regarding job applications and how to handle imposter syndrome. Michael has also written about mental health and development – please check out his <a className="underline text-main" href="https://dev.to/potatostudios_/one-engineer-s-journey-with-mental-health-17lh">recent article</a>.</p>
@@ -50,6 +51,7 @@ export default function Podcast() {
             loaded={loaded} 
             width={width} 
             handleIframeLoad={handleIframeLoad}
+            id="episode-2"
           />
           <div className="m-auto mt-4 mb-7 md:mt-5 md:mb-8 text-base md:text-lg" style={{maxWidth: '800px'}}>
             <p className="mb-3">In this episode, I interview <a className="underline text-main" href="https://www.linkedin.com/in/david-bayley-940762a5/">David Bayley</a>, a former Sport and Exercise Science graduate who is now a very successful software engineer for Lloyds Bank in London. David is a self-taught developer and has some fantastic insight into the tech world along with his own tips and advice for learning and breaking into the industry.</p>
@@ -60,6 +62,7 @@ export default function Podcast() {
             loaded={loaded} 
             width={width}
             handleIframeLoad={handleIframeLoad}
+            id="episode-1"
           />
           <div className="m-auto mt-4 md:mt-5 text-base md:text-lg" style={{maxWidth: '800px'}}>
             <p className="mb-3">I am very excited to share with you the first episode of The Front End Coach Podcast! This very first episode is a little different in format from regular episodes. Instead, it’s an introduction to me, the podcast, what you can expect, and The Front End Coach itself.</p>
