@@ -6,7 +6,11 @@ import Wave from '../../components/Wave';
 import PodcastIframe from '../../components/PodcastIframe';
 
 
-const episodeSlugs = ['Welcome-to-The-Front-End-Coach-Podcast-elvm9t', 'From-Sport-Science-to-Software-Engineer-emmtjb'];
+const episodeSlugs = [
+  'Welcome-to-The-Front-End-Coach-Podcast-elvm9t',
+  'From-Sport-Science-to-Software-Engineer-emmtjb',
+  'Insights-from-a-Tech-Community-Lead-eo49a8'
+];
 
 export default function Podcast() {
   const [loaded, setLoaded] = useState(false);
@@ -31,6 +35,16 @@ export default function Podcast() {
         </section>
         <Wave alignment="bottom"/>
         <section className="pt-8 pb-6 px-3">
+        <PodcastIframe 
+            slug={episodeSlugs[2]}
+            loaded={loaded} 
+            width={width} 
+            handleIframeLoad={handleIframeLoad}
+          />
+          <div className="m-auto mt-4 mb-7 md:mt-5 md:mb-8 text-base md:text-lg" style={{maxWidth: '800px'}}>
+            <p className="mb-3">In this episode, I interview <a className="underline text-main" href="http://mstrutt.co.uk">Michael Strutt</a>, a Tech Community Lead at <a className="underline text-main" href="https://p.ota.to/">Potato</a>. Michael shares his thoughts on what it takes to become a great developer, alongside tips regarding job applications and how to handle imposter syndrome. Michael has also written about mental health and development – please check out his <a className="underline text-main" href="https://dev.to/potatostudios_/one-engineer-s-journey-with-mental-health-17lh">recent article</a>.</p>
+          </div>
+
           <PodcastIframe 
             slug={episodeSlugs[1]}
             loaded={loaded} 
@@ -38,7 +52,7 @@ export default function Podcast() {
             handleIframeLoad={handleIframeLoad}
           />
           <div className="m-auto mt-4 mb-7 md:mt-5 md:mb-8 text-base md:text-lg" style={{maxWidth: '800px'}}>
-            <p className="mb-3">In this episode I interview <a className="udnerline text-main" href="https://www.linkedin.com/in/david-bayley-940762a5/">David Bayley</a>, a former Sport and Exercise Science graduate who is now a very successful software engineer for Lloyds Bank in London. David is a self-taught developer and has some fantastic insight into the tech world along with his own tips and advice for learning and breaking into the industry.</p>
+            <p className="mb-3">In this episode, I interview <a className="underline text-main" href="https://www.linkedin.com/in/david-bayley-940762a5/">David Bayley</a>, a former Sport and Exercise Science graduate who is now a very successful software engineer for Lloyds Bank in London. David is a self-taught developer and has some fantastic insight into the tech world along with his own tips and advice for learning and breaking into the industry.</p>
           </div>
 
           <PodcastIframe 
