@@ -45,7 +45,7 @@ Let’s have a look at each of these criteria in more detail:
 
 You can’t cut too many corners here - this is your bread and butter. These are the core browser technologies, and this is where you will be spending your time as a front-end developer. Whatever job you take, whatever framework, templating system, or library you work with, you **will be utilising these technologies** - even if there is a fairly thick layer of abstraction over them.
 
-For those that are looking to become UX-focused front-end developers you’ll probably want to centre more of your time toward the HTML, CSS side of things. For those wanting to become JavaScript focused front-end developers (now commonly termed ‘front-end engineers’), you’ll want to point your focus toward JavaScript – make sure you learn the fundamentals, as well as more advanced concepts such as closures, prototypes & inheritance, promises, etc.
+For those that are looking to become UX-focused front-end developers you’ll probably want to centre more of your time toward the HTML, CSS side of things. For those wanting to become JavaScript focused front-end developers (now commonly termed ‘front-end engineers’), you’ll want to point your focus toward JavaScript – make sure you learn the fundamentals, as well as more advanced concepts such as closures, prototypes and inheritance, promises, etc.
 
 ### Some experience with a JavaScript framework and/or library
 
