@@ -1,10 +1,27 @@
 import Helmet from 'react-helmet';
+import classname from 'classnames';
 
-export default function Newsletter() {
+
+export default function Newsletter({ newsletterPage }) {
   return (
     <>
-      <section className="wrapper mt-4">
-        <div className="mx-3 pt-6 border-t pb-7 justify-center items-center flex border-light-grey">
+      <section 
+        className={classname({
+          'wrapper': true,
+          'mt-4': !newsletterPage
+        })}
+      >
+        <div
+          className={classname({
+            'mx-3': true,
+            'pt-6': true,
+            'border-t': !newsletterPage,
+            'pb-7': true,
+            'justify-center': true,
+            'flex': true,
+            'border-light-grey': !newsletterPage
+          })}
+        >
           <div id="newsletter">
             <style jsx>
               {`
@@ -30,10 +47,10 @@ export default function Newsletter() {
               <div id="newsletter-container" className="ml-form-align-left">
                 <div className="ml-form-embedWrapper embedForm">
                   <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
-                    <div className="ml-form-embedContent">
+                    {!newsletterPage && <div className="ml-form-embedContent">
                       <h3>SUBSCRIBE TO THE NEWSLETTER</h3>
                       <p id="newsletter-description">Stay up-to-date with new articles, podcast episodes and latest news.</p>
-                    </div>
+                    </div>}
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
                       <div className="ml-form-formContent horozintalForm">
                         <div className="ml-form-horizontalRow">

@@ -1,15 +1,18 @@
 import Link from 'next/link';
+import Router, { withRouter } from 'next/router';
 import Newsletter from './Newsletter';
 import Wave from './Wave';
 
-export default function Footer() {
+function Footer({ router }) {
+  const isNewsletterPage = router.pathname === '/newsletter';
+
   return (
     <>
-      <Newsletter/>
+      <Newsletter newsletterPage={isNewsletterPage}/>
       <Wave alignment="top"/>
       <footer className="footer text-sm bg-main text-white pb-6 py-3 px-3">
         <div className="wrapper">
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap items-start">
             <div className="mr-3">
               <ul>
                 <li className="mr-2 mb-2 mt-2">
@@ -20,6 +23,11 @@ export default function Footer() {
                 <li className="mr-2 mb-2 mt-2">
                   <Link href="/support">
                     <a className="p-1">Support</a>
+                  </Link>
+                </li>
+                <li className="mb-2 mt-2">
+                  <Link href="/newsletter">
+                    <a className="p-1">Newsletter</a>
                   </Link>
                 </li>
               </ul>
@@ -66,3 +74,5 @@ export default function Footer() {
     </>
   )
 }
+
+export default withRouter(Footer);
