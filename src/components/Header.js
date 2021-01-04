@@ -5,7 +5,7 @@ import Router, { withRouter } from 'next/router';
 import classname from 'classnames';
 
 function Header({ router }) {
-  const isDefault = router.pathname === '/' || router.pathname === '/podcast';
+  const isDefault = ['/', '/podcast'].includes(router.pathname);
   const { width } = useWindowSize();
   const [active, toggleActive] = useState(false);
 
