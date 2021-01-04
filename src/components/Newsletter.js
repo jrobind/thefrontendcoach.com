@@ -49,7 +49,9 @@ export default function Newsletter({ newsletterPage }) {
                   <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
                     {!newsletterPage && <div className="ml-form-embedContent">
                       <h3>SUBSCRIBE TO THE NEWSLETTER</h3>
-                      <p id="newsletter-description">Stay up-to-date with new articles, podcast episodes and latest news.</p>
+                      <p id="newsletter-description">
+                        Stay up-to-date with upcoming courses, articles, podcast episodes, and more.
+                      </p>
                     </div>}
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
                       <div className="ml-form-formContent horozintalForm">
