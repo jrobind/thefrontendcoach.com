@@ -22,7 +22,7 @@ I think It’s really important to make an informed choice about your code-learn
 
 ![A number of footpaths in a large field](/images/blog/pathways.jpg)
 
-There are three popular code-learning pathways. They each have their pros and their cons and It’s up to you to balance each and everyone one of them to decide which works best for you. The three main pathways into the coding world are:
+There are three popular code-learning pathways. They each have their pros and cons and It’s up to you to balance each and everyone one of them to decide which works best for you. The three main pathways are:
 
 * College (usually computer science degree)
 * Coding bootcamp
@@ -30,7 +30,7 @@ There are three popular code-learning pathways. They each have their pros and th
 
 A rather large caveat I’d like to touch on before we proceed is that just because you attend a bootcamp or you decide to enroll in a computer science degree programme (or similar) this doesn’t mean that you won’t need to self-teach. The development space is constantly evolving and it’s moving incredibly fast (especially within the front end), there is so much to learn, **whatever path you decide to take you will inevitably need to get comfortable with self-teaching**.
 
-Many readers will be wondering whether you need a computer science degree to become a developer. In short, the answer is no. I don’t have one, and I’m completely self-taught. I’ve worked on some really exciting projects with industry-leading brands such as Google, so I’m an example that it’s definitely possible. 
+Many readers will be wondering whether you need a computer science degree to become a developer. In short, the answer is no. I don’t have one, I’m completely self-taught and I’ve worked on some really exciting projects with industry-leading brands including Google.
 
 ## To degree, or not to degree
 
@@ -47,19 +47,19 @@ In that case, you’re left with a couple of options:
 
 ## Bootcamping
 
-There are a few similarities between a bootcamp and a college degree (albeit not many). Namely, a defined course structure, along with a set start and end date. You’ll also be learning alongside other students with similar goals and abilities. Similarly, as with colleges, bootcamps frequently maintain relationships with businesses and partners. These relationships are useful for networking and job opportunities. The key difference between the two is the length of time the courses run for and the content covered.
+There are a some similarities between a bootcamp and a college degree (albeit not many). Namely, a defined course structure, along with a set start and end date. You’ll also be learning alongside other students with similar goals and abilities. Similarly, as with colleges, bootcamps frequently maintain relationships with businesses and partners. These relationships are useful for networking and job opportunities. The key difference between the two is the length of time the courses run for and the content covered.
 
-Bootcamps typically run anywhere from a few weeks up to 6 months in length (with the average around ~14 weeks). They are generally sold as a fast track to development jobs and focus on an intense, accelerated learning experience. You’ll cover a huge range of topics from front end to back end and also pick up several languages, libraries and, frameworks. The process is incredibly intense. With the approach leaning more toward the ‘learn lots and acquire a broad but potentially shallow knowledge of many technologies and subjects.’ Many bootcamps also build portfolio and interview support into their courses to help give students an edge when applying and searching for work. Unfortunately, bootcamps are also pricey and a course could set you back (on average) ~13,500 USD.
+Bootcamps typically run anywhere from a few weeks up to 6 months in length (with the average around ~14 weeks). They are generally sold as a fast track to development jobs and focus on an intense, accelerated learning experience. You’ll cover a huge range of topics from front end to back end and also pick up several languages, libraries and, frameworks. With the approach leaning more toward the ‘learn lots and acquire a broad but potentially shallow knowledge of many technologies and subjects.’ Many bootcamps also build portfolio and interview support into their courses to help give students an edge when applying and searching for work. Unfortunately, bootcamps are also pricey and a course could set you back (on average) ~13,500 USD.
 
-Attending a coding bootcamp doesn’t guarantee you a job after completion, either. Maybe it did a few years ago, but bootcamps have proliferated in recent times and as a result, the competition for junior and entry-level developer positions is very high. Many aspiring coders will not have the funds available or be prepared to take on the financial commitments associated with degree programmes or bootcamps. In this case, your most realistic remaining option is to teach yourself.
+Attending a coding bootcamp doesn’t guarantee you a job after completion either. Maybe it did a few years ago, but bootcamps have proliferated in recent times and as a result, the competition for junior and entry-level developer positions is very high. Many aspiring coders will not have the funds available or be prepared to take on the financial commitments associated with degree programmes or bootcamps. In this case, your most realistic remaining option is to teach yourself.
 
-I’ll be completely honest with you, **self-teaching is the hardest route to take**. You will need to dedicate yourself to some serious learning, you will need to build a strong portfolio and you’ll need to have a really good grasp of the technologies that you’re learning. You’re going to have to go that extra mile to ensure you stand out from the other candidates applying for similar roles – a lot of these candidates will have computer science degrees and have attended coding bootcamps. It’s an unspoken truth, but being self-taught also implies that more will be expected from you than someone with a computer science degree.
+I’ll be completely honest with you, **self-teaching is the hardest route to take**. You will need to dedicate yourself to some serious learning, you will need to build a strong portfolio and you’ll need to have a really good grasp of the technologies that you’re learning. You’re going to have to go that extra mile to ensure you stand out from other candidates applying for similar roles – a lot of these candidates will have computer science degrees and have attended coding bootcamps. It’s an unspoken truth, but being self-taught also implies that more will be expected from you than someone with a computer science degree.
 
 ## Self-teaching - get ready for a challenging ride
 
 Whilst a lot of industry voices who target prospective coders constantly highlight that teaching yourself how to code will enable you to land a job within a matter of a few weeks, I find this a little disingenuous. Whilst I *am* saying that this is totally possible (I did it myself), I believe it's best to be prepared and well informed before deciding on something that can greatly impact your short and long term future. In my book, honesty is the best policy!
 
-Teaching yourself is hard. Very hard. Here’s a non-exhaustive list of reasons why it’s hard:
+Teaching yourself is hard, very hard. Here’s a non-exhaustive list of reasons why it’s hard:
 
 * You’re isolated learning on your own
 * There’s no defined learning structure
@@ -90,7 +90,7 @@ If you’re able to commit to learning full-time or nearly full-time, I’d enco
 
 Whatever learning resources and pathway you decide to follow, you will need a ton of discipline. When you’re not forced by something - such as a deadline or course completion date - it can be tough to stick with something. Setting yourself realistic and achievable daily and weekly goals can be a great way to manage the overwhelming nature of the code-learning experience. 
 
-Many of the students I mentor lose discipline when they try to learn too many things at once and when they try to set unrealistic goals. It’s usually a combination of both. For those that read my content, you’ll know I’m a firm advocate for [nailing the fundamentals](how-to-become-a-front-end-developer#do-not-try-to-learn-everything) before reaching for frameworks/libraries and complex tooling. If you want to become a front-end developer, don’t set yourself a neverending list of technologies to learn, instead learn the fundamental web technologies such as HTML, CSS, and JavaScript in detail before picking up frameworks and libraries. Take time to learn each technology/concept you’re covering otherwise you’ll become disheartened, overwhelmed and you won’t stay disciplined. 
+Many of the students I mentor lose discipline when they try to learn too many things at once and when they try to set unrealistic goals. It’s usually a combination of both. For those that read my content, you’ll know I’m a firm advocate for [nailing the fundamentals](how-to-become-a-front-end-developer#do-not-try-to-learn-everything) before reaching for frameworks/libraries and complex tooling. If you want to become a front-end developer, don’t set yourself a never ending list of technologies to learn, instead learn the fundamental web technologies such as HTML, CSS, and JavaScript in detail before picking up frameworks and libraries. Take time to learn each technology/concept you’re covering otherwise you’ll become disheartened, overwhelmed and you won’t stay disciplined. 
 
 ## Don’t be afraid of feedback
 
@@ -100,6 +100,6 @@ Contributing to open source is a great way to counter this. Feedback on code you
 
 ## Final thoughts
 
-For those who don't work well with self-directed learning, and for those who struggle to learn without structure and guidance, you might find yourself best suited to either a degree course or bootcamp. If however, you've opted to take the self-taught route you’ll need to maintain high levels of motivation and be an incredibly disciplined individual (not that a degree programme or bootcamp don't require this, it's just intensified when self-teaching). If you’re a computer science student or you’re attending (or recently graduated) you’ll still need to teach yourself things. Don’t think the process ends after your course finishes. A career as a developer is a career of learning.
+For those who don't work well with self-directed learning, and for those who struggle to learn without structure and guidance, you might find yourself best suited to either a degree course or bootcamp. If however, you've opted to take the self-taught route you’ll need to maintain high levels of motivation and be an incredibly disciplined individual (not that a degree programme or bootcamp doesn't require this, it's just intensified when self-teaching). If you’re a computer science student or you’re attending (or recently graduated) you’ll still need to teach yourself things. Don’t think the process ends after your course finishes. A career as a developer is a career of learning.
 
 Regardless of whether you decide to pursue a computer science degree, attend a bootcamp, or teach yourself, there are a few fundamental truths that underpin our chances of success. Namely, that the path you take won’t matter if you don’t put in the work. As long as you put in the work, are consistent with your learning, and remain disciplined you will be able to meet with success.
