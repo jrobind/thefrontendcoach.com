@@ -12,13 +12,11 @@ export default function Newsletter({ newsletterPage }) {
         })}
       >
         <div
-          className={classname({
-            'mx-3': true,
-            'pt-6': true,
+          className={classname('mx-3', 'pb-7', 'flex', 'justify-center', {
+            'pt-6': !newsletterPage,
+            'md:pt-6': newsletterPage,
+            'pt-3': newsletterPage,
             'border-t': !newsletterPage,
-            'pb-7': true,
-            'justify-center': true,
-            'flex': true,
             'border-light-grey': !newsletterPage
           })}
         >
