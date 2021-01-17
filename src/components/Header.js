@@ -43,22 +43,22 @@ function Header({ router }) {
             <ul className="max-h-0 overflow-hidden sm:absolute sm:flex sm:right-0">
               <li className="menu__item">
                 <Link href="/about">
-                  <a tabIndex={!active && width < 700 ? '-1' : 'false'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">About</a>
+                  <a tabIndex={!active && width < 700 ? '-1' : '0'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">About</a>
                 </Link>
               </li>
               <li className="menu__item">
                 <Link href="/blog">
-                  <a tabIndex={!active && width < 700 ? '-1' : 'false'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Blog</a>
+                  <a tabIndex={!active && width < 700 ? '-1' : '0'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Blog</a>
                 </Link>
               </li>
               <li className="menu__item">
                 <Link href="/support">
-                  <a tabIndex={!active && width < 700 ? '-1' : 'false'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Support</a>
+                  <a tabIndex={!active && width < 700 ? '-1' : '0'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Support</a>
                 </Link>
               </li>
               <li className="menu__item">
                 <Link href="/podcast">
-                  <a tabIndex={!active && width < 700 ? '-1' : 'false'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Podcast</a>
+                  <a tabIndex={!active && width < 700 ? '-1' : '0'} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Podcast</a>
                 </Link>
               </li>
             </ul>
