@@ -9,7 +9,7 @@ const BlogPost = ({ posts, limit }) => {
       {postsToRender.map(({slug, data}) => {
         return (
           <Link key={slug} href={"/blog/" + slug}>
-            <a className="blog-card text-black" style={{height: '180px'}}>
+            <a className="blog-card" style={{height: '180px', color: 'black'}}>
               <div className="flex justify-between">
                 <span className="text-xs">{data.date}</span>
                 <div>
