@@ -48,7 +48,7 @@ export default function Newsletter({ newsletterPage }) {
                     {!newsletterPage && <div className="ml-form-embedContent">
                       <h3>JOIN THE SELF-TAUGHT TIPS NEWSLETTER</h3>
                       <p id="newsletter-description">
-                        Improve your learning process and receive self-taught, learning tips every week, straight to your inbox.
+                        Improve your learning process and receive self-taught learning tips every week, straight to your inbox.
                       </p>
                     </div>}
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
