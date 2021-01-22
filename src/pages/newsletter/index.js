@@ -22,7 +22,7 @@ export default function NewsletterPage() {
               Learning to code is tough. Self-teaching is even tougher.
             </p>
             <p>
-              Improve your learning process and <span className="font-bold">receive self-taught, learning tips every week</span>, straight to your inbox. 🙌
+              Improve your learning process and <span className="font-bold">receive self-taught, learning tips every week</span>, straight to your inbox 🙌
             </p>
           </div>
           </div>
