@@ -1,0 +1,9 @@
+.hero-cta .arrow {
+  @apply relative;
+  right: 0;
+  transition: right ease 0.2s;
+}
+
+.hero-cta:hover .arrow {
+  right: -6px;
+}

@@ -29,7 +29,7 @@ export default function Podcast() {
         <div className="pt-5 md:pt-7 wrapper px-3 text-white">
           <h1 className="text-3xl md:text-4xl text-center">The Front End Coach Podcast</h1>
           <p className="m-auto mt-4 pb-6 text-lg md:text-xl max-w-600 text-center">
-            With Interviews, tips, advice on learning how to build your Front End skillset, getting your first job in the tech industry, and more!
+            With Interviews, tips, advice on learning how to build your front-end skillset, getting your first job in the tech industry, and more!
           </p>
           </div>
         </section>

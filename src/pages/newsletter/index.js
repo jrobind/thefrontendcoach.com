@@ -11,10 +11,20 @@ export default function NewsletterPage() {
       />
       <section>
         <div className="pt-5 md:pt-7 wrapper px-3">
-          <h1 className="text-3xl md:text-4xl text-center">The Front End Coach Newsletter</h1>
-          <p className="m-auto mt-4 text-lg md:text-xl text-center" style={{ maxWidth: '500px' }}>
-            Stay up-to-date with upcoming courses, articles, podcast episodes, and more 🙌
-          </p>
+          <h1 
+            style={{maxWidth: 'fit-content', borderColor: '#F7B501', lineHeight: '1.2'}}
+            className="m-auto border-b-4 text-3xl md:text-4xl text-center">Join the self-taught tips newsletter</h1>
+          <div 
+            className="m-auto mt-4 text-center text-xl md:text-2xl"
+            style={{maxWidth: '650px'}}
+          >
+            <p className="mb-3">
+              Learning to code is tough. Self-teaching is even tougher.
+            </p>
+            <p>
+              Improve your learning process and <span className="font-bold">receive self-taught, learning tips every week</span>, straight to your inbox. 🙌
+            </p>
+          </div>
           </div>
         </section>
       </div>

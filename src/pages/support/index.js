@@ -15,7 +15,7 @@ export default function Support() {
         <div className="pb-7 flex justify-center">
           <div className="z-1 mt-5 md:mt-7" style={{maxWidth: '500px'}}>
             <h1 className="mb-5 text-3xl md:text-4xl text-center">Need some help?</h1>
-            <p className="text-base md:text-lg text-center m-auto">Do you want to become a front-end developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold underline">see the support options below.</strong></p>
+            <p className="text-base md:text-lg text-center m-auto">Do you want to become a front-end developer? Are you stuck? Have no idea where to start? Maybe you're further down the learning pathway and you need a hand with your portfolio? Not to worry! Help is on its way - <strong className="font-bold">see the support options below.</strong></p>
           </div>
         </div>
         <img 
@@ -56,7 +56,7 @@ export default function Support() {
             <p className="my-3">For a limited number of students, I will be providing a more personalised support. This will be most suited to students who are struggling to progress with their learning or who are looking for more guidance on their CV, job applications, and portfolios.</p>
             <p className="mb-3">
               The format of this support will involve weekly one-to-one scheduled video calls. Direct mentorship can be incredibly rewarding for both parties. These sessions will help to provide you with the right level of accountability and support to help you reach your development goals.</p>
-            <p className="mb-3"><span className="font-bold underline">To join the waiting list</span>, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
+            <p className="mb-3"><span className="font-bold">To join the waiting list</span>, please send an email to <strong className="font-bold">james@thefrontendcoach.com</strong> outlining a few things:</p>
             <ul>
               <li className="pb-2"><span className="bullet mr-1"></span> A brief introduction, including information about your current progress and experience level.</li>
               <li className="pb-2"><span className="bullet mr-1"></span> Why you want to become a front-end developer.</li>

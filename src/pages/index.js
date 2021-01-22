@@ -20,8 +20,15 @@ const Home = ({ slugs, posts }) => (
           <p className="my-3 text-lg md:text-xl">
             Learning to code? Thinking of becoming a front-end developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
-          <Link href="/support">
-            <a className="btn btn--yellow">GET SUPPORT</a>
+          <Link href="/newsletter">
+            <a 
+              className="hero-cta text-xl md:text-2xl text-tertiary"
+              style={{width: 'fit-content'}}>
+              <span 
+                className="border-b-2 inline-block font-bold"
+                style={{lineHeight: '1.2'}}>Get weekly learning tips</span>
+              <svg className="arrow ml-3 inline" width="27" height="24" fill="#F7B501" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#F7B501" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+            </a>
           </Link>
         </div>
         <img className="img-shadow hidden md:block" alt="Man inspecting code block" src="./images/web-development.svg" width='450' height='450'/>
@@ -39,7 +46,7 @@ const Home = ({ slugs, posts }) => (
         <div className="md:max-w-600 md:ml-4">
           <h2 className="mb-3 text-3xl">About James Robinson</h2>
           <p className="mb-5 text-base md:text-lg">
-            Hey. I'm James Robinson, a self-taught front-end developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry I've worked on a variety of exciting projects, for high-profile industry-leading brands including Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold underline">actually need</span> to become a front-end developer.
+            Hey. I'm James Robinson, a self-taught front-end developer. I've been through the process myself, and I know just how frustrating and difficult it can be when first starting out. Since landing my first job in the industry I've worked on a variety of exciting projects, for high-profile industry-leading brands including Google. I'm here to share with you my honest, BS-free approach to acquiring the skills you <span className="font-bold">actually need</span> to become a front-end developer.
           </p>
           <Link href="/about">
             <a className="btn">MY JOURNEY</a>

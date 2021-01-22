@@ -46,13 +46,13 @@ export default function Newsletter({ newsletterPage }) {
                 <div className="ml-form-embedWrapper embedForm">
                   <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
                     {!newsletterPage && <div className="ml-form-embedContent">
-                      <h3>SUBSCRIBE TO THE NEWSLETTER</h3>
+                      <h3>JOIN THE SELF-TAUGHT TIPS NEWSLETTER</h3>
                       <p id="newsletter-description">
-                        Stay up-to-date with upcoming courses, articles, podcast episodes, and more.
+                        Improve your learning process and receive self-taught, learning tips every week, straight to your inbox.
                       </p>
                     </div>}
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
-                      <div className="ml-form-formContent horozintalForm">
+                      <div className="ml-form-formContent horozintalForm" style={{ paddingBottom: '12px'}}>
                         <div className="ml-form-horizontalRow">
                           <div className="ml-input-horizontal">
                             <div style={{width: '100%'}} className="horizontal-fields">
@@ -70,11 +70,8 @@ export default function Newsletter({ newsletterPage }) {
                       </div>
                       <div className="ml-form-embedPermissions">
                         <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
-                          <p>You can unsubscribe anytime.</p>
+                          <p>No spam. Unsubscribe anytime.</p>
                         </div>
-                      </div>
-                      <div className="ml-form-checkboxRow ml-validate-required">
-                        <label className="checkbox"> <input type="checkbox"/> <span className="label-description"> <span>I am happy for The Front End Coach to contact me by email.</span> </span> </label>
                       </div>
                       <input type="hidden" name="ml-submit" value="1"/>
                       <div className="ml-mobileButton-horizontal">
@@ -86,7 +83,7 @@ export default function Newsletter({ newsletterPage }) {
                   <div className="ml-form-successBody row-success" style={{display: 'none'}}>
                     <div className="ml-form-successContent">
                       <h4>Thank you!</h4>
-                      <p>You have successfully joined our subscriber list.</p>
+                      <p>You have successfully joined the subscriber list.</p>
                     </div>
                   </div>
                 </div>
