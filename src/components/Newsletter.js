@@ -70,13 +70,14 @@ export default function Newsletter({ newsletterPage }) {
                       </div>
                       <div className="ml-form-embedPermissions">
                         <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
-                          <p>No spam. Unsubscribe anytime.</p>
+                        <p>No spam. Unsubscribe anytime.</p>
                         </div>
                       </div>
                       <input type="hidden" name="ml-submit" value="1"/>
                       <div className="ml-mobileButton-horizontal">
                         <button type="submit" className="primary subscribe-btn">SUBSCRIBE</button>
                         <button disabled="disabled" style={{display: 'none'}} type="button" className="loading"> <span className="ml-form-embedSubmitLoad"><span></span><span></span><span></span><span></span></span> </button>
+                        <p className="mt-2">No spam. Unsubscribe anytime.</p>
                       </div>
                     </form>
                   </div>
