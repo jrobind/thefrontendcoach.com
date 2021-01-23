@@ -84,7 +84,7 @@ export default function Newsletter({ newsletterPage }) {
                   <div className="ml-form-successBody row-success" style={{display: 'none'}}>
                     <div className="ml-form-successContent">
                       <h4>Thank you!</h4>
-                      <p>You have successfully joined the subscriber list.</p>
+                      <p>Success! Please check your email and confirm your subscription 🎉 </p>
                     </div>
                   </div>
                 </div>
