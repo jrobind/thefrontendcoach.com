@@ -48,7 +48,7 @@ module.exports = {
       '95': '0.95'
     },
     backgroundImage: (theme) => ({
-      'logo-black-small': "url('/images/test.png')",
+      'logo-black-small': "url('/images/test.svg')",
       'logo-white-small': "url('/images/logo-white-small.png')",
       'logo-white-large': "url('/images/logo-white-large.png')",
       'logo-black-large': "url('/images/logo-black-large.png')",
