@@ -58,7 +58,7 @@ function Header({ router }) {
               </li>
               <li className="menu__item">
                 <Link href="/podcast">
-                  <a tabIndex={!active && width < 700 ? '-1' : ''} className="block text-base sm:text-lg p-3 sm:px-3 sm:pb-5">Podcast</a>
+                  <a tabIndex={!active && width < 700 ? '-1' : ''} className="block text-base sm:text-lg p-3 sm:px-3 sm:pr-0 sm:pb-5">Podcast</a>
                 </Link>
               </li>
             </ul>
