@@ -23,7 +23,7 @@ const BlogHome = ({ posts }) => (
         backgroundSize: '600px',
         minHeight: 'calc(100vh - 85px)'
       }}>
-      <div className="wrapper px-3" style={{minHeight: '700px'}}>
+      <div className="wrapper px-3 md:px-0" style={{minHeight: '700px'}}>
         <h1 className="text-3xl md:text-4xl mb-4">Latest Articles</h1>
         <div className="flex justify-between grid gap-3 grid-cols-landing-blog-sm md:grid-cols-landing-blog-lg">
           <BlogPost posts={posts} limit={0}/>
