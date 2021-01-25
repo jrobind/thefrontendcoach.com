@@ -48,10 +48,10 @@ module.exports = {
       '95': '0.95'
     },
     backgroundImage: (theme) => ({
-      'logo-black-small': "url('/images/test.svg')",
-      'logo-white-small': "url('/images/logo-white-small.png')",
-      'logo-white-large': "url('/images/logo-white-large.png')",
-      'logo-black-large': "url('/images/logo-black-large.png')",
+      'logo-black-small': "url('/images/logo-black-small.svg')",
+      'logo-white-small': "url('/images/logo-white-small.svg')",
+      'logo-white-large': "url('/images/logo-white-large.svg')",
+      'logo-black-large': "url('/images/logo-black-large.svg')",
       'blog-blob-landing': "url('/images/blog-blob.svg')",
       'blog-home-blob': "url('/images/blog-home-blob.svg')",
       'blog-home-blob-2': "url('/images/blog-home-blob-2.svg')",
