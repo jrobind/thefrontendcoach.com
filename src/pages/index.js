@@ -20,7 +20,7 @@ const Home = ({ slugs, posts }) => (
           <p className="my-3 text-lg md:text-xl">
             Learning to code? Thinking of becoming a front-end developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
-          <Link href="/newsletter">
+          <Link href="/newsletter" prefetch={false}>
             <a 
               className="hero-cta text-xl md:text-2xl text-tertiary"
               style={{width: 'fit-content'}}>
