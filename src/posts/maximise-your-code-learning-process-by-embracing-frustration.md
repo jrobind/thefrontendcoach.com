@@ -18,9 +18,9 @@ With the availability of free online learning resources, it’s now ‘easier’
 
 A self-directed learning process is inherently tough because you need to pick what you’re going to learn and what you’re going to learn from. A degree course or bootcamp handles this for you and so, it’s one less thing to worry about. The sheer quantity of learning materials and resources can become a blessing as well as a curse. Because there’s no structured pathway set out for you, not only will you have to manage finding the best resources but you’ll also have to manage your progression through concepts and topics with increasing levels of difficulty and complexity.
 
-With a degree programme, difficulty usually progresses incrementally over time, in general, you’ll find more foundational concepts and topics covered within your first year, by the second and third years the workload and intensity of learning increases, many of the topics and concepts that you’ll learn will be more complex and often build upon things you learnt at the beginning of your programme. I’m not suggesting that these learning programmes are the gold standard for effective learning, but at a minimum, they do provide a structured pathway. 
+With a degree programme, difficulty usually progresses incrementally over time, in general, you’ll find more foundational concepts and topics covered within your first year, by the second and third years the workload and intensity of learning increases, many of the topics and concepts that you’ll learn will be more complex and often build upon things you learnt at the beginning of your programme. I’m not suggesting that this is the gold standard for effective learning, but at a minimum, it does provide a structured pathway.
 
-This is ultimately why self-teaching is tough because you’re not forced by anything – you’re going to have to guide yourself towards coding competency. You’re totally accountable for your own progression, and if you’re learning to code with the intention of landing yourself a job you’ll need to ensure you acquire the skills necessary to become an employable developer.
+Ultimately, this is why self-teaching is tough because you’re not forced by anything – you’re going to have to guide yourself towards coding competency. You’re totally accountable for your own progression, and if you’re learning to code with the intention to land a job, you’ll need to ensure you acquire the skills necessary to become an employable developer.
 
 ## The honeymoon phase
 
@@ -34,9 +34,9 @@ Tutorials and courses can’t do the work for you, that’s up to you. And so, b
 
 Learners often give up after this honeymoon period not because they lack the talent or capabilities to become a developer, but because of inefficient learning practices.
 
-Learning for 99% of us is incredibly tough. We all learn in different ways, and this is true, but different ways do not necessarily mean ‘effective’. Most of our learning approaches are passive which limits our ability to progress. We’re in a constant battle with our brains. Our brains are naturally hard-wired to pursue the path of least resistance, to find the easier, most dopamine laden routes. It’s your greatest asset but can be your greatest enemy too. Passive learning is an ideal middle ground that seems to appease both parties. It appeases you because you’ve made a deliberate effort to learn, to sink some time into something (your inner-voice is happy) whilst your brain is appeased because it doesn’t have to work too hard to structure any new knowledge or learning.
+Learning for the majority of us is incredibly tough. We all learn in different ways, and this is true, but different ways do not necessarily mean ‘effective’. Most of our learning approaches are passive which limits our ability to progress. We’re in a constant battle with our brains. Our brains are naturally hard-wired to pursue the path of least resistance, to find the easier, most dopamine laden routes. It’s your greatest asset but can be your greatest enemy too. Passive learning is an ideal middle ground that seems to appease both parties. It appeases you because you’ve made a deliberate effort to learn, to sink some time into something (your inner-voice is happy) whilst your brain is appeased because it doesn’t have to work too hard to structure any new knowledge or learning.
 
-Let’s define what we mean by passive learning within a code-learning context:
+Let’s define what we mean by passive learning within a coding context:
 
 * Watching tutorials or courses
 * Reading articles or books
@@ -47,7 +47,9 @@ These passive approaches may work for a seasoned developer but for beginners, th
 
 All practice is not the same. You’ve probably seen more experienced developers regurgitate the trite expression that “practice makes perfect”. The problem is, it often doesn’t. Practice often follows a standard convention of mindless repetitions over content we already know or we’re already very familiar with. We do this because it makes us feel good, it makes us feel smart, it’s a dopamine trip for the brain. We end up mistaking these positive feelings for growth and progression. We often employ regular, repetitive practice as a means to mindlessly memorise content. Mindless repetition and memorisation cause problems because we fail to solidify our understanding of something. If you understand how and why something works it becomes much easier to structure that knowledge.
 
-Enter deliberate practice. It has a huge amount of research and information behind it. Anders Ericsson coined the term while researching how people become experts. His [1993 academic publication](https://pdfs.semanticscholar.org/f6f1/d52a73ace9361b0a16363bd5481ffa920c7b.pdf?_ga=2.262932492.168325746.1611672246-572063247.1611672246) has sparked much research and writing on the topic. James Clear has also written in great detail about this and I’d encourage you to read his [awesome introduction](https://jamesclear.com/beginners-guide-deliberate-practice) on the topic which also contains some useful real-world examples. To summarise, deliberate practice differs from conventional or regular practice because it is:
+Enter deliberate practice. It has a huge amount of research and information behind it. Anders Ericsson coined the term while researching how people become experts. His [1993 academic publication](https://pdfs.semanticscholar.org/f6f1/d52a73ace9361b0a16363bd5481ffa920c7b.pdf?_ga=2.262932492.168325746.1611672246-572063247.1611672246) has sparked much research and writing on the topic. James Clear has also written in great detail about this and I’d encourage you to read his [awesome introduction](https://jamesclear.com/beginners-guide-deliberate-practice) on the topic which also contains some useful real-world examples. 
+
+To summarise, deliberate practice differs from conventional or regular practice because it is:
 
 * Purposeful
 * Systematic 
@@ -66,7 +68,7 @@ Beginners treat frustration and discomfort as a sign of failure, they become stu
 
 Ultimately, you must accept that frequent points of frustration are unavoidable in this profession. It all comes down to reframing the way you think about coding and how you channel as well as manage frustration. The first step is to readjust your expectations of coding. It's totally normal to feel constantly frustrated. The second, but most important step is to see frustration not as the enemy but rather, as a necessary side-effect of growth. There aren't many situations I can think of where growth in a particular discipline isn't accompanied by some level of discomfort or frustration. With this in mind, see frustration as something to continually seek out. Frustration is a fantastic marker for progress and a strong indication that you’re working outside of your comfort zone – all steps that are a necessity for growth. 
 
-The learning process might feel like an exception but that’s merely because you’re not used to this intense learning process. Having the patience and resilience to methodically work through a complex debugging issue is an incredibly important skill, that’s why developers are paid good money!
+Once you've embraced frustration, you'll naturally develop patience and resilience which are highly desirable qualities for a developer. Having the patience and resilience to methodically work through a complex debugging issue is an incredibly important skill, that’s why developers are paid good money!
 
 
 ## Final thoughts
@@ -75,13 +77,13 @@ There’s a great deal to unpack here, and I feel like a lot of what I’ve touc
 
 ### Practice can make perfect
 
-Remember there are different forms of practice. Mindless repetition over content we already know is an inefficient code-learning mechanism. Successful learners often employ a deliberate approach to practicing which is systematic and purposeful. An approach that intentionally seeks out discomfort.
+Remember there are different forms of practice. Mindless repetition over content we already know is an inefficient code-learning mechanism. Successful learners often employ a deliberate approach to practicing which is systematic and purposeful – an approach that intentionally seeks out discomfort.
 
 
 ### Build tolerance to frustration
 
 Reframe the way you think about coding, it is a frustrating profession. Try to seek out frustration and discomfort because it’s one of the best markers for learning progression. If you’re frustrated there’s a good chance you’re reaching outside of your comfort zone. This is the sweet spot for learning.
 
-In the end, there’s no one quick trick for achieving success (as with most things in life – coding included) but there are patterns and skills that do often differentiate the successful from the unsuccessful, and within a coding context the successful generally have a high tolerance to frustration and often engage in deliberate practice. What we’ve discussed doesn't necessarily just apply to newbie coders, improving your learning practices and reframing the way you see and experience frustration can help developers of all experience levels. 
+In the end, there’s no one quick trick for achieving success (as with most things in life – coding included) but there are patterns and skills that do often differentiate the successful from the unsuccessful, and within a coding context the successful generally have a high tolerance to frustration and often engage in deliberate practice. What we’ve covered doesn't necessarily just apply to newbie coders, improving your learning practices and reframing the way you see and experience frustration can help developers of all experience levels. 
 
 **Enjoy coding and embrace frustration!** 
