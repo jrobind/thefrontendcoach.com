@@ -32,9 +32,9 @@ Tutorials and courses can’t do the work for you, that’s up to you. And so, b
 
 ## Learning is only worthwhile if it’s deliberate and focused
 
-A lot of the reasons why learners give up after this honeymoon period isn’t because they lack the talent or capabilities to become a developer, it’s because of inefficient learning practices.
+Learners often give up after this honeymoon period not because they lack the talent or capabilities to become a developer, but because of inefficient learning practices.
 
-Learning for 99% of us is incredibly tough. We all learn in different ways, and this is true, but different ways does necessarily mean ‘effective’. Most of our learning approaches are passive which limits our ability to progress. We’re in a constant battle with our brains. Our brains are naturally hard-wired to pursue the path of least resistance, to find the easier, most dopamine laden routes. It’s your greatest asset but can be your greatest enemy too. Passive learning is an ideal middle ground that seems to appease both parties. It appeases you because you’ve made a deliberate effort to learn, to sink some time into something (your inner-voice is happy) whilst your brain is appeased because it doesn’t have to work too hard to structure any new knowledge or learning.
+Learning for 99% of us is incredibly tough. We all learn in different ways, and this is true, but different ways does not necessarily mean ‘effective’. Most of our learning approaches are passive which limits our ability to progress. We’re in a constant battle with our brains. Our brains are naturally hard-wired to pursue the path of least resistance, to find the easier, most dopamine laden routes. It’s your greatest asset but can be your greatest enemy too. Passive learning is an ideal middle ground that seems to appease both parties. It appeases you because you’ve made a deliberate effort to learn, to sink some time into something (your inner-voice is happy) whilst your brain is appeased because it doesn’t have to work too hard to structure any new knowledge or learning.
 
 Let’s define what we mean by passive learning within a code-learning context:
 
@@ -60,7 +60,7 @@ The hardest part of deliberate practice is the frustration and discomfort that c
 
 ## Dealing with the discomfort of frustration
 
-Frustration and coding come hand in hand. Coding is a constant test of patience. Within a front-end development context, building a performant, accessible, and pleasant experience for users isn’t an easy feat. There are lots of moving pieces, lots of things you’ll need to consider as well as understand, so naturally you’ll often encounter frustration.
+Frustration and coding come hand in hand. Coding is a constant test of patience. Within a front-end development context, building a performant, accessible, and pleasant experience for users isn’t an easy feat. There are lots of moving pieces, lots of things you’ll need to consider as well as understand, so naturally, you’ll often encounter frustration.
 
 Beginners treat frustration and discomfort as a sign of failure, they become stuck and often become disheartened and unhappy with their lack of progress. A common trait I’ve seen amongst successful developers that I’ve worked with (as well as well as successful students that I've mentored) is a **high tolerance to frustration**.
 
