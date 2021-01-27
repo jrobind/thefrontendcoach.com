@@ -17,6 +17,15 @@ export default function Layout({ children }) {
         <link rel="prefetch" href="/images/blog-home-blob-2.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
       </Head>
+      <style jsx global>{`
+        #__next {
+          min-height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+      `}
+      </style>
       <Header/>
       <main>
         {children}
