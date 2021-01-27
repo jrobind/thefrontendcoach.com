@@ -19,7 +19,7 @@ export default function Layout({ children }) {
       </Head>
       <Header/>
       <main>
-        <div>{children}</div>
+        {children}
       </main>
       <Footer/>
       <Helmet>

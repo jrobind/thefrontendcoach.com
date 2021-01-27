@@ -13,6 +13,14 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <style jsx global>{`
+            #__next {
+              min-height: 100%;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+            }
+          `}</style>
         </body>
       </Html>
     )

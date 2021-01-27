@@ -9,6 +9,7 @@ function Footer({ router }) {
   return (
     <>
       <Newsletter newsletterPage={isNewsletterPage}/>
+      {isNewsletterPage && <div style={{flexGrow: '1'}}></div>}
       <Wave alignment="top"/>
       <footer className="footer text-sm bg-main text-white pb-6 py-3 px-3">
         <div className="wrapper">

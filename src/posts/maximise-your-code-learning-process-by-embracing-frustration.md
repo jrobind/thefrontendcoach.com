@@ -3,7 +3,7 @@ date: January 2021
 title: Maximise your code-learning process by embracing frustration
 cardTitle: Maximise your code-learning process by embracing frustration
 description: There’s no quick trick for achieving success but there are patterns and skills that often differentiate the successful from the unsuccessful. Within a coding context, the successful generally have a high tolerance to frustration and often engage in deliberate practice.
-tags: ['Learning', 'Beginner']
+tags: ['Beginner', 'Learning']
 codeBlock: false
 timestamp: 1611678898
 ---

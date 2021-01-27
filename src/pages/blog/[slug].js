@@ -12,8 +12,9 @@ const DynamicRenderer = dynamic(
   () => import('../../components/BlogPostRenderer'),
   { 
     loading: () =>  
-      <div className="flex justify-center">
+      <div className="flex items-center flex-col">
         <Loader type="ThreeDots" color="#2B8275" height={100} width={100} />
+        <div style={{flexGrow: '1'}}></div>
       </div>
   }
  );
