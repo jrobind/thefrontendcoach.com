@@ -23,7 +23,7 @@ const Home = ({ slugs, posts }) => (
           <Link href="/newsletter">
             <a 
               className="hero-cta text-xl md:text-2xl text-tertiary"
-              style={{width: 'fit-content'}}>
+              style={{width: 'fit-content', color: '#FECB3E'}}>
               <span 
                 className="border-b-2 inline-block font-bold"
                 style={{lineHeight: '1.2'}}>Get weekly learning tips</span>

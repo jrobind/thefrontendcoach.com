@@ -48,7 +48,7 @@ export default function Newsletter({ newsletterPage }) {
                     {!newsletterPage && <div className="ml-form-embedContent">
                       <h3>JOIN THE SELF-TAUGHT TIPS NEWSLETTER</h3>
                       <p id="newsletter-description">
-                        Improve your learning process and receive self-taught, learning tips every week, straight to your inbox.
+                        Improve your learning process and receive self-taught learning tips every week, straight to your inbox.
                       </p>
                     </div>}
                     <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/r3a1b8" data-code="r3a1b8" method="post" target="_blank">
@@ -70,20 +70,21 @@ export default function Newsletter({ newsletterPage }) {
                       </div>
                       <div className="ml-form-embedPermissions">
                         <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
-                          <p>No spam. Unsubscribe anytime.</p>
+                        <p>No spam. Unsubscribe anytime.</p>
                         </div>
                       </div>
                       <input type="hidden" name="ml-submit" value="1"/>
                       <div className="ml-mobileButton-horizontal">
                         <button type="submit" className="primary subscribe-btn">SUBSCRIBE</button>
                         <button disabled="disabled" style={{display: 'none'}} type="button" className="loading"> <span className="ml-form-embedSubmitLoad"><span></span><span></span><span></span><span></span></span> </button>
+                        <p className="mt-2">No spam. Unsubscribe anytime.</p>
                       </div>
                     </form>
                   </div>
                   <div className="ml-form-successBody row-success" style={{display: 'none'}}>
                     <div className="ml-form-successContent">
                       <h4>Thank you!</h4>
-                      <p>You have successfully joined the subscriber list.</p>
+                      <p>Success! Please check your email and confirm your subscription 🎉 </p>
                     </div>
                   </div>
                 </div>
