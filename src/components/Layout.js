@@ -17,8 +17,8 @@ export default function Layout({ children }) {
         <link rel="prefetch" href="/images/blog-home-blob-2.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
       </Head>
+      <Header/>
       <main>
-        <Header/>
         <div>{children}</div>
       </main>
       <Footer/>
