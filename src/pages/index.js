@@ -31,7 +31,7 @@ const Home = ({ slugs, posts }) => (
             </a>
           </Link>
         </div>
-        <img className="img-shadow hidden md:block" alt="Man inspecting code block" src="./images/web-development.svg" width='450' height='450'/>
+        <img className="img-shadow hidden md:block" alt="Man inspecting code block" src="./images/web-development.svg"/>
       </div>
     </section>
     <Wave alignment="bottom"/>
