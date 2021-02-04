@@ -18,6 +18,8 @@ export default function Layout({ children }) {
         <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
         <link rel="prefetch" href="/images/logo-white-small.svg" as="image"/>
         <link rel="prefetch" href="/images/logo-white-large.svg" as="image"/>
+        <link rel="prefetch" href="/images/logo-black-small.svg" as="image"/>
+        <link rel="prefetch" href="/images/logo-black-large.svg" as="image"/>
       </Head>
       <style jsx global>{`
         #__next {
