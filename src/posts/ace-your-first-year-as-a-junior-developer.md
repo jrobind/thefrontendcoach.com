@@ -69,7 +69,7 @@ Don’t
 >“I can’t get this h3 to center inside this div”.
 
 Do
->“I'm struggling to center an H3 element horizontally and vertically inside a div. I’ve tried to use flexbox to do this. I have applied the flex display property along with justify-content and align-items center properties to the containing div but that hasn’t worked. I think it may be something to do with specificity. I’ve taken a look at the styles in the stylesheet but I’m struggling to find where the styles I’m applying are being overridden - if at all. Would you be able to point me in the right direction please?”
+>“I'm struggling to center an H3 element horizontally and vertically inside a div. I’ve tried to use flexbox to do this. I have applied the flex display property along with justify-content and align-items center properties to the containing div but that hasn’t worked. I think it may be something to do with specificity. I’ve taken a look at the stylesheet but I’m struggling to find where the styles I’m applying are being overridden - if at all. Would you be able to point me in the right direction please?”
 
 ### Batch your questions
 
@@ -87,6 +87,6 @@ If you don’t have access to a mentor, all is not lost. If you play your cards 
 
 ## Final thoughts
 
-As a developer you will always be required to learn new things, it’s the nature of the job. However, this learning experience is intensified for a junior developer given there is so much to learn and adapt to. It’s not just the new frameworks, libraries, and languages but it’s also working in a cross-functional team, working with other developers, working with a client, or with a business product. These things are really tough to become good at if you’ve never had a job as a developer. It’s a chicken and egg type situation.
+As a developer you will always be required to learn new things, it’s the nature of the job. However, this learning experience is intensified for a junior developer given there is so much to learn and adapt to. It’s not just the new frameworks, libraries, and languages but it’s also working in a cross-functional team, working with other developers, working with a client, or with a business product. These things are really tough to become good at if you’ve never had a job as a developer.
 
 Ultimately you need to be willing to step out of your comfort zone. Be enthusiastic about it and make sure you communicate your progress (or lack of). This will enhance your learning and rate of progression, ensuring your experience as a newly hired developer is a positive and rewarding one.
