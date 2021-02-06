@@ -55,7 +55,7 @@ Enthusiasm is a fairly broad term so we can refine this a little more with a few
 
 Your fellow developers are way more likely to want to invest time in you and your progression because of this. Helping you to improve benefits the whole team not just you.
 
-## 4. Get good at asking questions
+## 4. Ask good questions
 
 ![Dog with paw raised in the air](/images/blog/dog-question.jpg)
 
