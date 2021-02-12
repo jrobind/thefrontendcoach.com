@@ -1,9 +1,9 @@
 .blog-card {
-  @apply cursor-pointer flex flex-col bg-white justify-between p-2 shadow-md z-10 top-0 relative top-0 rounded overflow-hidden
+  @apply cursor-pointer flex flex-col bg-white justify-between p-2 shadow-md z-10 top-0 relative top-0 rounded overflow-hidden;
+  transition: all 0.2s ease-out;
 }
 
 .blog-card:hover {
-  transition: all 0.2s ease-out;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   top: -4px;
 }
@@ -16,7 +16,6 @@
   right: -16px;
   transform: scale(2);
   transform-origin: 50% 50%;
-  transition: transform 0.15s ease-out;
 }
 
 .blog-card:hover:before {

@@ -12,7 +12,7 @@ export default function NewsletterPage() {
       <section>
         <div className="pt-5 md:pt-7 wrapper px-3 text-center">
           <h1 
-            style={{borderColor: '#F7B501', boxShadow: 'inset 0 -3px #F7B501, inset 0 -10px #F7B501'}}
+            style={{borderColor: '#FECB3E', boxShadow: 'inset 0 -3px #FECB3E, inset 0 -10px #FECB3E'}}
             className="inline text-3xl md:text-4xl">Join the self-taught tips newsletter</h1>
           <div 
             className="m-auto mt-4 text-xl md:text-2xl"

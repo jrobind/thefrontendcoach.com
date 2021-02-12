@@ -12,7 +12,7 @@
 }
 
 .blog-post h2 {
-  @apply text-3xl my-6;
+  @apply text-2xl my-6;
 }
 
 .blog-post h3,
@@ -43,7 +43,7 @@
 
 /* Date - em */
 .blog-post p:first-of-type em {
-  @apply not-italic text-base block
+  @apply not-italic text-tiny block text-main font-bold;
 }
 
 .blog-post p:first-of-type em:nth-of-type(2) {
@@ -56,7 +56,7 @@
 
 /* Horizontal rule */
 .blog-post hr:first-of-type {
-  @apply mb-6 text-light-grey
+  @apply mb-6 text-light-grey;
 }
 
 /* Image */
@@ -94,16 +94,16 @@
 }
 
 .blog-post ul li {
-  @apply mb-1 list-none
+  @apply mb-1 list-none;
 }
 
 .blog-post ol li {
-  @apply mb-2
+  @apply mb-2;
 }
 
 .blog-post ul li::before {
   content: "\2022";
-  @apply text-tertiary font-bold inline-block mr-2 text-xl
+  @apply text-tertiary font-bold inline-block mr-2 text-xl;
 }
 
 /* Blockquotes */

@@ -17,6 +17,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.menu__item a:hover {
+  text-decoration: underline;
+}
+
 .header .wrapper.active ul {
   max-height: 330px;
 }

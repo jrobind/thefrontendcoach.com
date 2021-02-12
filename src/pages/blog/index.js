@@ -8,8 +8,8 @@ const BlogHome = ({ posts }) => (
   <div 
     className="blog bg-blog-home-blob bg-no-repeat"
     style={{
-      backgroundPosition: 'right -280px',
-      backgroundSize: '700px',
+      backgroundPosition: 'right 0',
+      backgroundSize: '550px',
     }}
   >
     <NextSeo

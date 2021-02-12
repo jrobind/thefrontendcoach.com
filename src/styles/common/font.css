@@ -17,3 +17,13 @@
        url('/fonts/nunito-v16-latin-700.woff') format('woff');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Karla Bold'),
+       url('/fonts/karla-v15-latin-700.woff2') format('woff2'),
+       url('/fonts/karla-v15-latin-700.woff') format('woff');
+  font-display: swap;
+}

@@ -19,7 +19,7 @@ export default function About() {
               Hey! <br/> I'm James Robinson,<br/> <span style={{minWidth:"250px"}} className="font-bold text-xl md:text-2xl mt-2 italic opacity-95">a self-taught<br/> front-end developer</span>
             </h1>
             <div>
-              <img className="img-shadow relative w-full sm:ml-3" style={{maxWidth: "200px", maxHeight: "200px", minWidth: "150px"}} alt="Photo of man sitting on a mountain top" src="/images/james-robinson.jpeg"/>
+              <img className="rounded img-shadow relative w-full sm:ml-3" style={{maxWidth: "200px", maxHeight: "200px", minWidth: "150px"}} alt="Photo of man sitting on a mountain top" src="/images/james-robinson.jpeg"/>
             </div>
           </div>
 
@@ -53,10 +53,7 @@ export default function About() {
           </div>
           <div className="max-w-600 m-auto">
             <img className="m-auto mb-2 img-shadow block" style={{maxWidth: '340px'}} alt="" src="/images/team-work.svg"/>
-            <p className="text-center mb-5 text-base md:text-lg">Get started by joining our Discord community, read some of the latest articles, and head over to the podcast for real world insight, interviews, and advice. Alternatively, if you want to reach out to me privately for anything, then please do - I'll get back to you as soon as I can.</p>
-            <Link href="/support">
-              <a className="btn m-auto">GET SUPPORT</a>
-            </Link>
+            <p className="text-center mb-5 text-base md:text-lg">Get started by joining our Discord community, read some of the latest articles, and head over to the podcast for real world insight, interviews, and advice.</p>
           </div>
         </div>
       </section>

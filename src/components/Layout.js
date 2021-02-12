@@ -12,14 +12,11 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://cdn.iubenda.com/" crossOrigin=""/>
         <link rel="prefetch" href="/images/question.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob-2.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-white-small.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-white-large.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-black-small.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-black-large.svg" as="image"/>
+        <link rel="prefetch" href="/images/logo-white.svg" as="image"/>
+        <link rel="prefetch" href="/images/logo-black.svg" as="image"/>
       </Head>
       <style jsx global>{`
         #__next {
