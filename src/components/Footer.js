@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import Router, { withRouter } from 'next/router';
 import Wave from './Wave';
+import Contact from './Contact';
 
 function Footer({ router }) {
   return (
     <>
+      <Contact/>
+      <div style={{flexGrow: '1'}}></div>
       <Wave alignment="top"/>
       <footer className="footer text-tiny bg-main text-white pb-6 py-3 px-3">
         <div className="wrapper">
@@ -52,8 +55,8 @@ function Footer({ router }) {
             </a>
           </div>
           <div className="pt-3 wrapper flex flex-wrap" style={{borderTop: '1px solid rgba(250, 250, 250, 0.45)'}}>
-            <span className="mr-4 mt-2">The Front End Coach 2021</span>
-            <span className="mt-2">Built by James Robinson</span>
+            <span className="text-sm mr-4 mt-2">The Front End Coach 2021</span>
+            <span className="text-sm mt-2">Built by James Robinson</span>
           </div>
         </div>
       </footer>  

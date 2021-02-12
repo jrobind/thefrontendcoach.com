@@ -26,7 +26,7 @@ const Home = ({ slugs, posts }) => (
               style={{width: 'fit-content'}}>
               <span 
                 className="border-b-2 inline-block font-bold"
-                style={{lineHeight: '1.2'}}>Get weekly learning tips</span>
+                style={{lineHeight: '1.2'}}>See support options</span>
               <svg className="arrow ml-3 inline" width="27" height="24" fill="#F7B501" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#F7B501" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
             </a>
           </Link>
@@ -39,7 +39,7 @@ const Home = ({ slugs, posts }) => (
     <section className="about px-3 py-7 md:py-8">
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
         <img 
-          className="rounded max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0 img-shadow" 
+          className="rounded max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0" 
           src="/images/james-robinson.jpeg"
           alt="Photo of James Robinson on a mountain"
         />
@@ -102,24 +102,37 @@ const Home = ({ slugs, posts }) => (
     </section>
 
     <section>
-      <div className="wrapper px-3 pt-6 pb-5 mb-4">
-          <div className="px-3 pb-3 bg-main text-white mt-5 rounded shadow-md">
+      <div className="wrapper px-3 pt-6">
+          <div className="px-3 pb-4 bg-main text-white mt-5 rounded shadow-md">
             <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
-              <h3 className="text-xl text-center">JOIN THE DISCORD COMMUNITY</h3>
-              <p className="text-base md:text-lg mt-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front-end developer.</p>
-              <a href="https://discord.gg/YMsd9sgZ4f" className="btn mt-5">JOIN NOW</a>
+              <p className="text-base md:text-lg mb-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front-end developer.</p>
+              <a
+                className="hero-cta text-xl md:text-2xl text-tertiary"
+                style={{width: 'fit-content'}}
+                href="https://discord.gg/YMsd9sgZ4f"
+              >
+              <span 
+                className="border-b-2 inline-block font-bold"
+                style={{lineHeight: '1.2'}}>Join the community</span>
+              <svg className="arrow ml-3 inline" width="27" height="24" fill="#F7B501" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#F7B501" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+            </a>
             </div>
           </div>
         </div>
     </section>
-    <section  className="wrapper px-3 pb-6 md:pb-7">
-    <img className="m-auto block" style={{maxWidth: '400px'}} alt="Scrum board illustration" src="./images/scrum-board.svg"/>
-    <div className="flex flex-col items-center">
-      <h2 className="mb-3 text-2xl md:text-3xl text-center">Contribute to Open Source</h2>
-      <p className="text-base md:text-lg m-auto max-w-600 md:max-w-750 md:text-center">The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.</p>
-      <a href="https://github.com/jrobind/dev-jot" className="btn mt-5">GO TO PROJECT</a>
-    </div>
+
+    <section className="wrapper px-3 my-7">
+      <div className="flex flex-col md:flex-row md:justify-between items-center">
+      <img className="block img-shadow" style={{maxWidth: '450px'}} alt="Scrum board illustration" src="./images/scrum-board.svg"/>
+        <div className="md:max-w-600">
+          <h2 className="mb-3 text-2xl md:text-3xl">Contribute to Open Source</h2>
+          <p className="mb-5 text-base md:text-lg">
+            The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.
+          </p>
+          <a href="https://github.com/jrobind/dev-jot" className="btn mt-5">GO TO PROJECT</a>
+        </div>
+      </div>
     </section>
   </div>
 );
