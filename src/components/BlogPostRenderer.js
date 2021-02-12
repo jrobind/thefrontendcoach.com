@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import js from 'react-syntax-highlighter/dist/cjs/languages/hljs/javascript';
@@ -9,6 +9,7 @@ import bash from 'react-syntax-highlighter/dist/cjs/languages/hljs/bash';
 import vs2015 from 'react-syntax-highlighter/dist/cjs/styles/hljs/vs2015';
 import Link from "next/link";
 import { rootURL } from '../lib/constants';
+import { useAppContext } from '../lib/context';
 
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('html', html);
@@ -48,6 +49,10 @@ const HeadingRenderer = (props) => {
 }
 
 export default function MarkdownRenderer({ markdownBody, hasCodeBlock, slug }) {
+  const { setLoading } = useAppContext();
+
+  useEffect(() => setLoading(true), []);
+
   const renderers =  hasCodeBlock ? 
     { 
       heading: HeadingRenderer,

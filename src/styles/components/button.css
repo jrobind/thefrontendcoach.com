@@ -7,6 +7,12 @@
     letter-spacing: 1px;
     font: inherit;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.05), 0 5px 8px 0 rgba(0,0,0,.05);
+    transition: transform ease-in-out .25s;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    transform: scale(1.07);
   }
 }
 

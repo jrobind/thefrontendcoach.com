@@ -16,7 +16,7 @@
   right: -16px;
   transform: scale(2);
   transform-origin: 50% 50%;
-  transition: transform 0.15s ease-out;
+  transition: transform 0.15s ease-in-out;
 }
 
 .blog-card:hover:before {

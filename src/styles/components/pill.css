@@ -1,7 +1,7 @@
 @layer components {
   .pill {
-    @apply py-1 px-2;
+    @apply py-1 px-2 font-bold;
     border-radius: 35px;
-    background: rgba(247, 181, 1, 0.65);
+    background: #FAD367;
   }
 }
