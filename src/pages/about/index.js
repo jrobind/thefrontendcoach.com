@@ -53,10 +53,7 @@ export default function About() {
           </div>
           <div className="max-w-600 m-auto">
             <img className="m-auto mb-2 img-shadow block" style={{maxWidth: '340px'}} alt="" src="/images/team-work.svg"/>
-            <p className="text-center mb-5 text-base md:text-lg">Get started by joining our Discord community, read some of the latest articles, and head over to the podcast for real world insight, interviews, and advice. Alternatively, if you want to reach out to me privately for anything, then please do - I'll get back to you as soon as I can.</p>
-            <Link href="/support">
-              <a className="btn m-auto">GET SUPPORT</a>
-            </Link>
+            <p className="text-center mb-5 text-base md:text-lg">Get started by joining our Discord community, read some of the latest articles, and head over to the podcast for real world insight, interviews, and advice.</p>
           </div>
         </div>
       </section>

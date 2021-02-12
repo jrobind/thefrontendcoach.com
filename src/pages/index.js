@@ -20,14 +20,14 @@ const Home = ({ slugs, posts }) => (
           <p className="my-3 text-lg md:text-xl">
             Learning to code? Thinking of becoming a front-end developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
-          <Link href="/newsletter">
+          <Link href="/support">
             <a 
               className="hero-cta text-xl md:text-2xl text-tertiary"
               style={{width: 'fit-content'}}>
               <span 
                 className="border-b-2 inline-block font-bold"
                 style={{lineHeight: '1.2'}}>See support options</span>
-              <svg className="arrow ml-3 inline" width="27" height="24" fill="#F7B501" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#F7B501" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+              <svg className="arrow ml-3 inline" width="27" height="24" fill="#FECB3E" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#FECB3E" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
             </a>
           </Link>
         </div>
@@ -108,14 +108,11 @@ const Home = ({ slugs, posts }) => (
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
               <p className="text-base md:text-lg mb-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front-end developer.</p>
               <a
-                className="hero-cta text-xl md:text-2xl text-tertiary"
+                className="hero-cta text-xl md:text-2xl text-tertiary font-bold"
                 style={{width: 'fit-content'}}
                 href="https://discord.gg/YMsd9sgZ4f"
               >
-              <span 
-                className="border-b-2 inline-block font-bold"
-                style={{lineHeight: '1.2'}}>Join the community</span>
-              <svg className="arrow ml-3 inline" width="27" height="24" fill="#F7B501" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path stroke="#F7B501" strokeWidth="2" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+                <span className="border-b-2">Join the community</span>
             </a>
             </div>
           </div>
