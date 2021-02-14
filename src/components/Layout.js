@@ -47,10 +47,18 @@ export default function Layout({ children }) {
       <Helmet>
         <script type="text/javascript">
           {`
-            document.body.classList.add('font-loading');
-            document.fonts.onloadingdone = function (fontFaceSetEvent) {
-              document.body.classList.remove('font-loading');
-            };
+            (function() {
+              if (sessionStorage.fontsLoaded) {
+                document.body.classList.remove('font-loading');
+                return;
+              }
+  
+              document.body.classList.add('font-loading');
+              document.fonts.onloadingdone = function (fontFaceSetEvent) {
+                document.body.classList.remove('font-loading');
+                sessionStorage.fontsLoaded = true;
+              };
+            })();
           `}
         </script>
       </Helmet>
