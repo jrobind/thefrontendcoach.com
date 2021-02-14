@@ -3,9 +3,7 @@
 
 @import "tailwindcss/base";
 
-/* Adding styles to override `base` and mailerlite form styles */
 @import "./common/custom-base.css";
-@import "./common/overrides.css";
 
 @import "tailwindcss/components";
 

@@ -12,11 +12,23 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="prefetch" href="/images/logo-white.svg" as="image"/>
+        <link rel="prefetch" href="/images/logo-black.svg" as="image"/>
+        <link
+          rel="preload"
+          href="/fonts/karla-v15-latin-700.woff"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/nunito-v14-latin-regular.woff"
+          as="font"
+          crossOrigin=""
+        />
         <link rel="prefetch" href="/images/question.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob-2.svg" as="image"/>
         <link rel="prefetch" href="/images/blog-home-blob.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-white.svg" as="image"/>
-        <link rel="prefetch" href="/images/logo-black.svg" as="image"/>
       </Head>
       <style jsx global>{`
         #__next {
@@ -34,7 +46,12 @@ export default function Layout({ children }) {
       <Footer/>
       <Helmet>
         <script type="text/javascript">
-          {`(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);`}
+          {`
+            document.body.classList.add('font-loading');
+            document.fonts.onloadingdone = function (fontFaceSetEvent) {
+              document.body.classList.remove('font-loading');
+            };
+          `}
         </script>
       </Helmet>
     </>
