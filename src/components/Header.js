@@ -57,9 +57,7 @@ function Header({ router }) {
                 </Link>
               </li>
               <li className="menu__item">
-                <Link href="/podcast">
-                  <a tabIndex={!active && width < 700 ? '-1' : ''} className="font-bold block text-sm sm:text-tiny py-3 sm:p-0 sm:mx-3 sm:mr-1 sm:mb-5 sm:mt-3">Podcast</a>
-                </Link>
+                <a tabIndex={!active && width < 700 ? '-1' : ''} href="https://anchor.fm/thefrontendcoach" className="font-bold block text-sm sm:text-tiny py-3 sm:p-0 sm:mx-3 sm:mr-1 sm:mb-5 sm:mt-3">Podcast</a>
               </li>
             </ul>
           </nav>

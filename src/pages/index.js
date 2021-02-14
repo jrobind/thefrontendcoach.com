@@ -81,9 +81,7 @@ const Home = ({ slugs, posts }) => (
               <p className="mb-3 text-base md:text-lg" style={{maxWidth: '380px'}}>
                 Interviews, advice on learning how to build your front-end skillset, getting your first job in the tech industry and more!
               </p>
-              <Link href="/podcast">
-                <a className="btn">LISTEN NOW</a>
-              </Link>
+                <a className="btn" href="https://anchor.fm/thefrontendcoach">LISTEN NOW</a>
             </div>
           </div>
         </div>

@@ -34,9 +34,7 @@ function Footer({ router }) {
                   </Link>
                 </li>
                 <li className="mr-2 mb-2 mt-2">
-                  <Link href="/podcast">
-                    <a className="p-1">Podcast</a>
-                  </Link>
+                  <a className="p-1"href="https://anchor.fm/thefrontendcoach">Podcast</a>
                 </li>
               </ul>
             </div>
