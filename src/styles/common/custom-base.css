@@ -20,7 +20,7 @@ body:not(.fonts-loaded) h1 {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.6;
-  font-size: 29px;
+  font-size: 30px;
 }
 
 .fonts-loaded h1, 
