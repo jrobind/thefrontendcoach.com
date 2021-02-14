@@ -49,13 +49,12 @@ export default function Layout({ children }) {
           {`
             (function() {
               if (sessionStorage.fontsLoaded) {
-                document.body.classList.add('font-loading');
+                document.body.classList.add("fonts-loaded");
                 return;
               }
-  
-              document.body.classList.add('font-loading');
+
               document.fonts.onloadingdone = function (fontFaceSetEvent) {
-                document.body.classList.remove('font-loading');
+                document.body.classList.add('fonts-loaded');
                 sessionStorage.fontsLoaded = true;
               };
             })();
