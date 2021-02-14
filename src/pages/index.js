@@ -15,10 +15,10 @@ const Home = ({ slugs, posts }) => (
     />
     <section className="hero bg-main px-3 py-4 md:px-3">
       <div className="wrapper u-px-3 flex md:justify-between justify-center items-center">
-        <div className="text-white flex flex-col md:mr-4 max-w-600 md:max-w-75- md:max-w-600">
-          <h1 className="text-shadow text-3xl md:text-4xl">The Help You Need To Start Your Career as a Front-End Developer</h1>
+        <div className="text-white flex flex-col md:mr-4" style={{maxWidth: "650px"}}>
+          <h1 className="text-shadow">The Help You Need To Start Your Career as a Front-End Developer</h1>
           <p className="my-3 text-lg md:text-xl">
-            Learning to code? Thinking of becoming a front-end developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
+            Thinking of becoming a front-end developer? The Front End Coach is here to help! A free support system to help you acquire the skills you need.
           </p>
           <Link href="/support">
             <a 
