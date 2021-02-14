@@ -49,7 +49,7 @@ export default function Layout({ children }) {
           {`
             (function() {
               if (sessionStorage.fontsLoaded) {
-                document.body.classList.remove('font-loading');
+                document.body.classList.add('font-loading');
                 return;
               }
   
