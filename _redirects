@@ -1,6 +1,10 @@
 
-/about.html    /about
-/support.html  /support
-/podcast/*      https://anchor.fm/thefrontendcoach
-/newsletter/*   /
-/blog.html     /blog
+/about.html        /about
+/support.html      /support
+/podcast           https://anchor.fm/thefrontendcoach
+/podcast#episode-1 https://anchor.fm/thefrontendcoach
+/podcast#episode-2 https://anchor.fm/thefrontendcoach
+/podcast#episode-3 https://anchor.fm/thefrontendcoach
+/newsletter        /
+/newsletter.html   /
+/blog.html         /blog
