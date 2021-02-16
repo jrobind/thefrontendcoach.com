@@ -1,5 +1,6 @@
 
-/about.html  /about
+/about.html    /about
 /support.html  /support
-/podcast.html  https://anchor.fm/thefrontendcoach
-/blog.html  /blog
+/podcast*      https://anchor.fm/thefrontendcoach
+/newsletter*   /
+/blog.html     /blog
