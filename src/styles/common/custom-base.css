@@ -67,3 +67,7 @@ main {
     font-size: 36px;
   }
 }
+
+img:-moz-loading {
+  visibility: hidden;
+}
