@@ -6,7 +6,7 @@
   "scripts": {
     "compress": "gulp",
     "dev": "cd ./src && next dev",
-    "build": "cd ./src && next build && next export",
+    "build": "cd ./src && next build && next export && npm run postbuild",
     "start": "cd ./src && next start",
     "postbuild": "cp -r _redirects ./src/out/_redirects",
     "analyse": "ANALYZE=true && cd ./src && next build",
