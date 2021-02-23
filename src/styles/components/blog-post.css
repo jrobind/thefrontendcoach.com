@@ -108,7 +108,7 @@
 
 /* Blockquotes */
 .blog-post blockquote {
-  @apply p-2 mx-6 mb-4 border-l-4 border-tertiary italic;
+  @apply p-2 mx-4 mb-4 border-l-4 border-tertiary italic;
 }
 
 .blog-post blockquote > p {

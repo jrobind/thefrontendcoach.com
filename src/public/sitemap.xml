@@ -14,10 +14,6 @@
             </url>
           
             <url>
-                <loc>https://thefrontendcoach.com/newsletter/</loc>
-            </url>
-          
-            <url>
                 <loc>https://thefrontendcoach.com/support/</loc>
             </url>
           
@@ -51,6 +47,10 @@
           
             <url>
                 <loc>https://thefrontendcoach.com/blog/maximise-your-code-learning-process-by-embracing-frustration</loc>
+            </url>
+          
+            <url>
+                <loc>https://thefrontendcoach.com/blog/the-importance-of-debugging-ability</loc>
             </url>
           
     </urlset>
