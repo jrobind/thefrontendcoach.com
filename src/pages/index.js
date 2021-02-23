@@ -5,6 +5,7 @@ import BlogPost from "../components/BlogPost";
 import { getAllBlogPosts } from '../lib/api';
 import { rootURL } from '../lib/constants';
 import Wave from '../components/Wave';
+import ReviewCard from '../components/ReviewCard';
 
 
 const Home = ({ slugs, posts }) => (
@@ -106,12 +107,12 @@ const Home = ({ slugs, posts }) => (
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
               <p className="text-base md:text-lg mb-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front-end developer.</p>
               <a
-                className="hero-cta text-xl md:text-2xl text-tertiary font-bold"
+                className="hero-cta text-xl md:text-2xl font-bold"
                 style={{width: 'fit-content'}}
                 href="https://discord.gg/YMsd9sgZ4f"
               >
                 <span className="border-b-2">Join the community</span>
-            </a>
+              </a>
             </div>
           </div>
         </div>
@@ -129,6 +130,8 @@ const Home = ({ slugs, posts }) => (
         </div>
       </div>
     </section>
+
+    <ReviewCard/>
   </div>
 );
 

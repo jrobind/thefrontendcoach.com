@@ -11,6 +11,7 @@
 # next.js
 src/.next/
 src/out/
+src/public/images/reviews
 
 # production
 /build
