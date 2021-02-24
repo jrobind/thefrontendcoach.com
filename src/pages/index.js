@@ -8,7 +8,7 @@ import Wave from '../components/Wave';
 import ReviewCard from '../components/ReviewCard';
 
 
-const Home = ({ slugs, posts }) => (
+const Home = ({ slugs, posts, ky, dv }) => (
   <div className="landing">
     <NextSeo
       description="The Front End Coach is a unique support system created to help self-taught coders on their quest to become front-end developers."
@@ -131,7 +131,7 @@ const Home = ({ slugs, posts }) => (
       </div>
     </section>
 
-    <ReviewCard/>
+    <ReviewCard ky={ky} dv={dv}/>
   </div>
 );
 
@@ -142,6 +142,8 @@ export const getStaticProps = async () => {
     props: {
       slugs: files.map(filename => filename.replace(".md", "")),
       posts: getAllBlogPosts(),
+      ky: process.env.KY_REVIEW,
+      dv: process.env.DV_REVIEW
     }
   };
 };
