@@ -131,7 +131,16 @@ const Home = ({ slugs, posts }) => (
       </div>
     </section>
 
-    <ReviewCard />
+    <section className="wrapper mt-3">
+      <div className="px-3">
+        <h2 className="text-2xl md:text-3xl text-center">Mentee Testimonials</h2>
+        <p className="m-auto text-center mb-5 mt-3 text-base md:text-lg max-w-600">
+          1:1 sessions provide you with the right level of accountability and support to help you reach your development goals.
+        </p>
+        <a href="/support#direct-mentorship" className="btn mb-7 m-auto">APPLY NOW</a>
+      </div>
+      <ReviewCard />
+    </section>
   </div>
 );
 
