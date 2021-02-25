@@ -18,7 +18,7 @@
 @import "./components/img-shadow";
 @import "./components/text-shadow";
 @import "./components/hero-cta";
-@import "./components/card";
+@import "./components/review-card";
 
 @import "tailwindcss/utilities";
 

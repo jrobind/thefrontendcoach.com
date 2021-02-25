@@ -1,4 +1,11 @@
-.card {
+.review-card {
   @apply flex flex-col bg-white justify-between shadow-md rounded;
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  max-width: 550px;
+}
+
+@screen md {
+  .review-card {
+    max-width: 400px;
+  }
 }
