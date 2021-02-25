@@ -14,7 +14,7 @@ const Home = ({ slugs, posts }) => (
       description="The Front End Coach is a unique support system created to help self-taught coders on their quest to become front-end developers."
       canonical={rootURL}
     />
-    <section className="hero bg-main px-3 py-4 md:px-3">
+    <section className="hero bg-main px-3 py-5 md:px-3">
       <div className="wrapper u-px-3 flex md:justify-between justify-center items-center">
         <div className="text-white flex flex-col md:mr-4" style={{maxWidth: "650px"}}>
           <h1 className="text-shadow">The Help You Need To Start Your Career as a Front-End Developer</h1>
@@ -37,7 +37,7 @@ const Home = ({ slugs, posts }) => (
     </section>
     <Wave alignment="bottom"/>
 
-    <section className="about px-3 py-7 md:py-8">
+    <section className="about px-3 my-7 md:my-8">
       <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
         <img 
           className="rounded max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0" 
@@ -56,7 +56,7 @@ const Home = ({ slugs, posts }) => (
       </div>
     </section>
 
-    <section className="services py-6 md:py-7" style={{backgroundColor: 'rgba(0, 0, 0, 0.025)'}}>
+    <section className="services py-6 md:py-8" style={{backgroundColor: 'rgba(0, 0, 0, 0.025)'}}>
       <div className="wrapper flex-col px-3">
         <div className="flex flex-col mb-5 md:flex-row justify-center">
           <div className="block justify-center flex-col mb-6 md:mb-3 items-center md:mr-7">
@@ -100,9 +100,22 @@ const Home = ({ slugs, posts }) => (
       </div>
     </section>
 
+    <section className="wrapper px-3 mt-5 md:mt-6 my-7">
+      <div className="flex flex-col md:flex-row md:justify-between items-center">
+      <img className="block img-shadow" style={{maxWidth: '450px'}} alt="Scrum board illustration" src="./images/scrum-board.svg"/>
+        <div className="md:max-w-600">
+          <h2 className="mb-3 text-2xl md:text-3xl">Contribute to Open Source</h2>
+          <p className="mb-5 text-base md:text-lg">
+            The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.
+          </p>
+          <a href="https://github.com/jrobind/dev-jot" className="btn mt-5">GO TO PROJECT</a>
+        </div>
+      </div>
+    </section>
+
     <section>
-      <div className="wrapper px-3 pt-6">
-          <div className="px-3 pb-4 bg-main text-white mt-5 rounded shadow-md">
+      <div className="wrapper px-3 mb-6 md:mb-8">
+          <div className="px-3 pb-4 bg-main text-white rounded shadow-md">
             <img className="m-auto block" style={{maxWidth: '400px'}} alt="Discord logo" src="./images/discord-logo.svg"/>
             <div className="flex items-center flex-col mt-3 m-auto max-w-600">
               <p className="text-base md:text-lg mb-3 text-center">Don't learn in isolation! Join other like-minded, aspiring developers and myself. This is a highly inclusive and supportive community for those looking for help at whatever stage of their journey to become a front-end developer.</p>
@@ -116,19 +129,6 @@ const Home = ({ slugs, posts }) => (
             </div>
           </div>
         </div>
-    </section>
-
-    <section className="wrapper px-3 my-7">
-      <div className="flex flex-col md:flex-row md:justify-between items-center">
-      <img className="block img-shadow" style={{maxWidth: '450px'}} alt="Scrum board illustration" src="./images/scrum-board.svg"/>
-        <div className="md:max-w-600">
-          <h2 className="mb-3 text-2xl md:text-3xl">Contribute to Open Source</h2>
-          <p className="mb-5 text-base md:text-lg">
-            The Front End Coach open source project has been set up to create a welcoming and friendly learning environment, so you can feel safe making mistakes. This is also an opportunity to receive feedback and guidance whilst collaborating with other developers.
-          </p>
-          <a href="https://github.com/jrobind/dev-jot" className="btn mt-5">GO TO PROJECT</a>
-        </div>
-      </div>
     </section>
 
     <section className="wrapper mt-3">
