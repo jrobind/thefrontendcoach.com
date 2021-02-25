@@ -14,15 +14,15 @@ timestamp: 1613925862
 
 ***
 
-Some of the best developers that I’ve worked with have possessed exceptional debugging skills. A common cause of frustration for aspiring developers is the debugging process. There’s a tendency to view it as an unfortunate, cumbersome side-effect of coding. But if we reframe the way we see debugging and view it as a skill, it’s arguably one of the most important tools in a programmer's arsenal. A programmer that cannot debug is essentially blind.
+Some of the best developers that I’ve worked with have possessed exceptional debugging skills. A common cause of frustration for aspiring developers is the debugging process. There’s a tendency to view it as an unfortunate, cumbersome side-effect of coding. But if we reframe the way we see debugging and view it as a skill, it’s arguably one of the most important tools in a programmer's arsenal. **A programmer that cannot debug is essentially blind**.
 
-Sure, in an ideal world you’ll write bug-free code. You write an extensive test suite (unit, integration end-to-end) and because of this nothing can go wrong so you’ll never need to debug, right? Nope.
+Sure, in an ideal world you’ll write bug-free code. You'll write an extensive test suite (unit, integration, end-to-end) and because of this nothing can go wrong so you’ll never need to debug, right? Nope.
 
 > "If debugging is the process of removing software bugs, then programming must be the process of putting them in."
 >
 > ~ Edsger W. Dijkstra
 
-Maybe my experiences are unique, (I doubt that they are) but in the real world software engineering is vastly different from the utopian fun, safe, and guided one you’re sold in tutorials and coding courses. Most of your time will be spent maintaining, and changing either existing code or old legacy code written by other developers. A lot of the code you end up working with is less than ideal – it’s imperfect because it was rushed when it was written or maybe the code you’re looking at is the remnants of a first version a developer put together in 24 hours with no sleep. On top of this, there may be no tests, and if you’re lucky and documentation exists the likelihood is it will be out of date. If you do not have the ability to debug code you will inevitably have to depend on the rest of your team to help you. Having other members of your team helping you isn’t bad, per se, but it could be a symptom of a lack of debugging ability on your part. Fortunately, just like any other skill debugging can be learned and it most certainly can be improved.
+Maybe my experiences are unique, (I doubt that they are) but in the real world software engineering is vastly different from the utopian, safe, and guided one you’re sold in tutorials and coding courses. Most of your time will be spent maintaining, and changing either existing code or old legacy code written by other developers. A lot of the code you end up working with is less than ideal – it’s imperfect because it was rushed when it was written. The code you’re looking at may be the remnants of a first version a developer put together in 24 hours with no sleep. On top of this, there may be no tests, and if you’re lucky and documentation exists the likelihood is it will be out of date. If you do not have the ability to debug code you will inevitably have to depend on the rest of your team to help you. Having other members of your team helping you isn’t bad, per se, but it could be a symptom of a lack of debugging ability on your part. Fortunately, just like any other skill debugging can be learned and it most certainly can be improved.
 
 In my case, I never set out to improve my debugging skills. I never sat down one day and said, “I’m going to learn this one awesome thing that people will pay me money for, and no it’s not React it’s debugging”. It ended up becoming something I needed to improve as I started to contribute to open source and landed my first job as a developer. Most of the projects I’ve worked on have been large pre-existing projects, with large complex codebases, which comes with the potential for causing all sorts of issues with a simple line/character change. For that reason, a lot of my time as a developer (so far) has been spent debugging stuff. Debugging as I write a new feature, debugging a bug that I introduced, debugging a bug someone else introduced, you get the point, lots of debugging.
 
@@ -57,7 +57,7 @@ Before you head straight to the debugger or start dropping `console.logs` all ov
 
 It seems a little obvious to start with error messages but you’d be amazed how many times I’ve been asked to help debug an issue only to find the individual hasn’t taken the time to read their own error messages!
 
-Here’s an example `TypeError` message – you’ve probably encountered something like this before
+Here’s an example `TypeError` message – you’ve probably encountered something like this before.
 
 
 ![TypeError message](/images/blog/error-message.png)
@@ -101,13 +101,13 @@ Let’s take a look at our `TypeError` message and stack trace output from befor
 
 The content within the first green box tells us whether the error has been correctly handled. The content within the second is the type of error, and the last green box contains the stack trace, which you'll receive whenever the browser experiences an unhandled exception.
 
-To understand the stack trace you need to understand how the call stack works. Essentially the call stack works as a last-in-first-out structure for your function calls. Think of the call stack as a pile of books. If you add a new book ( a function call) to the pile of books you add the book to the top of the pile (think call stack) and when you wish to remove a book you remove it from the top. Read more about the call stack [here](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack).
+To understand the stack trace you need to understand how the call stack works. Essentially the call stack works as a last-in-first-out structure for your function calls. Think of the call stack as a pile of books. If you add a new book (a function call) to the pile of books you add the book to the top of the pile (think call stack) and when you wish to remove a book you remove it from the top. Read more about the call stack [here](https://developer.mozilla.org/en-US/docs/Glossary/Call_stack).
 
 The stack trace is very useful to us because it's an overview of all of the function calls up until the point where your code/application failed. You can see we have information on the exact files and line numbers for the function calls. We should begin by looking at the first line which gives us information on the error type and the details of the function where the error occurred. In this example, it is line 7 of the  `updateModalGreeting()` function.
 
 More often than not, stack traces look more complex than this and if you find that you have a stack trace that includes many files and function calls that are completely alien to you then your best approach is to **look for the files and the functions that you recognise**. Once you’ve found them you can follow the function calls from **the bottom-up**.
 
-There are situations when you don’t have the luxury of an error message. Just because your code has executed error-free this doesn't necessarily mean it’s bug-free. You may encounter silent bugs. In this instance finding the culprit is a little more tricky because you don’t have the benefit of a stack trace or error message to point you in the right direction.
+There are situations when you don’t have the luxury of an error message. Just because your code has executed error-free this doesn't necessarily mean it’s bug-free – you may encounter silent bugs. In this instance, finding the culprit is a little more tricky because you don’t have the benefit of a stack trace or error message to point you in the right direction.
 
 ## Test your assumptions
 
@@ -175,7 +175,7 @@ You can use the step over function call button to step over each line.
 
 ![TypeError message](/images/blog/dev-tools-step-over.png)
 
-But before we step over to line 8, below we can see some useful information regarding the in-scope variables within the Scope pane. If we collapse the 'Local' category we can see the function parameter `message` is initialised with a default value as expected, but if we collapse the 'Script' category conversely we can see that `greetingMessage` is `null`. You can also see variable values whilst code execution is paused by hovering over them too. If you're wondering why we have a 'Script' category within the Scope pane see [this Stack Overflow answer](https://stackoverflow.com/a/40685352). 
+But before we step over to line 8, below we can see some useful information regarding the in-scope variables within the Scope pane. If we collapse the 'Local' category we can see the function parameter `message` is initialised with a default value as expected, but if we collapse the 'Script' category conversely, we can see that `greetingMessage` is `null`. You can also see variable values whilst code execution is paused by hovering over them too. If you're wondering why we have a 'Script' category within the Scope pane see [this Stack Overflow answer](https://stackoverflow.com/a/40685352). 
 
 ![TypeError message](/images/blog/dev-tools-scope-pane.png)
 
@@ -192,7 +192,7 @@ For an exhaustive guide on the features and capabilities of Chrome debugging too
 
 ## Process of elimination
 
-In the real world more often than not you'll be faced with a huge codebase and thousands of lines of code that hide a bug somewhere, finding the offending code might not be such a walk in the park as it was in our rather simple example above. As mentioned above you may not always have an error message and call stack to point you in the right direction. You could work through each of the lines, one by one? Sure, but this would be incredibly time ineffective. So how do you go about narrowing down your search for the offending line(s) in a time-efficient manner?
+In the real world more often than not you'll be faced with a huge codebase and thousands of lines of code that hide a bug somewhere. Finding the offending code might not be such a walk in the park as it was in our rather simple example above. As mentioned above, you may not always have an error message and call stack to point you in the right direction. You could work through each of the lines, one by one? Sure, but this would be incredibly time consuming. So how do you go about narrowing down your search for the offending line(s) in a time-efficient manner?
 You need to follow the **divide and conquer approach**, which is arguably one of the most important debugging principles. Start by trying to cut the problem into smaller pieces, start by **dividing your code in half**.
 
 Is the bug in the first half or the second half? Once you’ve established which half contains the bug you can repeat this process by removing irrelevant chunks of code. Eventually, you’ll have narrowed down to a manageable section of code that contains the bug.
