@@ -44,7 +44,7 @@ Instead, do this:
 
 Even if you’re fast approaching a deadline or you’re under pressure to ship something before the end of the day. If you are up against things, reframing the way you see the debugging process will allow you to solve the issue faster. Frustration leads to stress and anxiety which clouds judgement and rational thought processes which in turn impedes your ability to solve problems, which is the opposite of what you want when you need to fix something quickly.
 
-## Step 2. Reproduce the bug
+## Reproduce the bug
 
 This is a step that should not be skipped. I cannot tell you the number of times I’ve picked up tickets or issues with bugs I cannot reproduce. Always make sure you find the exact steps needed to reproduce the bug, and if you’re not able to do this you’ll need to acquire more evidence before you can go ahead and debug. If you can’t reproduce then (if possible) try and find someone who can help you, if you’re working on an issue try and speak to the person that raised the issue, get them to show you the steps needed to reproduce the bug. If you don’t do this, and you try to rectify things by throwing some wild fixes at the problem a few things will happen:
 
@@ -111,7 +111,7 @@ There are situations when you don’t have the luxury of an error message. Just 
 
 ## Test your assumptions
 
-By this point, you probably have a few assumptions about what’s caused the bug. Assumptions are great, but they’re useless if you don’t test them. Most of your assumptions will be wrong, but there’s a chance that one of them will either be correct or at least along the right lines. You have to embrace a process of elimination here. You need to test out your assumptions one by one. Before you can test them out it helps to do two things (don’t skip this step):
+By this point, you probably have a few assumptions about what’s caused the bug. Assumptions are great, but they’re useless if you don’t test them. Most of your assumptions will be wrong, but there’s a chance that one of them will either be correct or at least along the right lines. You have to embrace a process of elimination here. You need to test out your assumptions one by one. Before you can test them out it helps to do two things:
 
 * Write down your assumptions
 * Talk out each of your assumptions 
