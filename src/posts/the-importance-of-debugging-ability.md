@@ -80,7 +80,7 @@ Syntactically invalid code not recognised by the JavaScript engine.
 
 ```javascript
 function() {
-  return ‘Hello world’;
+  return 'Hello world';
 }
 // SyntaxError: Function statements require a function name
 ```
@@ -89,7 +89,7 @@ function() {
 Occurs when a value has a type that is different from the one expected.
 
 ```javascript
-document.querySelector(‘.some-element’).textContent = ‘Hello world’;
+document.querySelector('.some-element').textContent = 'Hello world';
 // TypeError: Cannot set property 'textContent' of null
 ```
 
