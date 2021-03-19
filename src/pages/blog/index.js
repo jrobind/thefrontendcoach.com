@@ -5,7 +5,7 @@ import { rootURL } from '../../lib/constants';
 
 
 const BlogHome = ({ posts }) => (
-  <div 
+  <article
     className="blog bg-blog-home-blob bg-no-repeat"
     style={{
       backgroundPosition: 'right 0',
@@ -30,7 +30,7 @@ const BlogHome = ({ posts }) => (
         </div>
       </div>
     </section>
-  </div>
+  </article>
 );
 
 export const getStaticProps = async () => {
