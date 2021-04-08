@@ -97,7 +97,7 @@ You can find out more about JavaScript error types [here](https://developer.mozi
 
 Let’s take a look at our `TypeError` message and stack trace output from before, with key parts highlighted in green.
 
-![TypeError message](/images/blog/error-message-sections.png)
+![Stack trace error message with key areas highlighted](/images/blog/error-message-sections.png)
 
 The content within the first green box tells us whether the error has been correctly handled. The content within the second is the type of error, and the last green box contains the stack trace, which you'll receive whenever the browser experiences an unhandled exception.
 
@@ -159,29 +159,29 @@ To start, open up the Chrome DevTools, `Command+Option+i` on Mac and `Control+Sh
 
 Then head to the sources tab where we debug JavaScript. Using the file navigator pane on the left you can track down the relevant javaScript files that you wish to inspect. 
 
-![TypeError message](/images/blog/dev-tools-sources-tab.png)
+![Chrome DevTools file navigator pane](/images/blog/dev-tools-sources-tab.png)
 
 There are a lot of useful features, but for now, I just wanted to show you how to manually set breakpoints in your code. It helps to have an idea of where you should place these breakpoints. Before we do that it’s useful to know that there are actually [many different types of breakpoints](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints#overview). The most common is the line-of-code breakpoint which we will use for our buggy example code. Based on our error message we already know the offending line so it makes sense to set a line-of-code breakpoint on line 7.
 
 To set the breakpoint, click to the left of the line number.
 
-![TypeError message](/images/blog/dev-tools-breakpoint.png)
+![A breakpoint applied to a line of JavaScript in Chrome DevTools](/images/blog/dev-tools-breakpoint.png)
 
 Our goal here is to trigger the breakpoint so we can step through the code one line at a time. For this example, the `showModal` function invokes the `updateModalGreeting` function. We can invoke the `showModal` function by triggering a click event on the button element the event listener is attached to. Once triggered, code execution will pause on the breakpoint as demonstrated below.
 
-![TypeError message](/images/blog/dev-tools-paused-debugger.png)
+![Debugger paused in Chrome DevTools](/images/blog/dev-tools-paused-debugger.png)
 
 You can use the step over function call button to step over each line.
 
-![TypeError message](/images/blog/dev-tools-step-over.png)
+![A step over function call button in Chrome DevTools](/images/blog/dev-tools-step-over.png)
 
 But before we step over to line 8, below we can see some useful information regarding the in-scope variables within the Scope pane. If we collapse the 'Local' category we can see the function parameter `message` is initialised with a default value as expected, but if we collapse the 'Script' category conversely, we can see that `greetingMessage` is `null`. You can also see variable values whilst code execution is paused by hovering over them too. If you're wondering why we have a 'Script' category within the Scope pane see [this Stack Overflow answer](https://stackoverflow.com/a/40685352). 
 
-![TypeError message](/images/blog/dev-tools-scope-pane.png)
+![The scope pane in Chrome DevTools](/images/blog/dev-tools-scope-pane.png)
 
 Once we press the step over function call button the `console.log` will be executed on line 7 and the debugger will move to line 8. If we step over again we can see as demonstrated below, that the `TypeError` message is thrown, given this, it’s clear there is a problem with the `querySelector` call on line 1.
 
-![TypeError message](/images/blog/dev-tools-type-error.png)
+![A TypeError message highlighted in Chrome DevTools](/images/blog/dev-tools-type-error.png)
 
 If we head to the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector#return_value) for the `querySelector` method we can see the return value is `null` if there is no matching selector. In our example, there is no matching element with a `.greet-message` class. We can fix this by adding the class to the appropriate element in our HTML (or create one and do so if it does not exist).
 
