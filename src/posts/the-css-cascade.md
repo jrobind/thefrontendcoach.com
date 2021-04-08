@@ -13,11 +13,11 @@ timestamp: 1617897203
 
 ***
 
-The key to feeling more confident with CSS is to treat it with some respect, given its deceptively declaritive syntax developers often underestimate its complexity. Adding a small stylesheet to your web project with a few basic styles is a trivial process, but after working on large codebases I can tell you it becomes unwieldy and complicated, fast. To really understand CSS and to feel confident making changes and decisions you need to understand the principles underpin certain behaviours and practices. Whilst quick tricks and cheatsheets might be enough to struggle through, they often don't contribute toward a deep, connected knowledge, these quick trick snippets of information are often memorised in isolation which leads to a **fragmented understanding of the language**. Debugging CSS can also be notoriously hard (especially for beginners), but ultimately (and this applies beyond CSS) with greater understanding, debugging becomes much easier. The CSS Cascade is (arguably) the most fundamental principle of the language. Let's take a look at it in some detail with an example.
+The key to feeling more confident with CSS is to treat it with some respect, given its deceptively declaritive syntax developers often underestimate its complexity. Adding a small stylesheet to your web project with a few basic styles is a trivial process, but after working on large codebases I can tell you it becomes unwieldy and complicated, fast. To really understand CSS and to feel confident making changes and decisions you need to understand the principles that underpin certain behaviours and practices. Whilst quick tricks and cheatsheets might be enough to struggle through, they often don't contribute toward a deep, connected knowledge, these quick trick snippets of information are often memorised in isolation which leads to a **fragmented understanding of the language**. Debugging CSS can also be notoriously hard (especially for beginners), but ultimately (and this applies beyond CSS) with greater understanding, debugging becomes much easier. The CSS Cascade is arguably the most fundamental principle of the language.
 
 ## Cascading stylesheets
 
-The 'C' in CSS stands for 'cascading', which suggests (given it's in the name) it's kind of a big deal. It's an awesome part of CSS and if used correctly, will allow you to write very little CSS! One of the most challenging obstacles can be deciphering how and why certain styles have been applied to elements on a page, especially when you least expect it. We can all relate to writing a declaration at some point and failing to see our styles being applied, confused we turn to either inlining the style properties and values or throwing an `!important` statement into the mix. Most of the time we can avoid using the dreaded `!important` statement (although admittedly this is sometimes not possible when dealing with third-party libraries and may even be a preferable approach in certain situations). CSS has mechanisms in place to handle these types of situations. The Cascade is a key part of this, which ultimately helps to enforce predictability. The cascade determines how to resolve these types of conflicts. You might be wondering what we mean by 'conflict', well, here's a common example:
+The 'C' in CSS stands for 'cascading', which suggests (given it's in the name) it's kind of a big deal. It's an awesome part of CSS and if used correctly, will allow you to write very little CSS! One of the most challenging obstacles can be deciphering how and why certain styles have been applied to elements on a page, especially when you least expect it. We can all relate to writing a declaration at some point and failing to see our styles being applied, confused we turn to using either a style attribute within our HTML or an `!important` statement. Most of the time we can avoid using the dreaded `!important` statement (although admittedly this is sometimes not possible when dealing with third-party libraries and may even be a preferable approach in [certain situations](https://css-tricks.com/when-using-important-is-the-right-choice/)). CSS has mechanisms in place to handle these types of situations. The Cascade is a key part of this, which ultimately helps to enforce predictability. The CSS Cascade determines how to resolve these types of conflicts. You might be wondering what we mean by 'conflict', well, here's a common example:
 
 ```css
 button {
@@ -33,7 +33,7 @@ button {
 }
 ```
 
-Let's assume in our markup we have a button that we wish to reset some of the native button styles for. We have three conflicting style declarations that all correctly target the button element. CSS upholds a set of principles and rules that will determine which of these declarations wins this 'conflict'.
+Let's assume in our markup we have a button and we wish to reset some of its native styles. We have three conflicting style declarations above that all correctly target the button element. CSS upholds a set of principles and rules that will determine which of these declarations wins this 'conflict'.
 
 Essentially, the CSS cascade is the way in which browsers resolve conflicting CSS declarations. There are three main rules:
 
@@ -45,7 +45,7 @@ Essentially, the CSS cascade is the way in which browsers resolve conflicting CS
 
 ## Origin
 
-Browsers come with their own user-agent stylesheets and although they do differ, they generally do apply similar default styles such as font sizes (commonly: `16px`) and top and bottom margins to headings and paragraphs. Author-agent stylesheets have priority over user-agent stylesheets, so any declarations that you specify will override those set by the user-agent stylesheet.
+Browsers come with their own user-agent stylesheets and although they do differ, they generally apply similar default styles such as font sizes (commonly: `16px`) and top and bottom margins to headings and paragraphs. Author-agent stylesheets have priority over user-agent stylesheets, so any declarations that you specify will override those set by the user-agent stylesheet.
 
 ```css
 h1 {
@@ -59,7 +59,7 @@ The rule above will override the browser user-agent margins applied to `h1` elem
 
 Author stylesheets are the most common type of stylesheet (either written by the author inline or by linking to external stylesheet(s)) and this is the only origin that you have control over as a developer.
 
-At this stage, it is also worth mentioning the often hotly debated `!important` declaration. When used it raises the specificity of a declaration. In other words, an important declaration can be used to override other declarations (it even overrides inline styles from HTML) For instance,
+At this stage, it is also worth mentioning the often hotly debated `!important` declaration. When used it raises the specificity of a declaration. In other words, an important declaration can be used to override other declarations (it even overrides inline styles from HTML), for instance:
 
 ```css
 body {
@@ -71,7 +71,7 @@ body {
 }
 ```
 
-In the example above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rule sets are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration, the declaration that appears last will take precedence. So here the body background color will be blue. We can, however (not recommended) use the !important declaration to override the normal declaration conflict resolution steps and brute force specificity increase.
+In the example above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rule sets are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration, the declaration that appears last will take precedence. In this instance, the `background-color` will be `blue`. We can, however (not recommended) use the `!important` declaration to override the normal declaration conflict resolution steps and brute force an increase in specificity.
 
 ## Specificity
 
@@ -82,13 +82,13 @@ Specificity is evaluated in two parts:
 * Inline styles using `style` attribute in HTML
 * Styles applied using a selector
 
-Inline styles applied using a style attribute in HTML will override any declarations applied from a stylesheet. So
+Inline styles applied using a style attribute in HTML will override any declarations applied from a stylesheet. For instance:
 
 ```html
   <h1 style=”color: red;”>Hello world!</h1>
 ```
 
-Will override
+Will override:
 
 ```css
 h1 {
@@ -104,7 +104,7 @@ Inline CSS:
   <h1 style=”color: red;”>Hello world!</h1>
 ```
 
-Internal CSS
+Internal CSS:
 
 ```html
 <head>
@@ -116,7 +116,7 @@ Internal CSS
 </head>
 ```
 
-External CSS
+External CSS:
 
 ```html
 <head>
@@ -142,7 +142,7 @@ When there are no inline styles to resolve specificity conflicts the browser wil
   .some-class [some-attribute] div p {} – 0,0,2,2
 ```
 
-Given the above selector examples (including the inline style) to determine which selector is more specific we can compare the numbers. In this instance, the inline style applied to the `h1` tag has the highest specificity (1,0,0,0) the single id selector comes next (0,1,0,0). The selector with two attributes follows. Although attribute selectors have the same specificity ranking as classes (so do pseudo classes i.e. `button:hover`), there are two which raise the specificity above the single `.some-class`. The single class selector then follows with the element or type selector coming last in terms of specificity weight.
+To determine which of the above selectors (including the inline style) is more specific we can compare the numbers. In this instance, the inline style applied to the `h1` tag has the highest specificity (1,0,0,0) the single ID selector comes next (0,1,0,0). The selector with two attributes follows. Although attribute selectors have the same specificity ranking as classes (so do pseudo classes i.e. `button:hover`), there are two which raises the specificity above the single `.some-class`. The single class selector then follows, with the element or type selector coming last in terms of specificity weight.
 
 ## Position
 
