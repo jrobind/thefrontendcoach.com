@@ -129,16 +129,16 @@
   @apply mb-6;
 }
 
-code:not(.language-javascript):not(.language-html):not(.language-bash) {
+code:not(.language-javascript):not(.language-html):not(.language-bash):not(.language-css) {
   @apply text-main text-sm whitespace-no-wrap font-bold tracking-wide;
   font-family: Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono, Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
 
-code:not(.language-javascript):not(.language-html):not(.language-bash):before {
+code:not(.language-javascript):not(.language-html):not(.language-bash):not(.language-css):before {
   content: "`";
 }
 
-code:not(.language-javascript):not(.language-html):not(.language-bash):after {
+code:not(.language-javascript):not(.language-html):not(.language-bash):not(.language-css):after {
   content: "`";
 }
 
