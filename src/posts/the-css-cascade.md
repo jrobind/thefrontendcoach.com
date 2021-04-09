@@ -17,7 +17,9 @@ The key to feeling more confident with CSS is to treat it with some respect. Giv
 
 ## Cascading stylesheets
 
-The 'C' in CSS stands for 'cascading', which suggests (given it's in the name) it's kind of a big deal. It's an awesome part of CSS and if used correctly, will allow you to write very little CSS! One of the most challenging obstacles can be deciphering how and why certain styles have been applied to elements on a page, especially when you least expect it. We can all relate to writing a declaration at some point and failing to see our styles being applied, confused we turn to use either a style attribute within our HTML or an `!important` statement. Most of the time we can avoid using the dreaded `!important` statement (although admittedly this is sometimes not possible when dealing with third-party libraries and may even be a preferable approach in [certain situations](https://css-tricks.com/when-using-important-is-the-right-choice/)). CSS has mechanisms in place to handle these types of situations. The Cascade is a key part of this, which ultimately helps to enforce predictability. The CSS Cascade determines how to resolve these types of conflicts. You might be wondering what we mean by 'conflict', well, here's a common example:
+The 'C' in CSS stands for 'cascading', which suggests (given it's in the name) it's kind of a big deal. It's an awesome part of CSS and if used correctly, will allow you to write very little CSS! One of the most challenging obstacles can be deciphering how and why certain styles have been applied to elements on a page, especially when you least expect it. We can all relate to writing a declaration at some point and failing to see our styles being applied, confused we turn to use either a style attribute within our HTML or an `!important` statement. Most of the time we can avoid using the dreaded `!important` statement (although admittedly this is sometimes not possible when dealing with third-party libraries and may even be a preferable approach in [certain situations](https://css-tricks.com/when-using-important-is-the-right-choice/)). CSS has mechanisms in place to handle these types of situations. The Cascade is a key part of this, helping to enforce predictability. The Cascade determines how to resolve these types of conflicts. 
+
+You might be wondering what we mean by 'conflict', well, here's a common example:
 
 ```css
 button {
@@ -33,7 +35,7 @@ button {
 }
 ```
 
-Let's assume in our markup we have a button and we wish to reset some of its native styles. We have three conflicting style declarations above that all correctly target the button element. CSS upholds a set of principles and rules that will determine which of these declarations wins this 'conflict'.
+Let's assume in our markup we have a button and we wish to apply a `background-color` to it. We have three conflicting style declarations above that all correctly target the button element. CSS upholds a set of principles and rules that will determine which of these declarations wins this 'conflict'.
 
 Essentially, the CSS cascade is the way in which browsers resolve conflicting CSS declarations. There are three main rules:
 
@@ -71,7 +73,7 @@ body {
 }
 ```
 
-In the code above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rules are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration, the rule that appears last will take precedence. In this instance, the `background-color` will be `blue`. We can, however (not recommended) use the `!important` statement to override the normal declaration conflict resolution steps and brute force an increase in specificity.
+In the code above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rules are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration. **The rule that appears last will take precedence**. In this instance, the `background-color` will be `blue`. We can, however (not recommended) use the `!important` statement to override the normal declaration conflict resolution steps and brute force an increase in specificity.
 
 ## Specificity
 
@@ -131,15 +133,13 @@ When there are no inline styles to resolve specificity conflicts the browser wil
 ```
 
 ```css
-  body div span {} – 0,0,0,3
-
-  .some-class {} – 0,0,1,0
+  #some-id {}  – 0,1,0,0
 
   [some-attribute] [another-attribute] {} – 0,0,2,0
 
-  #some-id {}  – 0,1,0,0
+  .some-class {} – 0,0,1,0
 
-  .some-class [some-attribute] div p {} – 0,0,2,2
+  body div span {} – 0,0,0,3
 ```
 
 To determine which of the above selectors (including the inline style) is more specific we can compare the numbers. In this example, the inline style applied to the `h1` tag has the highest specificity (1,0,0,0), whilst the single ID selector comes next (0,1,0,0) in second place. The selector with two attributes follows in third. Although attribute selectors have the same specificity ranking as classes (so do pseudo classes i.e. `button:hover`), there are two of them which in turn raises the specificity above the single `.some-class`. The single class selector then follows, with the element (or type selector) coming last in terms of specificity weight.
@@ -151,7 +151,7 @@ The final step for resolving declaration conflicts is for the browser to determi
 * The same origin
 * Of equal specificity
 
-The winning declaration/rule will be the one that appears later in the CSS. For instance
+The winning declaration/rule will be the one that appears later in the CSS. For instance:
 
 ```css
 button {
