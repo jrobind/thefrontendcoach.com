@@ -6,6 +6,7 @@ import js from "react-syntax-highlighter/dist/cjs/languages/hljs/javascript";
 import html from "react-syntax-highlighter/dist/cjs/languages/hljs/htmlbars";
 import xml from "react-syntax-highlighter/dist/cjs/languages/hljs/xml";
 import bash from "react-syntax-highlighter/dist/cjs/languages/hljs/bash";
+import css from "react-syntax-highlighter/dist/cjs/languages/hljs/css";
 import vs2015 from "react-syntax-highlighter/dist/cjs/styles/hljs/vs2015";
 import Link from "next/link";
 import { rootURL } from "../lib/constants";
@@ -15,6 +16,7 @@ SyntaxHighlighter.registerLanguage("javascript", js);
 SyntaxHighlighter.registerLanguage("html", html);
 SyntaxHighlighter.registerLanguage("bash", bash);
 SyntaxHighlighter.registerLanguage("xml", xml);
+SyntaxHighlighter.registerLanguage("css", css);
 
 const DynamicSharing = dynamic(() => import("./Sharing"));
 

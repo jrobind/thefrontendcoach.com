@@ -13,7 +13,7 @@ timestamp: 1617897203
 
 ***
 
-The key to feeling more confident with CSS is to treat it with some respect, given its deceptively declaritive syntax developers often underestimate its complexity. Adding a small stylesheet to your web project with a few basic styles is a trivial process, but after working on large codebases I can tell you it becomes unwieldy and complicated, fast. To really understand CSS and to feel confident making changes and decisions you need to understand the principles that underpin certain behaviours and practices. Whilst quick tricks and cheatsheets might be enough to struggle through, they often don't contribute toward a deep, connected knowledge, these quick trick snippets of information are often memorised in isolation which leads to a **fragmented understanding of the language**. Debugging CSS can also be notoriously hard (especially for beginners), but ultimately (and this applies beyond CSS) with greater understanding, debugging becomes much easier. The CSS Cascade is arguably the most fundamental principle of the language.
+The key to feeling more confident with CSS is to treat it with some respect. Given its deceptively declaritive syntax, developers often underestimate its complexity. Adding a small stylesheet to your web project with a few basic styles is a trivial process, but after working on large codebases I can tell you it becomes unwieldy and complicated, fast. To really understand CSS and to feel confident making changes and decisions you need to understand the principles that underpin certain behaviours and practices. Whilst quick tricks and cheatsheets might be enough to struggle through, they often don't contribute toward a deep, connected knowledge, these quick trick snippets of information are often memorised in isolation which leads to a **fragmented understanding of the language**. Debugging CSS can also be notoriously hard (especially for beginners), but ultimately (and this applies beyond CSS) with greater understanding, debugging becomes much easier. The CSS Cascade is arguably the most fundamental principle of the language.
 
 ## Cascading stylesheets
 
@@ -55,11 +55,11 @@ h1 {
 
 The rule above will override the browser user-agent margins applied to `h1` elements. With your browser developer tools if you head to the elements tab you can inspect elements and see their associated user-agent stylesheets declarations (if they exist) for that element.
 
-![user agent styles from Chrome dev tools](/images/blog/user-agent-styles.png)
+![user agent styles from Chrome DevTools](/images/blog/user-agent-styles.png)
 
 Author stylesheets are the most common type of stylesheet (either written by the author inline or by linking to external stylesheet(s)) and this is the only origin that you have control over as a developer.
 
-At this stage, it is also worth mentioning the often hotly debated `!important` declaration. When used it raises the specificity of a declaration. In other words, an important declaration can be used to override other declarations (it even overrides inline styles from HTML), for instance:
+At this stage, it is also worth mentioning the use of the often hotly debated `!important` statement. When used it raises the specificity of a declaration. In other words, an important statement/keyword can be used to override other declarations (it even overrides inline styles from HTML), for instance:
 
 ```css
 body {
@@ -71,11 +71,11 @@ body {
 }
 ```
 
-In the example above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rule sets are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration, the declaration that appears last will take precedence. In this instance, the `background-color` will be `blue`. We can, however (not recommended) use the `!important` declaration to override the normal declaration conflict resolution steps and brute force an increase in specificity.
+In the code above, we can see the use of the type selector and the setting of the `color` value to the `background-color` property. Because both of these rules are from the same origin and also have the same specificity, the order in which styles are declared will be taken into consideration, the rule that appears last will take precedence. In this instance, the `background-color` will be `blue`. We can, however (not recommended) use the `!important` statement to override the normal declaration conflict resolution steps and brute force an increase in specificity.
 
 ## Specificity
 
-If the browser is unable to resolve any declaration conflicts by checking their origin, the next step is an attempted resolution via declaration specificity. This is where things get a little more tricky and where most of the trip-ups tend to take place.
+If the browser is unable to resolve any declaration conflicts by checking their origin, the next step is an attempted resolution via specificity. This is where things get a little more tricky and where most of the trip-ups tend to take place.
 
 Specificity is evaluated in two parts:
 
@@ -85,7 +85,7 @@ Specificity is evaluated in two parts:
 Inline styles applied using a style attribute in HTML will override any declarations applied from a stylesheet. For instance:
 
 ```html
-  <h1 style=”color: red;”>Hello world!</h1>
+  <h1 style="color: red;">Hello world!</h1>
 ```
 
 Will override:
@@ -101,7 +101,7 @@ Think of styles applied via a style attribute as closer to the element or scoped
 Inline CSS:
 
 ```html
-  <h1 style=”color: red;”>Hello world!</h1>
+  <h1 style="color: red;">Hello world!</h1>
 ```
 
 Internal CSS:
@@ -120,14 +120,14 @@ External CSS:
 
 ```html
 <head>
-  <link rel=”stylesheet” href=”somestylesheet.css”/>
+  <link rel="stylesheet" href="somestylesheet.css"/>
 </head>
 ```
 
-When there are no inline styles to resolve specificity conflicts the browser will turn to selector specificity. I've found the easiest way to remember selector specificity weights is by using a number form notation which is probably best explained using an example:
+When there are no inline styles to resolve specificity conflicts the browser will turn to selector specificity. I've found the easiest way to remember selector specificity weighting is by using a number form notation which is probably best explained using an example:
 
 ```html
-  <h1 style=”color: red;”>Hello world!</h1>  – 1,0,0,0
+  <h1 style="color: red;">Hello world!</h1>  – 1,0,0,0
 ```
 
 ```css
@@ -142,11 +142,11 @@ When there are no inline styles to resolve specificity conflicts the browser wil
   .some-class [some-attribute] div p {} – 0,0,2,2
 ```
 
-To determine which of the above selectors (including the inline style) is more specific we can compare the numbers. In this instance, the inline style applied to the `h1` tag has the highest specificity (1,0,0,0) the single ID selector comes next (0,1,0,0). The selector with two attributes follows. Although attribute selectors have the same specificity ranking as classes (so do pseudo classes i.e. `button:hover`), there are two which raises the specificity above the single `.some-class`. The single class selector then follows, with the element or type selector coming last in terms of specificity weight.
+To determine which of the above selectors (including the inline style) is more specific we can compare the numbers. In this example, the inline style applied to the `h1` tag has the highest specificity (1,0,0,0), whilst the single ID selector comes next (0,1,0,0) in second place. The selector with two attributes follows in third. Although attribute selectors have the same specificity ranking as classes (so do pseudo classes i.e. `button:hover`), there are two of them which in turn raises the specificity above the single `.some-class`. The single class selector then follows, with the element (or type selector) coming last in terms of specificity weight.
 
 ## Position
 
-The final step for resolving declaration conflicts is for the browser to determine the position or source order of the declaration. To reach this stage conflicting declarations must be:
+The final step for resolving declaration conflicts is for the browser to determine the position or source order of the rule/declaration. To reach this stage, conflicting declarations must be:
 
 * The same origin
 * Of equal specificity
