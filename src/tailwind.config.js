@@ -66,6 +66,8 @@ module.exports = {
       'blog-blob-landing': "url('/images/blog-blob.svg')",
       'blog-home-blob': "url('/images/blog-home-blob.svg')",
       'blog-home-blob-2': "url('/images/blog-home-blob-2.svg')",
+      'blob-home-dotted-1': "url('/images/dotted-blob-1.svg')",
+      'blob-home-dotted-2': "url('/images/dotted-blob-2.svg')"
     })
   },
   variants: {},

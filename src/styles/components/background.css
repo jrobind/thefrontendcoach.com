@@ -1,0 +1,13 @@
+.bg-blob-home-dotted-1 {
+  background-repeat: no-repeat;
+  background-position: 160px -30px;
+  background-size: 440px;
+}
+
+@screen md {
+  .bg-blob-home-dotted-1 {
+    background-repeat: no-repeat;
+    background-position: -80px -45px;
+    background-size: 55%;
+  }
+}

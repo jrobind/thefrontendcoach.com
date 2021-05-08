@@ -67,8 +67,8 @@ const Home = ({ slugs, posts }) => (
     </section>
     <Wave alignment="bottom" />
 
-    <section className="about px-3 my-7 md:my-8">
-      <div className="wrapper flex flex-col md:flex-row md:justify-between items-center">
+    <section className="about md:px-3">
+      <div className="wrapper px-3 md:px-0 py-7 md:py-8 bg-blob-home-dotted-1 flex flex-col md:flex-row md:justify-between items-center">
         <img
           className="rounded max-w-250 md:max-w-340 w-full img-shadow mb-3 md:mb-0"
           src="/images/james-robinson.jpeg"
