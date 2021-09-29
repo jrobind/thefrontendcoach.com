@@ -41,6 +41,10 @@
   top: 0;
 }
 
+button.menu-icon {
+  outline: none;
+}
+
 .menu-icon {
   padding: 40px 4px;
 }
